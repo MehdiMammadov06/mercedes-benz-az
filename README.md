@@ -8,7 +8,7 @@ Backend yoxdur — bütün məlumatlar `src/data/` qovluğunda saxlanılır.
 - **React 18** — komponent əsaslı UI
 - **Vite** — build aləti və dev server
 - **React Router v6** — səhifələr arası naviqasiya
-- **Tailwind CSS 3** — stil
+- **Tailwind CSS 4** — stil (CSS-first konfiqurasiya, `@tailwindcss/vite` plagini)
 
 ## Quraşdırma
 
@@ -40,7 +40,7 @@ src/
 ├── data/            # mətnlər, naviqasiya, model məlumatları
 ├── pages/           # route-lara uyğun səhifələr
 ├── App.jsx          # route-ların təyin olunduğu yer
-├── index.css        # Tailwind + qlobal stillər
+├── index.css        # Tailwind idxalı, @theme konfiqurasiyası, qlobal stillər
 └── main.jsx         # giriş nöqtəsi
 ```
 
@@ -57,12 +57,30 @@ istifadə olunur. Hazırda gözlənilən fayl:
 
 ## Dizayn qeydləri
 
-- Rəng və şrift dəyərləri `tailwind.config.js` faylında `mb-*` adı altında toplanıb
-  (`mb-black`, `mb-blue`, `mb-silver` və s.).
-- Başlıqlar üçün `font-display`, mətn üçün `font-sans` istifadə olunur. Mercedes-in
-  öz şriftləri (MB Corpo) lisenziyalı olduğu üçün pulsuz alternativlər seçilmişdir:
-  Source Serif 4 və Inter.
+Tailwind v4-də `tailwind.config.js` faylı yoxdur — bütün konfiqurasiya
+`src/index.css` faylındaki `@theme` blokundadır. Orada təyin olunan hər CSS
+dəyişəni avtomatik utility klassa çevrilir:
+
+| `@theme` dəyişəni | Yaranan klass |
+| --- | --- |
+| `--color-mb-blue` | `bg-mb-blue`, `text-mb-blue`, `border-mb-blue` |
+| `--font-display` | `font-display` |
+| `--container-site` | `max-w-site` |
+| `--ease-mb` | `ease-mb` |
+| `--animate-fade-up` | `animate-fade-up` |
+
+- Rəng tokenləri `mb-*` prefiksi ilə: `mb-black`, `mb-ink`, `mb-blue`, `mb-silver`,
+  `mb-grey`, `mb-border`.
+- Başlıqlar üçün `font-display`, mətn üçün `font-sans`. Mercedes-in öz şriftləri
+  (MB Corpo) lisenziyalı olduğu üçün pulsuz alternativlər seçilmişdir: Source Serif 4
+  və Inter.
 - Bölmələrin yan boşluqları üçün `container-site` klassı var (`src/index.css`).
+
+### v4-də diqqət edilməli fərqlər
+
+- `bg-gradient-to-r` → **`bg-linear-to-r`** (adı dəyişdi)
+- Düymələrin default `cursor: pointer`-i yoxdur — `index.css`-də geri qaytarılıb
+- Default border rəngi `currentColor`-dur, ona görə border rəngi hər yerdə açıq yazılır
 
 ## Mərhələlər
 
