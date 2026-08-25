@@ -1,0 +1,111 @@
+import { useEffect, useState } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { useLanguage } from '../../context/LanguageContext.jsx';
+import { navLinks } from '../../data/navigation.js';
+import { CarIcon, CloseIcon, GlobeIcon, MenuIcon, MercedesStar } from '../icons/index.jsx';
+
+export default function Header() {
+  const { t, toggleLang } = useLanguage();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { pathname } = useLocation();
+
+  // Səhifə dəyişəndə mobil menyu avtomatik bağlanır
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
+
+  // Mobil menyu açıq olanda arxa fonun sürüşməsini dayandırırıq
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMenuOpen]);
+
+  return (
+    <header className="sticky top-0 z-50 bg-mb-black text-white">
+      {/* --- Üst sətir: loqo, 140 il bloku, dil dəyişdirici --- */}
+      <div className="container-site flex h-16 items-center justify-between sm:h-20">
+        <Link to="/" aria-label={t.header.home} className="shrink-0">
+          <MercedesStar className="h-10 w-10 sm:h-12 sm:w-12" strokeWidth={2.5} />
+        </Link>
+
+        <div className="flex items-center gap-4 sm:gap-7">
+          {/* 140 YEARS OF INNOVATION */}
+          <div className="hidden items-center gap-2 sm:flex">
+            <span className="font-display text-3xl leading-none tracking-tight">140</span>
+            <span className="max-w-[6.5rem] text-[9px] font-medium uppercase leading-[1.2] tracking-[0.12em] text-white/90">
+              {t.header.anniversary}
+            </span>
+          </div>
+
+          <button
+            type="button"
+            onClick={toggleLang}
+            className="flex items-center gap-1.5 text-xs font-medium transition-opacity hover:opacity-70 sm:text-sm"
+          >
+            <GlobeIcon className="h-4 w-4" />
+            {t.langSwitchLabel}
+          </button>
+
+          {/* Mobil menyu düyməsi */}
+          <button
+            type="button"
+            onClick={() => setIsMenuOpen((prev) => !prev)}
+            aria-label={isMenuOpen ? t.header.closeMenu : t.header.openMenu}
+            aria-expanded={isMenuOpen}
+            className="lg:hidden"
+          >
+            {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
+          </button>
+        </div>
+      </div>
+
+      {/* --- Alt sətir: masaüstü naviqasiya --- */}
+      <nav className="hidden border-t border-white/10 lg:block">
+        <ul className="container-site flex h-12 items-center gap-8">
+          {navLinks.map((link) => (
+            <li key={link.key}>
+              <NavLink
+                to={link.path}
+                className={({ isActive }) =>
+                  [
+                    'flex items-center gap-2 text-sm transition-colors duration-300 ease-mb',
+                    isActive ? 'text-white' : 'text-white/80 hover:text-white',
+                  ].join(' ')
+                }
+              >
+                {link.icon === 'car' && <CarIcon className="h-5 w-5" />}
+                {t.nav[link.key]}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      {/* --- Mobil menyu paneli --- */}
+      {isMenuOpen && (
+        <nav className="animate-fade-in border-t border-white/10 lg:hidden">
+          <ul className="container-site flex flex-col py-2">
+            {navLinks.map((link) => (
+              <li key={link.key}>
+                <NavLink
+                  to={link.path}
+                  className={({ isActive }) =>
+                    [
+                      'flex items-center gap-3 border-b border-white/10 py-4 text-base',
+                      isActive ? 'text-white' : 'text-white/80',
+                    ].join(' ')
+                  }
+                >
+                  {link.icon === 'car' && <CarIcon className="h-5 w-5" />}
+                  {t.nav[link.key]}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
+    </header>
+  );
+}
