@@ -1,6 +1,60 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+/* ---------------------------------------------------------------
+   Tailwind v4 konfiqurasiyası CSS içindədir (tailwind.config.js yox).
+   @theme blokundaki hər dəyişən avtomatik utility klassa çevrilir:
+     --color-mb-blue  ->  bg-mb-blue, text-mb-blue, border-mb-blue
+     --font-display   ->  font-display
+     --container-site ->  max-w-site
+     --ease-mb        ->  ease-mb
+     --animate-fade-up -> animate-fade-up
+   --------------------------------------------------------------- */
+@theme {
+  /* Rənglər */
+  --color-mb-black: #000000;
+  --color-mb-ink: #1a1a1a;
+  --color-mb-blue: #0078d6;
+  --color-mb-blue-dark: #0064b4;
+  --color-mb-silver: #f4f4f4;
+  --color-mb-grey: #767676;
+  --color-mb-grey-light: #e5e5e5;
+  --color-mb-border: #d9d9d9;
+
+  /* Şriftlər — Mercedes-in MB Corpo şriftləri lisenziyalı olduğu üçün
+     pulsuz alternativlər istifadə olunur */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Source Serif 4', Georgia, serif;
+
+  /* Saytın maksimum eni */
+  --container-site: 1440px;
+
+  /* Mercedes-in interfeys animasiya əyrisi */
+  --ease-mb: cubic-bezier(0.275, 0, 0.185, 1);
+
+  /* Animasiyalar */
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.275, 0, 0.185, 1) both;
+  --animate-fade-in: fade-in 0.6s ease-out both;
+
+  @keyframes fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
 
 @layer base {
   html {
@@ -12,9 +66,16 @@
     @apply bg-white font-sans text-mb-ink antialiased;
   }
 
+  /* v4-də düymələrin default kursoru "default"-dur, "pointer"-i geri qaytarırıq */
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+
   /* Klaviatura ilə naviqasiya edənlər üçün görünən focus */
   :focus-visible {
-    @apply outline-none ring-2 ring-mb-blue ring-offset-2;
+    outline: 2px solid var(--color-mb-blue);
+    outline-offset: 2px;
   }
 }
 
@@ -25,9 +86,7 @@
   }
 }
 
-@layer utilities {
-  /* Hero üzərindəki mətnin oxunaqlılığı üçün */
-  .text-shadow-hero {
-    text-shadow: 0 2px 24px rgb(0 0 0 / 45%);
-  }
+/* Hero üzərindəki mətnin oxunaqlılığı üçün */
+@utility text-shadow-hero {
+  text-shadow: 0 2px 24px rgb(0 0 0 / 45%);
 }
