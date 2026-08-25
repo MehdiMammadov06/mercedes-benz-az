@@ -10,7 +10,9 @@ yarn-error.log*
 pnpm-debug.log*
 
 # editor / os
+# .vscode qovluğunda yalnız komanda üçün faydalı fayllar saxlanılır
 .vscode/*
+!.vscode/settings.json
 !.vscode/extensions.json
 .idea
 .DS_Store

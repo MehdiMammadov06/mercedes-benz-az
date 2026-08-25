@@ -1,0 +1,27 @@
+{
+  // --- Git: dəyişiklikləri GitHub ilə sinxron saxlamaq ---
+  // Commit etdikdən sonra avtomatik push edir (ayrıca "Push" basmağa ehtiyac yoxdur)
+  "git.postCommitCommand": "push",
+  // GitHub-dakı yeni commit-ləri avtomatik yoxlayır (mən push edəndə görəcəksən)
+  "git.autofetch": true,
+  // Stage etmədən birbaşa commit etməyə icazə verir
+  "git.enableSmartCommit": true,
+  // Sync düyməsində təsdiq pəncərəsi çıxmasın
+  "git.confirmSync": false,
+
+  // --- Tailwind CSS v4 ---
+  // v4-ün @theme, @utility, @apply direktivlərinə "Unknown at rule" xəbərdarlığı verilməsin
+  "css.lint.unknownAtRules": "ignore",
+  // className içində Tailwind avtotamamlaması işləsin
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascript",
+    "javascriptreact": "javascript"
+  },
+
+  // --- Fayl formatı ---
+  // Windows-da CRLF sətir sonluqları diff-ləri çirkləndirməsin
+  "files.eol": "\n"
+}

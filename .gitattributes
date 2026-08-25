@@ -1,0 +1,11 @@
+# Bütün mətn fayllarında sətir sonluqlarını LF kimi saxla
+# (Windows-da CRLF səbəbindən yaranan lüzumsuz diff-lərin qarşısını alır)
+* text=auto eol=lf
+
+# Binar fayllar
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.avif binary
+*.ico binary
