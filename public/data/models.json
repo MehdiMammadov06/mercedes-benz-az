@@ -8,7 +8,7 @@
       "categories": ["sedan", "electric"],
       "year": 2026,
       "price": 285000,
-      "image": "/images/models/eqe-sedan.jpg",
+      "image": "/images/models/eqe-sedan.avif",
       "specs": {
         "power": 292,
         "acceleration": 6.4,
@@ -27,7 +27,7 @@
       "categories": ["sedan", "electric"],
       "year": 2026,
       "price": 360000,
-      "image": "/images/models/eqs-sedan.jpg",
+      "image": "/images/models/eqs-sedan.avif",
       "specs": {
         "power": 360,
         "acceleration": 6.2,
@@ -46,7 +46,7 @@
       "categories": ["sedan", "electric"],
       "year": 2026,
       "price": 165000,
-      "image": "/images/models/c-class-electric.jpg",
+      "image": "/images/models/c-class-electric.avif",
       "specs": {
         "power": 258,
         "acceleration": 6.7,
@@ -65,7 +65,7 @@
       "categories": ["sedan"],
       "year": 2026,
       "price": 138000,
-      "image": "/images/models/c-class.jpg",
+      "image": "/images/models/c-class.avif",
       "specs": {
         "power": 204,
         "acceleration": 7.3,
@@ -83,7 +83,7 @@
       "categories": ["sedan"],
       "year": 2026,
       "price": 176000,
-      "image": "/images/models/e-class.jpg",
+      "image": "/images/models/e-class.avif",
       "specs": {
         "power": 204,
         "acceleration": 7.5,
@@ -102,7 +102,7 @@
       "categories": ["suv", "electric"],
       "year": 2026,
       "price": 155000,
-      "image": "/images/models/eqa-suv.jpg",
+      "image": "/images/models/eqa-suv.avif",
       "specs": {
         "power": 190,
         "acceleration": 8.6,
@@ -121,7 +121,7 @@
       "categories": ["suv", "electric"],
       "year": 2026,
       "price": 175000,
-      "image": "/images/models/eqb-suv.jpg",
+      "image": "/images/models/eqb-suv.avif",
       "specs": {
         "power": 190,
         "acceleration": 8.0,
@@ -140,7 +140,7 @@
       "categories": ["suv", "electric"],
       "year": 2026,
       "price": 245000,
-      "image": "/images/models/eqe-suv.jpg",
+      "image": "/images/models/eqe-suv.avif",
       "specs": {
         "power": 292,
         "acceleration": 6.7,
@@ -159,7 +159,7 @@
       "categories": ["suv", "electric"],
       "year": 2026,
       "price": 330000,
-      "image": "/images/models/eqs-suv.jpg",
+      "image": "/images/models/eqs-suv.avif",
       "specs": {
         "power": 360,
         "acceleration": 6.7,
@@ -178,7 +178,7 @@
       "categories": ["suv", "electric"],
       "year": 2026,
       "price": 460000,
-      "image": "/images/models/eqg.jpg",
+      "image": "/images/models/eqg.avif",
       "specs": {
         "power": 587,
         "acceleration": 4.9,
@@ -197,7 +197,7 @@
       "categories": ["suv", "electric"],
       "year": 2026,
       "price": 520000,
-      "image": "/images/models/maybach-eqs-suv.jpg",
+      "image": "/images/models/maybach-eqs-suv.avif",
       "specs": {
         "power": 658,
         "acceleration": 4.4,
@@ -216,7 +216,7 @@
       "categories": ["suv"],
       "year": 2026,
       "price": 118000,
-      "image": "/images/models/gla.jpg",
+      "image": "/images/models/gla.avif",
       "specs": {
         "power": 163,
         "acceleration": 8.7,
@@ -234,7 +234,7 @@
       "categories": ["suv"],
       "year": 2026,
       "price": 168000,
-      "image": "/images/models/glc.jpg",
+      "image": "/images/models/glc.avif",
       "specs": {
         "power": 258,
         "acceleration": 6.2,
@@ -252,7 +252,7 @@
       "categories": ["suv", "coupe"],
       "year": 2026,
       "price": 182000,
-      "image": "/images/models/glc-coupe.jpg",
+      "image": "/images/models/glc-coupe.avif",
       "specs": {
         "power": 258,
         "acceleration": 6.3,
@@ -270,7 +270,7 @@
       "categories": ["suv"],
       "year": 2026,
       "price": 235000,
-      "image": "/images/models/gle.jpg",
+      "image": "/images/models/gle.avif",
       "specs": {
         "power": 381,
         "acceleration": 5.7,
@@ -288,7 +288,7 @@
       "categories": ["suv", "coupe"],
       "year": 2026,
       "price": 255000,
-      "image": "/images/models/gle-coupe.jpg",
+      "image": "/images/models/gle-coupe.avif",
       "specs": {
         "power": 381,
         "acceleration": 5.6,
@@ -306,7 +306,7 @@
       "categories": ["suv"],
       "year": 2026,
       "price": 330000,
-      "image": "/images/models/gls.jpg",
+      "image": "/images/models/gls.avif",
       "specs": {
         "power": 381,
         "acceleration": 6.2,
@@ -324,7 +324,7 @@
       "categories": ["suv"],
       "year": 2026,
       "price": 430000,
-      "image": "/images/models/g-class.jpg",
+      "image": "/images/models/g-class.avif",
       "specs": {
         "power": 421,
         "acceleration": 5.4,
@@ -342,7 +342,7 @@
       "categories": ["suv"],
       "year": 2026,
       "price": 620000,
-      "image": "/images/models/maybach-gls.jpg",
+      "image": "/images/models/maybach-gls.avif",
       "specs": {
         "power": 558,
         "acceleration": 4.9,
@@ -361,7 +361,7 @@
       "categories": ["coupe"],
       "year": 2026,
       "price": 112000,
-      "image": "/images/models/cla-coupe.jpg",
+      "image": "/images/models/cla-coupe.avif",
       "specs": {
         "power": 190,
         "acceleration": 7.1,
@@ -379,7 +379,7 @@
       "categories": ["coupe"],
       "year": 2026,
       "price": 120000,
-      "image": "/images/models/cla-shooting-brake.jpg",
+      "image": "/images/models/cla-shooting-brake.avif",
       "specs": {
         "power": 190,
         "acceleration": 7.3,
@@ -397,7 +397,7 @@
       "categories": ["coupe"],
       "year": 2026,
       "price": 205000,
-      "image": "/images/models/cle-coupe.jpg",
+      "image": "/images/models/cle-coupe.avif",
       "specs": {
         "power": 258,
         "acceleration": 6.4,
@@ -415,7 +415,7 @@
       "categories": ["coupe"],
       "year": 2026,
       "price": 410000,
-      "image": "/images/models/amg-gt-coupe.jpg",
+      "image": "/images/models/amg-gt-coupe.avif",
       "specs": {
         "power": 585,
         "acceleration": 3.5,
@@ -433,7 +433,7 @@
       "categories": ["coupe"],
       "year": 2026,
       "price": 440000,
-      "image": "/images/models/amg-gt-4door.jpg",
+      "image": "/images/models/amg-gt-4door.avif",
       "specs": {
         "power": 639,
         "acceleration": 3.2,
@@ -451,7 +451,7 @@
       "categories": ["coupe", "cabriolet"],
       "year": 2026,
       "price": 260000,
-      "image": "/images/models/amg-sl-43.jpg",
+      "image": "/images/models/amg-sl-43.avif",
       "specs": {
         "power": 381,
         "acceleration": 4.9,
@@ -470,7 +470,7 @@
       "categories": ["cabriolet"],
       "year": 2026,
       "price": 215000,
-      "image": "/images/models/cle-cabriolet.jpg",
+      "image": "/images/models/cle-cabriolet.avif",
       "specs": {
         "power": 258,
         "acceleration": 6.4,
@@ -489,7 +489,7 @@
       "categories": ["hatchback"],
       "year": 2026,
       "price": 95000,
-      "image": "/images/models/a-class.jpg",
+      "image": "/images/models/a-class.avif",
       "specs": {
         "power": 163,
         "acceleration": 8.2,
@@ -508,7 +508,7 @@
       "categories": ["mpv"],
       "year": 2026,
       "price": 185000,
-      "image": "/images/models/v-class.jpg",
+      "image": "/images/models/v-class.avif",
       "specs": {
         "power": 237,
         "acceleration": 7.9,
