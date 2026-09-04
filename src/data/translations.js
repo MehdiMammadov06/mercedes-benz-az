@@ -119,8 +119,37 @@ export const translations = {
       },
     },
     footer: {
+      toTop: 'Yuxarı',
       rights: 'Bütün hüquqlar qorunur.',
-      disclaimer: 'Bu sayt tədris məqsədi ilə hazırlanmış layihədir.',
+      copyright: '© {year} Mercedes-Benz Cars Azerbaijan {rights}',
+      contact: {
+        title: 'Əlaqə',
+        links: [{ label: 'Bizimlə əlaqə', to: '/elaqe' }],
+      },
+      buyers: {
+        title: 'Alıcılar üçün',
+        links: [
+          { label: 'Mövcud təkliflər', to: '/modeller' },
+          { label: 'Showroom siyahısı', to: '/elaqe' },
+          { label: 'Test drayva yazılmaq', to: '/elaqe' },
+        ],
+      },
+      owners: {
+        title: 'Sahiblər üçün',
+        links: [
+          { label: 'Servisə yazılmaq', to: '/xidmetler' },
+          { label: 'Aksessuarlar', to: '/xidmetler' },
+          { label: 'Həyat tərz kolleksiyası', to: '/xidmetler' },
+          { label: 'Servis paketləri', to: '/xidmetler' },
+          { label: 'Orijinal hissələr', to: '/xidmetler' },
+          { label: 'Təlimat Kitabçaları', to: '/xidmetler' },
+        ],
+      },
+      legal: [
+        { label: 'Şərtlər və qaydalar', to: '/haqqimizda' },
+        { label: 'Kuki Siyasəti', to: '/haqqimizda' },
+        { label: 'Məlumatların Mühafizəsi', to: '/haqqimizda' },
+      ],
     },
     placeholder: {
       title: 'Bu səhifə hazırlanır',
@@ -242,8 +271,37 @@ export const translations = {
       },
     },
     footer: {
+      toTop: 'Top',
       rights: 'All rights reserved.',
-      disclaimer: 'This website is a project created for educational purposes.',
+      copyright: '© {year} Mercedes-Benz Cars Azerbaijan {rights}',
+      contact: {
+        title: 'Contact',
+        links: [{ label: 'Contact us', to: '/elaqe' }],
+      },
+      buyers: {
+        title: 'For buyers',
+        links: [
+          { label: 'Current offers', to: '/modeller' },
+          { label: 'Showroom list', to: '/elaqe' },
+          { label: 'Book a test drive', to: '/elaqe' },
+        ],
+      },
+      owners: {
+        title: 'For owners',
+        links: [
+          { label: 'Book a service', to: '/xidmetler' },
+          { label: 'Accessories', to: '/xidmetler' },
+          { label: 'Lifestyle collection', to: '/xidmetler' },
+          { label: 'Service packages', to: '/xidmetler' },
+          { label: 'Genuine parts', to: '/xidmetler' },
+          { label: 'Manuals', to: '/xidmetler' },
+        ],
+      },
+      legal: [
+        { label: 'Terms and conditions', to: '/haqqimizda' },
+        { label: 'Cookie Policy', to: '/haqqimizda' },
+        { label: 'Data Protection', to: '/haqqimizda' },
+      ],
     },
     placeholder: {
       title: 'This page is in progress',

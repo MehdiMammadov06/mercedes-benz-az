@@ -4,7 +4,6 @@ import Spotlight from '../components/home/Spotlight.jsx';
 import MaybachBanner from '../components/home/MaybachBanner.jsx';
 import ShoppingTools from '../components/home/ShoppingTools.jsx';
 import About from '../components/home/About.jsx';
-import PromoBanner from '../components/home/PromoBanner.jsx';
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
       <MaybachBanner />
       <ShoppingTools />
       <About />
-      <PromoBanner />
     </>
   );
 }
