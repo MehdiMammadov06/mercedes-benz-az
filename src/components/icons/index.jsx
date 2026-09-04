@@ -26,6 +26,96 @@ export function CarIcon({ className = 'h-5 w-5' }) {
   );
 }
 
+// --- Kateqoriya (kuzov növü) ikonları ---
+// Hər biri fərqli avtomobil siluetı. currentColor ilə işləyir.
+
+export function SedanIcon({ className = 'h-5 w-5' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 14l1.5-1 2-3.5A2 2 0 0 1 8.3 8.5h6.4a2 2 0 0 1 1.6.8L19 13l2 1v2h-2" />
+      <path d="M5 16H3v-2" />
+      <path d="M8.5 16h7" />
+      <circle cx="7" cy="16.5" r="1.6" />
+      <circle cx="17" cy="16.5" r="1.6" />
+    </svg>
+  );
+}
+
+export function SuvIcon({ className = 'h-5 w-5' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 15v-2l1.5-1 1.5-3.2A2 2 0 0 1 7.8 7.6h7.2a2 2 0 0 1 1.5.7L20 12l1 1v2h-2" />
+      <path d="M5 15H3" />
+      <path d="M9 8v3.5M14 8v3.5M6 11.5h13" />
+      <path d="M8.5 15h7" />
+      <circle cx="7" cy="15.5" r="1.7" />
+      <circle cx="17" cy="15.5" r="1.7" />
+    </svg>
+  );
+}
+
+export function CoupeIcon({ className = 'h-5 w-5' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 15l1-1 3-4c.6-.8 1.4-1.2 2.5-1.2h4c1.6 0 3 .8 4.2 2L21 14v1h-2" />
+      <path d="M5 15H3v-1" />
+      <path d="M8.5 15h7" />
+      <circle cx="7" cy="15.5" r="1.6" />
+      <circle cx="17" cy="15.5" r="1.6" />
+    </svg>
+  );
+}
+
+export function CabrioletIcon({ className = 'h-5 w-5' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 15l1-1 2.5-2.8" />
+      <path d="M6.5 11.2C8 9.7 10 9 12 9c2.3 0 4.4.9 6 2.6L21 14v1h-2" />
+      <path d="M5 15H3v-1" />
+      <path d="M8.5 15h7" />
+      <circle cx="7" cy="15.5" r="1.6" />
+      <circle cx="17" cy="15.5" r="1.6" />
+    </svg>
+  );
+}
+
+export function ElectricIcon({ className = 'h-5 w-5' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 14l1.5-1 2-3.5A2 2 0 0 1 8.3 8.5h6.4a2 2 0 0 1 1.6.8L19 13l2 1v2h-2" />
+      <path d="M5 16H3v-2M8.5 16h7" />
+      <circle cx="7" cy="16.5" r="1.6" />
+      <circle cx="17" cy="16.5" r="1.6" />
+      <path d="M12 4.5l-1.6 2.4h2.2L11 9.5" strokeWidth="1.2" />
+    </svg>
+  );
+}
+
+export function MpvIcon({ className = 'h-5 w-5' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 15V9.5c0-.8.6-1.5 1.5-1.5h11c.8 0 1.6.4 2 1.1L21 13v2h-2" />
+      <path d="M5 15H3" />
+      <path d="M9 8v7M14 8v6" />
+      <path d="M8.5 15h7" />
+      <circle cx="7" cy="15.5" r="1.7" />
+      <circle cx="17" cy="15.5" r="1.7" />
+    </svg>
+  );
+}
+
+export function HatchbackIcon({ className = 'h-5 w-5' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 15l1-1 2.2-3.4A2 2 0 0 1 7.9 9.6h5.5c1 0 1.9.4 2.6 1.1L20 15h1v0h-2" />
+      <path d="M5 15H3v-1" />
+      <path d="M8.5 15h7" />
+      <circle cx="7" cy="15.5" r="1.6" />
+      <circle cx="17" cy="15.5" r="1.6" />
+    </svg>
+  );
+}
+
 export function MenuIcon({ className = 'h-6 w-6' }) {
   return (
     <svg

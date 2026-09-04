@@ -2,7 +2,31 @@ import { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext.jsx';
 import { navLinks } from '../../data/navigation.js';
-import { CarIcon, ChevronRight, CloseIcon, GlobeIcon, MenuIcon } from '../icons/index.jsx';
+import {
+  CabrioletIcon,
+  CarIcon,
+  ChevronRight,
+  CloseIcon,
+  CoupeIcon,
+  ElectricIcon,
+  GlobeIcon,
+  HatchbackIcon,
+  MenuIcon,
+  MpvIcon,
+  SedanIcon,
+  SuvIcon,
+} from '../icons/index.jsx';
+
+// Kateqoriya ikonlarını açar-ikon xəritəsi ilə seçirik
+const CATEGORY_ICONS = {
+  hatchback: HatchbackIcon,
+  sedan: SedanIcon,
+  suv: SuvIcon,
+  coupe: CoupeIcon,
+  cabriolet: CabrioletIcon,
+  electric: ElectricIcon,
+  mpv: MpvIcon,
+};
 
 export default function Header() {
   const { t, toggleLang } = useLanguage();
@@ -92,20 +116,23 @@ export default function Header() {
               {link.submenu && (
                 <div className="invisible absolute left-0 top-full z-50 min-w-[260px] translate-y-1 opacity-0 transition-all duration-200 ease-mb group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
                   <ul className="mt-0 rounded-b-lg bg-white py-3 text-mb-ink shadow-xl">
-                    {link.submenu.map((sub) => (
-                      <li key={sub.labelKey}>
-                        <Link
-                          to={sub.to}
-                          className="flex items-center justify-between gap-4 px-6 py-3 text-sm transition-colors duration-200 hover:bg-mb-silver"
-                        >
-                          <span className="flex items-center gap-3">
-                            {link.icon === 'car' && <CarIcon className="h-5 w-5 text-mb-grey" />}
-                            {t.navMenus[sub.labelKey]}
-                          </span>
-                          {link.icon === 'car' && <ChevronRight className="h-4 w-4 text-mb-grey" />}
-                        </Link>
-                      </li>
-                    ))}
+                    {link.submenu.map((sub) => {
+                      const SubIcon = sub.icon ? CATEGORY_ICONS[sub.icon] : null;
+                      return (
+                        <li key={sub.labelKey}>
+                          <Link
+                            to={sub.to}
+                            className="flex items-center justify-between gap-4 px-6 py-3 text-sm transition-colors duration-200 hover:bg-mb-silver"
+                          >
+                            <span className="flex items-center gap-3">
+                              {SubIcon && <SubIcon className="h-5 w-5 text-mb-grey" />}
+                              {t.navMenus[sub.labelKey]}
+                            </span>
+                            {SubIcon && <ChevronRight className="h-4 w-4 text-mb-grey" />}
+                          </Link>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               )}

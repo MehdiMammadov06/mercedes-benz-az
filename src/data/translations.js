@@ -17,7 +17,7 @@ export const translations = {
     },
     navMenus: {
       // Modellərimiz (kateqoriyalar categories blokundan da gəlir, amma dropdown üçün ayrıca)
-      hatchback: 'Heçbək',
+      hatchback: 'Heçbek',
       sedan: 'Sedan',
       suv: 'Yolsuzluq avtomobilləri',
       coupe: 'Kupe',
