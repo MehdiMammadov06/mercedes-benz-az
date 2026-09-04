@@ -64,6 +64,15 @@ export const translations = {
       text: 'Xüsusi təkliflər, yeni modellər və unikal təcrübələr sizi gözləyir.',
       cta: 'Bizimlə əlaqə',
     },
+    spotlight: {
+      title: 'In the Spotlight',
+      subtitle: 'Mercedes-Benz-dən ən son yenilikləri kəşf edin.',
+      cta: {
+        explore: 'Explore Now',
+        informed: 'Keep me Informed',
+        register: 'Register your interest',
+      },
+    },
     models: {
       title: 'Modellərimiz',
       subtitle: 'Mercedes-Benz model sıramızı kəşf edin.',
@@ -184,6 +193,15 @@ export const translations = {
       title: 'Discover the world of Mercedes-Benz',
       text: 'Special offers, new models and unique experiences await you.',
       cta: 'Contact us',
+    },
+    spotlight: {
+      title: 'In the Spotlight',
+      subtitle: 'Discover the latest from Mercedes-Benz.',
+      cta: {
+        explore: 'Explore Now',
+        informed: 'Keep me Informed',
+        register: 'Register your interest',
+      },
     },
     models: {
       title: 'Our Models',
