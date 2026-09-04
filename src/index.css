@@ -37,7 +37,7 @@
   --font-display: 'Source Serif 4', Georgia, serif;
 
   /* Saytın maksimum eni */
-  --container-site: 1440px;
+  --container-site: 1600px;
 
   /* Mercedes-in interfeys animasiya əyrisi */
   --ease-mb: cubic-bezier(0.275, 0, 0.185, 1);

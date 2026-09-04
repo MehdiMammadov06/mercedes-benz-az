@@ -38,6 +38,32 @@ export const translations = {
       details: 'Ətraflı',
       new: 'Yeni',
     },
+    services: {
+      title: 'Sizin üçün xidmətlər',
+      subtitle: 'Mercedes-Benz sahibliyini asan və qayğısız edən həllər.',
+      items: [
+        {
+          title: 'Test-drive',
+          text: 'Bəyəndiyiniz modeli seçin və sürücü təcrübəsini özünüz yaşayın.',
+          cta: 'Qeydiyyatdan keç',
+        },
+        {
+          title: 'Maliyyə həlləri',
+          text: 'Sizə uyğun lizinq və kredit variantları ilə arzunuza yaxınlaşın.',
+          cta: 'Ətraflı',
+        },
+        {
+          title: 'Servis və baxım',
+          text: 'Rəsmi servis mərkəzlərində orijinal ehtiyat hissələri və peşəkar qulluq.',
+          cta: 'Servis yaz',
+        },
+      ],
+    },
+    promo: {
+      title: 'Mercedes-Benz dünyasını kəşf edin',
+      text: 'Xüsusi təkliflər, yeni modellər və unikal təcrübələr sizi gözləyir.',
+      cta: 'Bizimlə əlaqə',
+    },
     models: {
       title: 'Modellərimiz',
       subtitle: 'Mercedes-Benz model sıramızı kəşf edin.',
@@ -130,6 +156,32 @@ export const translations = {
       from: 'starting price',
       details: 'Details',
       new: 'New',
+    },
+    services: {
+      title: 'Services for you',
+      subtitle: 'Solutions that make Mercedes-Benz ownership easy and carefree.',
+      items: [
+        {
+          title: 'Test drive',
+          text: 'Choose the model you like and experience the drive yourself.',
+          cta: 'Sign up',
+        },
+        {
+          title: 'Financial solutions',
+          text: 'Get closer to your dream with leasing and credit options that suit you.',
+          cta: 'Learn more',
+        },
+        {
+          title: 'Service & maintenance',
+          text: 'Genuine spare parts and professional care at official service centers.',
+          cta: 'Book service',
+        },
+      ],
+    },
+    promo: {
+      title: 'Discover the world of Mercedes-Benz',
+      text: 'Special offers, new models and unique experiences await you.',
+      cta: 'Contact us',
     },
     models: {
       title: 'Our Models',

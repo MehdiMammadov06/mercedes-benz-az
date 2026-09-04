@@ -18,6 +18,9 @@ export default function App() {
           <Route key={link.key} path={link.path} element={<Placeholder titleKey={link.key} />} />
         ))}
 
+        {/* Model detalı — növbəti mərhələdə real komponentlə əvəz olunacaq */}
+        <Route path="/modeller/:id" element={<Placeholder titleKey="models" />} />
+
         <Route path="/elaqe" element={<Placeholder />} />
         <Route path="*" element={<Placeholder />} />
       </Routes>
