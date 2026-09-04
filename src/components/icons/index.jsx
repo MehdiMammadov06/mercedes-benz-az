@@ -75,6 +75,40 @@ export function ArrowRight({ className = 'h-4 w-4' }) {
   );
 }
 
+export function ChevronLeft({ className = 'h-5 w-5' }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className={className}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M15 18l-6-6 6-6" />
+    </svg>
+  );
+}
+
+export function ChevronRight({ className = 'h-5 w-5' }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className={className}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M9 6l6 6-6 6" />
+    </svg>
+  );
+}
+
 export function GlobeIcon({ className = 'h-4 w-4' }) {
   return (
     <svg
