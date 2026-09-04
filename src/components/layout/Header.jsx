@@ -122,13 +122,13 @@ export default function Header() {
 
               {/* --- Dropdown alt-menyu --- */}
               {link.submenu && (
-                <div className="invisible absolute left-0 top-full z-50 flex translate-y-1 opacity-0 transition-all duration-200 ease-mb group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                <div
+                  className="invisible absolute left-0 top-full z-50 flex translate-y-1 items-start opacity-0 transition-all duration-200 ease-mb group-hover:visible group-hover:translate-y-0 group-hover:opacity-100"
+                  onMouseLeave={() => setHoveredCategory(null)}
+                >
                   {/* Birinci sütun: kateqoriyalar.
-                      self-start + h-fit: öz məzmunu qədər qalır, 2-ci sütun uzun olsa da uzanmır. */}
-                  <ul
-                    className="h-fit min-w-[280px] self-start rounded-b-lg bg-white py-3 text-mb-ink shadow-xl"
-                    onMouseLeave={() => setHoveredCategory(null)}
-                  >
+                      items-start (ana div-də): 2-ci sütun uzun olsa da bu uzanmır. */}
+                  <ul className="min-w-[280px] rounded-b-lg bg-white py-3 text-mb-ink shadow-xl">
                     {link.submenu.map((sub) => {
                       const SubIcon = sub.icon ? CATEGORY_ICONS[sub.icon] : null;
                       // Modellər menyusunda hər kateqoriyanın öz modelləri var (flyout)
@@ -159,27 +159,36 @@ export default function Header() {
 
                   {/* İkinci sütun (flyout): seçilən kateqoriyanın modelləri.
                       Yalnız Modellər menyusunda və bir kateqoriya hover olunanda görünür.
-                      Eni məzmun qədər (w-max), yumşaq fade+sürüşmə ilə açılır. */}
+
+                      DIQQƏT: xarici div TAM HÜNDÜR (flex, stretch) və şəffafdır —
+                      bu, "körpü" rolunu oynayır: aşağıdakı kateqoriyaya (məs. MPV)
+                      hover edəndə mouse-u düz sağa apararkən bu görünməz sahə
+                      üzərində qalır, menyu bağlanmır. Görünən ağ qutu isə içəridə
+                      kompakt (h-fit) qalır. */}
                   {link.key === 'models' && hoveredCategory && (
-                    <ul
-                      key={hoveredCategory}
-                      className="animate-fade-in ml-px h-fit w-[300px] self-start rounded-b-lg bg-white py-3 text-mb-ink shadow-xl"
+                    <div
+                      className="ml-px flex w-[300px] flex-col self-stretch"
                       onMouseEnter={() => setHoveredCategory(hoveredCategory)}
                     >
-                      {(modelsByCategory[hoveredCategory] ?? []).map((model) => (
-                        <li key={model.id}>
-                          <Link
-                            to={`/modeller/${model.id}`}
-                            className="block px-8 py-2.5 text-sm transition-colors duration-200 hover:bg-mb-silver"
-                          >
-                            {model.name}
-                          </Link>
-                        </li>
-                      ))}
-                      {(modelsByCategory[hoveredCategory] ?? []).length === 0 && (
-                        <li className="px-6 py-2.5 text-sm text-mb-grey">—</li>
-                      )}
-                    </ul>
+                      <ul
+                        key={hoveredCategory}
+                        className="animate-fade-in h-fit rounded-b-lg bg-white py-3 text-mb-ink shadow-xl"
+                      >
+                        {(modelsByCategory[hoveredCategory] ?? []).map((model) => (
+                          <li key={model.id}>
+                            <Link
+                              to={`/modeller/${model.id}`}
+                              className="block px-8 py-2.5 text-sm transition-colors duration-200 hover:bg-mb-silver"
+                            >
+                              {model.name}
+                            </Link>
+                          </li>
+                        ))}
+                        {(modelsByCategory[hoveredCategory] ?? []).length === 0 && (
+                          <li className="px-6 py-2.5 text-sm text-mb-grey">—</li>
+                        )}
+                      </ul>
+                    </div>
                   )}
                 </div>
               )}
