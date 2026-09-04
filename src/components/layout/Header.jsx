@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext.jsx';
 import { navLinks } from '../../data/navigation.js';
+import { useFetch } from '../../hooks/useFetch.js';
 import {
   CabrioletIcon,
   CarIcon,
@@ -29,10 +30,24 @@ const CATEGORY_ICONS = {
 };
 
 export default function Header() {
-  const { t, toggleLang } = useLanguage();
+  const { t, lang, toggleLang } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null); // mobil: hansı menyu açıqdır
+  const [hoveredCategory, setHoveredCategory] = useState(null); // masaüstü: flyout üçün
   const { pathname } = useLocation();
+
+  // Modelləri bir dəfə çəkib kateqoriyaya görə qruplaşdırırıq (flyout üçün).
+  const { data } = useFetch('/data/models.json');
+  const modelsByCategory = useMemo(() => {
+    const groups = {};
+    (data?.models ?? []).forEach((model) => {
+      (model.categories ?? []).forEach((cat) => {
+        if (!groups[cat]) groups[cat] = [];
+        groups[cat].push(model);
+      });
+    });
+    return groups;
+  }, [data]);
 
   // Səhifə dəyişəndə mobil menyu avtomatik bağlanır
   useEffect(() => {
@@ -114,15 +129,28 @@ export default function Header() {
 
               {/* --- Dropdown alt-menyu --- */}
               {link.submenu && (
-                <div className="invisible absolute left-0 top-full z-50 min-w-[260px] translate-y-1 opacity-0 transition-all duration-200 ease-mb group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-                  <ul className="mt-0 rounded-b-lg bg-white py-3 text-mb-ink shadow-xl">
+                <div className="invisible absolute left-0 top-full z-50 flex translate-y-1 opacity-0 transition-all duration-200 ease-mb group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                  {/* Birinci sütun: kateqoriyalar */}
+                  <ul
+                    className="min-w-[280px] rounded-b-lg bg-white py-3 text-mb-ink shadow-xl"
+                    onMouseLeave={() => setHoveredCategory(null)}
+                  >
                     {link.submenu.map((sub) => {
                       const SubIcon = sub.icon ? CATEGORY_ICONS[sub.icon] : null;
+                      // Modellər menyusunda hər kateqoriyanın öz modelləri var (flyout)
+                      const catKey = link.key === 'models' ? sub.icon : null;
+                      const isHovered = catKey && hoveredCategory === catKey;
                       return (
-                        <li key={sub.labelKey}>
+                        <li
+                          key={sub.labelKey}
+                          onMouseEnter={() => catKey && setHoveredCategory(catKey)}
+                        >
                           <Link
                             to={sub.to}
-                            className="flex items-center justify-between gap-4 px-6 py-3 text-sm transition-colors duration-200 hover:bg-mb-silver"
+                            className={[
+                              'flex items-center justify-between gap-4 px-6 py-3 text-sm transition-colors duration-200',
+                              isHovered ? 'bg-mb-silver' : 'hover:bg-mb-silver',
+                            ].join(' ')}
                           >
                             <span className="flex items-center gap-3">
                               {SubIcon && <SubIcon className="h-5 w-5 text-mb-grey" />}
@@ -134,6 +162,29 @@ export default function Header() {
                       );
                     })}
                   </ul>
+
+                  {/* İkinci sütun (flyout): seçilən kateqoriyanın modelləri.
+                      Yalnız Modellər menyusunda və bir kateqoriya hover olunanda görünür. */}
+                  {link.key === 'models' && hoveredCategory && (
+                    <ul
+                      className="min-w-[280px] max-w-[320px] rounded-b-lg bg-white py-3 text-mb-ink shadow-xl"
+                      onMouseEnter={() => setHoveredCategory(hoveredCategory)}
+                    >
+                      {(modelsByCategory[hoveredCategory] ?? []).map((model) => (
+                        <li key={model.id}>
+                          <Link
+                            to={`/modeller/${model.id}`}
+                            className="block px-6 py-2.5 text-sm transition-colors duration-200 hover:bg-mb-silver"
+                          >
+                            {model.name}
+                          </Link>
+                        </li>
+                      ))}
+                      {(modelsByCategory[hoveredCategory] ?? []).length === 0 && (
+                        <li className="px-6 py-2.5 text-sm text-mb-grey">—</li>
+                      )}
+                    </ul>
+                  )}
                 </div>
               )}
             </li>
