@@ -1,10 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import tailwindcss from '@tailwindcss/vite';
 
+// Tailwind artıq Vite plagini kimi DEYIL, ayrıca CLI ilə işləyir.
+// CSS belə kompilyasiya olunur (ABB layihələrindəki üsul):
+//   npm run css   ->  src/index.css  ->  src/output.css  (--watch ilə izləyir)
+// React isə hazır src/output.css faylını idxal edir (bax: src/main.jsx).
 export default defineConfig({
-  // Tailwind v4 artıq Vite plagini kimi işləyir — postcss.config.js lazım deyil
-  plugins: [react(), tailwindcss()],
+  plugins: [react()],
   server: {
     port: 5173,
     open: true,

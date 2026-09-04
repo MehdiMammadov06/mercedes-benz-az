@@ -8,7 +8,8 @@ Backend yoxdur — bütün məlumatlar `src/data/` qovluğunda saxlanılır.
 - **React 18** — komponent əsaslı UI
 - **Vite** — build aləti və dev server
 - **React Router v6** — səhifələr arası naviqasiya
-- **Tailwind CSS 4** — stil (CSS-first konfiqurasiya, `@tailwindcss/vite` plagini)
+- **Tailwind CSS 4** — stil, `@tailwindcss/cli` ilə (mənbə `src/index.css`
+  → kompilyasiya `src/output.css`). Vite plagini deyil.
 
 ## Quraşdırma
 
@@ -17,14 +18,36 @@ npm install
 npm run dev
 ```
 
-Sayt `http://localhost:5173` ünvanında açılacaq.
+`npm run dev` iki prosesi paralel işə salır (`concurrently` ilə):
+- **css** — Tailwind CLI, `src/index.css`-i izləyir və `src/output.css`-i yenilər
+- **vite** — dev server (`http://localhost:5173`)
+
+İstəsən iki ayrı terminalda da işlədə bilərsən (prosesi daha aydın görmək üçün):
+
+```bash
+npm run css     # Terminal 1 — Tailwind izləmə rejimində
+npm run vite    # Terminal 2 — Vite dev server
+```
+
+Bax: `tailwindstart.txt` (bütün əmrlər orada qeyd olunub).
 
 Production build üçün:
 
 ```bash
-npm run build
+npm run build   # əvvəlcə output.css-i kiçildir, sonra vite build edir
 npm run preview
 ```
+
+### Tailwind necə işləyir (vacib)
+
+| Fayl | Rolu |
+| --- | --- |
+| `src/index.css` | **MƏNBƏ** — burada yazırsan (`@import`, `@theme`, öz CSS-in) |
+| `src/output.css` | **NƏTİCƏ** — Tailwind CLI yaradır, əl ilə redaktə etmə |
+| `src/main.jsx` | `output.css`-i idxal edir |
+
+Stil dəyişmək istəyəndə `src/index.css`-i redaktə et. `npm run css`
+işləyirsə, dəyişiklik avtomatik `output.css`-ə düşür və brauzer yenilənir.
 
 ## Qovluq strukturu
 
@@ -58,7 +81,7 @@ istifadə olunur. Hazırda gözlənilən fayl:
 ## Dizayn qeydləri
 
 Tailwind v4-də `tailwind.config.js` faylı yoxdur — bütün konfiqurasiya
-`src/index.css` faylındaki `@theme` blokundadır. Orada təyin olunan hər CSS
+`src/index.css` faylındaki `@theme` blokundadır (bu fayl CLI-nin mənbəsidir). Orada təyin olunan hər CSS
 dəyişəni avtomatik utility klassa çevrilir:
 
 | `@theme` dəyişəni | Yaranan klass |

@@ -3,6 +3,11 @@ dist
 dist-ssr
 *.local
 
+# QEYD: src/output.css git-də SAXLANILIR (ignore edilmir).
+# Səbəb: React onu idxal edir, ona görə repoda başlanğıc versiyası olmalıdır
+# ki, `npm run dev` ilk dəfə işləyəndə fayl mövcud olsun. `npm run css`
+# işləyəndə lokalda tam versiyaya yenilənir. ABB layihələrindəki üsulun eynisi.
+
 # logs
 npm-debug.log*
 yarn-debug.log*
