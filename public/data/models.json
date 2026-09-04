@@ -1,39 +1,60 @@
 {
-  "updatedAt": "2026-08-25",
+  "updatedAt": "2026-09-04",
   "models": [
     {
-      "id": "a-class",
-      "name": "A-Class",
-      "bodyType": "Hatchback",
-      "category": "sedan",
+      "id": "eqe-sedan",
+      "name": "EQE Sedan",
+      "bodyType": "Sedan",
+      "categories": ["sedan", "electric"],
       "year": 2026,
-      "price": 95000,
-      "image": "/images/models/a-class.jpg",
+      "price": 285000,
+      "image": "/images/models/eqe-sedan.jpg",
       "specs": {
-        "power": 163,
-        "acceleration": 8.2,
-        "topSpeed": 227,
-        "fuel": "petrol",
+        "power": 292,
+        "acceleration": 6.4,
+        "topSpeed": 210,
+        "fuel": "electric",
         "transmission": "automatic",
-        "seats": 5
+        "seats": 5,
+        "range": 660
+      },
+      "isNew": true
+    },
+    {
+      "id": "eqs-sedan",
+      "name": "EQS Sedan",
+      "bodyType": "Sedan",
+      "categories": ["sedan", "electric"],
+      "year": 2026,
+      "price": 360000,
+      "image": "/images/models/eqs-sedan.jpg",
+      "specs": {
+        "power": 360,
+        "acceleration": 6.2,
+        "topSpeed": 210,
+        "fuel": "electric",
+        "transmission": "automatic",
+        "seats": 5,
+        "range": 780
       },
       "isNew": false
     },
     {
-      "id": "cla",
-      "name": "CLA Coupe",
-      "bodyType": "Coupe",
-      "category": "coupe",
+      "id": "c-class-electric",
+      "name": "Yeni elektrikli C-Class",
+      "bodyType": "Sedan",
+      "categories": ["sedan", "electric"],
       "year": 2026,
-      "price": 112000,
-      "image": "/images/models/cla.jpg",
+      "price": 165000,
+      "image": "/images/models/c-class-electric.jpg",
       "specs": {
-        "power": 190,
-        "acceleration": 7.1,
-        "topSpeed": 240,
-        "fuel": "hybrid",
+        "power": 258,
+        "acceleration": 6.7,
+        "topSpeed": 210,
+        "fuel": "electric",
         "transmission": "automatic",
-        "seats": 5
+        "seats": 5,
+        "range": 640
       },
       "isNew": true
     },
@@ -41,7 +62,7 @@
       "id": "c-class",
       "name": "C-Class",
       "bodyType": "Sedan",
-      "category": "sedan",
+      "categories": ["sedan"],
       "year": 2026,
       "price": 138000,
       "image": "/images/models/c-class.jpg",
@@ -59,7 +80,7 @@
       "id": "e-class",
       "name": "E-Class",
       "bodyType": "Sedan",
-      "category": "sedan",
+      "categories": ["sedan"],
       "year": 2026,
       "price": 176000,
       "image": "/images/models/e-class.jpg",
@@ -73,39 +94,118 @@
       },
       "isNew": true
     },
+
     {
-      "id": "s-class",
-      "name": "S-Class",
-      "bodyType": "Sedan",
-      "category": "sedan",
+      "id": "eqa-suv",
+      "name": "EQA SUV",
+      "bodyType": "SUV",
+      "categories": ["suv", "electric"],
       "year": 2026,
-      "price": 325000,
-      "image": "/images/models/s-class.jpg",
+      "price": 155000,
+      "image": "/images/models/eqa-suv.jpg",
       "specs": {
-        "power": 381,
-        "acceleration": 5.1,
-        "topSpeed": 250,
-        "fuel": "petrol",
+        "power": 190,
+        "acceleration": 8.6,
+        "topSpeed": 160,
+        "fuel": "electric",
         "transmission": "automatic",
-        "seats": 5
+        "seats": 5,
+        "range": 500
       },
       "isNew": false
     },
     {
-      "id": "maybach-s-class",
-      "name": "Maybach S-Class",
-      "bodyType": "Sedan",
-      "category": "sedan",
+      "id": "eqb-suv",
+      "name": "EQB SUV",
+      "bodyType": "SUV",
+      "categories": ["suv", "electric"],
       "year": 2026,
-      "price": 560000,
-      "image": "/images/models/maybach-s-class.jpg",
+      "price": 175000,
+      "image": "/images/models/eqb-suv.jpg",
       "specs": {
-        "power": 503,
-        "acceleration": 4.8,
-        "topSpeed": 250,
-        "fuel": "petrol",
+        "power": 190,
+        "acceleration": 8.0,
+        "topSpeed": 160,
+        "fuel": "electric",
         "transmission": "automatic",
-        "seats": 4
+        "seats": 7,
+        "range": 535
+      },
+      "isNew": false
+    },
+    {
+      "id": "eqe-suv",
+      "name": "EQE SUV",
+      "bodyType": "SUV",
+      "categories": ["suv", "electric"],
+      "year": 2026,
+      "price": 245000,
+      "image": "/images/models/eqe-suv.jpg",
+      "specs": {
+        "power": 292,
+        "acceleration": 6.7,
+        "topSpeed": 210,
+        "fuel": "electric",
+        "transmission": "automatic",
+        "seats": 5,
+        "range": 550
+      },
+      "isNew": true
+    },
+    {
+      "id": "eqs-suv",
+      "name": "EQS SUV",
+      "bodyType": "SUV",
+      "categories": ["suv", "electric"],
+      "year": 2026,
+      "price": 330000,
+      "image": "/images/models/eqs-suv.jpg",
+      "specs": {
+        "power": 360,
+        "acceleration": 6.7,
+        "topSpeed": 210,
+        "fuel": "electric",
+        "transmission": "automatic",
+        "seats": 7,
+        "range": 660
+      },
+      "isNew": false
+    },
+    {
+      "id": "eqg",
+      "name": "EQG",
+      "bodyType": "SUV",
+      "categories": ["suv", "electric"],
+      "year": 2026,
+      "price": 460000,
+      "image": "/images/models/eqg.jpg",
+      "specs": {
+        "power": 587,
+        "acceleration": 4.9,
+        "topSpeed": 180,
+        "fuel": "electric",
+        "transmission": "automatic",
+        "seats": 5,
+        "range": 470
+      },
+      "isNew": true
+    },
+    {
+      "id": "maybach-eqs-suv",
+      "name": "Mercedes-Maybach EQS",
+      "bodyType": "SUV",
+      "categories": ["suv", "electric"],
+      "year": 2026,
+      "price": 520000,
+      "image": "/images/models/maybach-eqs-suv.jpg",
+      "specs": {
+        "power": 658,
+        "acceleration": 4.4,
+        "topSpeed": 210,
+        "fuel": "electric",
+        "transmission": "automatic",
+        "seats": 5,
+        "range": 600
       },
       "isNew": false
     },
@@ -113,7 +213,7 @@
       "id": "gla",
       "name": "GLA",
       "bodyType": "SUV",
-      "category": "suv",
+      "categories": ["suv"],
       "year": 2026,
       "price": 118000,
       "image": "/images/models/gla.jpg",
@@ -131,7 +231,7 @@
       "id": "glc",
       "name": "GLC",
       "bodyType": "SUV",
-      "category": "suv",
+      "categories": ["suv"],
       "year": 2026,
       "price": 168000,
       "image": "/images/models/glc.jpg",
@@ -146,10 +246,28 @@
       "isNew": true
     },
     {
+      "id": "glc-coupe",
+      "name": "GLC Coupé",
+      "bodyType": "SUV",
+      "categories": ["suv", "coupe"],
+      "year": 2026,
+      "price": 182000,
+      "image": "/images/models/glc-coupe.jpg",
+      "specs": {
+        "power": 258,
+        "acceleration": 6.3,
+        "topSpeed": 240,
+        "fuel": "hybrid",
+        "transmission": "automatic",
+        "seats": 5
+      },
+      "isNew": false
+    },
+    {
       "id": "gle",
       "name": "GLE",
       "bodyType": "SUV",
-      "category": "suv",
+      "categories": ["suv"],
       "year": 2026,
       "price": 235000,
       "image": "/images/models/gle.jpg",
@@ -164,10 +282,28 @@
       "isNew": false
     },
     {
+      "id": "gle-coupe",
+      "name": "GLE Coupé",
+      "bodyType": "SUV",
+      "categories": ["suv", "coupe"],
+      "year": 2026,
+      "price": 255000,
+      "image": "/images/models/gle-coupe.jpg",
+      "specs": {
+        "power": 381,
+        "acceleration": 5.6,
+        "topSpeed": 250,
+        "fuel": "hybrid",
+        "transmission": "automatic",
+        "seats": 5
+      },
+      "isNew": false
+    },
+    {
       "id": "gls",
       "name": "GLS",
       "bodyType": "SUV",
-      "category": "suv",
+      "categories": ["suv"],
       "year": 2026,
       "price": 330000,
       "image": "/images/models/gls.jpg",
@@ -185,7 +321,7 @@
       "id": "g-class",
       "name": "G-Class",
       "bodyType": "SUV",
-      "category": "suv",
+      "categories": ["suv"],
       "year": 2026,
       "price": 430000,
       "image": "/images/models/g-class.jpg",
@@ -200,51 +336,86 @@
       "isNew": false
     },
     {
-      "id": "eqe-suv",
-      "name": "EQE SUV",
+      "id": "maybach-gls",
+      "name": "Mercedes-Maybach GLS",
       "bodyType": "SUV",
-      "category": "electric",
+      "categories": ["suv"],
       "year": 2026,
-      "price": 245000,
-      "image": "/images/models/eqe-suv.jpg",
+      "price": 620000,
+      "image": "/images/models/maybach-gls.jpg",
       "specs": {
-        "power": 292,
-        "acceleration": 6.7,
-        "topSpeed": 210,
-        "fuel": "electric",
+        "power": 558,
+        "acceleration": 4.9,
+        "topSpeed": 250,
+        "fuel": "petrol",
         "transmission": "automatic",
-        "seats": 5,
-        "range": 550
+        "seats": 5
+      },
+      "isNew": false
+    },
+
+    {
+      "id": "cla-coupe",
+      "name": "CLA Coupé",
+      "bodyType": "Coupe",
+      "categories": ["coupe"],
+      "year": 2026,
+      "price": 112000,
+      "image": "/images/models/cla-coupe.jpg",
+      "specs": {
+        "power": 190,
+        "acceleration": 7.1,
+        "topSpeed": 240,
+        "fuel": "hybrid",
+        "transmission": "automatic",
+        "seats": 5
       },
       "isNew": true
     },
     {
-      "id": "eqs",
-      "name": "EQS",
-      "bodyType": "Sedan",
-      "category": "electric",
+      "id": "cla-shooting-brake",
+      "name": "CLA Shooting Brake",
+      "bodyType": "Coupe",
+      "categories": ["coupe"],
       "year": 2026,
-      "price": 360000,
-      "image": "/images/models/eqs.jpg",
+      "price": 120000,
+      "image": "/images/models/cla-shooting-brake.jpg",
       "specs": {
-        "power": 360,
-        "acceleration": 6.2,
-        "topSpeed": 210,
-        "fuel": "electric",
+        "power": 190,
+        "acceleration": 7.3,
+        "topSpeed": 240,
+        "fuel": "hybrid",
         "transmission": "automatic",
-        "seats": 5,
-        "range": 780
+        "seats": 5
       },
       "isNew": false
     },
     {
-      "id": "amg-gt",
-      "name": "AMG GT Coupe",
+      "id": "cle-coupe",
+      "name": "CLE Coupé",
       "bodyType": "Coupe",
-      "category": "coupe",
+      "categories": ["coupe"],
+      "year": 2026,
+      "price": 205000,
+      "image": "/images/models/cle-coupe.jpg",
+      "specs": {
+        "power": 258,
+        "acceleration": 6.4,
+        "topSpeed": 250,
+        "fuel": "hybrid",
+        "transmission": "automatic",
+        "seats": 4
+      },
+      "isNew": false
+    },
+    {
+      "id": "amg-gt-coupe",
+      "name": "AMG GT Coupé",
+      "bodyType": "Coupe",
+      "categories": ["coupe"],
       "year": 2026,
       "price": 410000,
-      "image": "/images/models/amg-gt.jpg",
+      "image": "/images/models/amg-gt-coupe.jpg",
       "specs": {
         "power": 585,
         "acceleration": 3.5,
@@ -256,10 +427,47 @@
       "isNew": false
     },
     {
+      "id": "amg-gt-4door",
+      "name": "Mercedes-AMG GT 4 Door Coupé",
+      "bodyType": "Coupe",
+      "categories": ["coupe"],
+      "year": 2026,
+      "price": 440000,
+      "image": "/images/models/amg-gt-4door.jpg",
+      "specs": {
+        "power": 639,
+        "acceleration": 3.2,
+        "topSpeed": 317,
+        "fuel": "hybrid",
+        "transmission": "automatic",
+        "seats": 5
+      },
+      "isNew": false
+    },
+    {
+      "id": "amg-sl-43",
+      "name": "AMG SL 43",
+      "bodyType": "Roadster",
+      "categories": ["coupe", "cabriolet"],
+      "year": 2026,
+      "price": 260000,
+      "image": "/images/models/amg-sl-43.jpg",
+      "specs": {
+        "power": 381,
+        "acceleration": 4.9,
+        "topSpeed": 275,
+        "fuel": "petrol",
+        "transmission": "automatic",
+        "seats": 4
+      },
+      "isNew": false
+    },
+
+    {
       "id": "cle-cabriolet",
       "name": "CLE Cabriolet",
       "bodyType": "Cabriolet",
-      "category": "cabriolet",
+      "categories": ["cabriolet"],
       "year": 2026,
       "price": 215000,
       "image": "/images/models/cle-cabriolet.jpg",
@@ -273,11 +481,31 @@
       },
       "isNew": true
     },
+
+    {
+      "id": "a-class",
+      "name": "A-Class Hatchback",
+      "bodyType": "Hatchback",
+      "categories": ["hatchback"],
+      "year": 2026,
+      "price": 95000,
+      "image": "/images/models/a-class.jpg",
+      "specs": {
+        "power": 163,
+        "acceleration": 8.2,
+        "topSpeed": 227,
+        "fuel": "petrol",
+        "transmission": "automatic",
+        "seats": 5
+      },
+      "isNew": false
+    },
+
     {
       "id": "v-class",
       "name": "V-Class",
       "bodyType": "MPV",
-      "category": "van",
+      "categories": ["mpv"],
       "year": 2026,
       "price": 185000,
       "image": "/images/models/v-class.jpg",
