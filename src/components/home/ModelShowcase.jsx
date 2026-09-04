@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext.jsx';
 import { useFetch } from '../../hooks/useFetch.js';
-import ModelCard from '../models/ModelCard.jsx';
+import ModelSlider from '../models/ModelSlider.jsx';
 import Button from '../ui/Button.jsx';
 
 // Ana səhifədəki "Model cərgəsi" bölməsi:
@@ -78,11 +78,7 @@ export default function ModelShowcase() {
       )}
 
       {!isLoading && !error && visibleModels.length > 0 && (
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {visibleModels.map((model) => (
-            <ModelCard key={model.id} model={model} />
-          ))}
-        </div>
+        <ModelSlider models={visibleModels} />
       )}
 
       {/* Boş kateqoriya (məs. Estates) */}
@@ -95,15 +91,15 @@ export default function ModelShowcase() {
   );
 }
 
-// Yüklənərkən göstərilən "skeleton" kartlar (məzmunun yerini tutur)
+// Yüklənərkən göstərilən "skeleton" kartlar (slider görünüşünə uyğun 3 ədəd)
 function ShowcaseSkeleton() {
   return (
-    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-      {Array.from({ length: 4 }).map((_, index) => (
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {Array.from({ length: 3 }).map((_, index) => (
         <div key={index} className="rounded-lg bg-white p-4">
           <div className="aspect-[4/3] animate-pulse rounded-md bg-mb-silver" />
           <div className="mx-auto mt-5 h-5 w-2/3 animate-pulse rounded bg-mb-silver" />
-          <div className="mx-auto mt-2 h-4 w-1/2 animate-pulse rounded bg-mb-silver" />
+          <div className="mx-auto mt-2 h-4 w-1/3 animate-pulse rounded bg-mb-silver" />
         </div>
       ))}
     </div>
