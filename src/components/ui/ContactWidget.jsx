@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext.jsx';
-import { MercedesStar } from '../icons/index.jsx';
 
 // Saytın sağ aşağı küncündəki üzən "Müraciət edin" düyməsi
 export default function ContactWidget() {
@@ -15,9 +14,9 @@ export default function ContactWidget() {
       <Link
         to="/elaqe"
         aria-label={t.widget.contact}
-        className="flex h-14 w-14 items-center justify-center rounded-full bg-mb-black text-white shadow-xl transition-transform duration-300 ease-mb hover:scale-105"
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-mb-black shadow-xl transition-transform duration-300 ease-mb hover:scale-105"
       >
-        <MercedesStar className="h-8 w-8" strokeWidth={3} />
+        <img src="/favicon.svg" alt="" className="h-9 w-9" />
       </Link>
     </div>
   );

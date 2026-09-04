@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext.jsx';
 import { navLinks } from '../../data/navigation.js';
-import { CarIcon, CloseIcon, GlobeIcon, MenuIcon, MercedesStar } from '../icons/index.jsx';
+import { CarIcon, CloseIcon, GlobeIcon, MenuIcon } from '../icons/index.jsx';
 
 export default function Header() {
   const { t, toggleLang } = useLanguage();
@@ -27,17 +27,20 @@ export default function Header() {
       {/* --- Üst sətir: loqo, 140 il bloku, dil dəyişdirici --- */}
       <div className="container-site flex h-16 items-center justify-between sm:h-20">
         <Link to="/" aria-label={t.header.home} className="shrink-0">
-          <MercedesStar className="h-10 w-10 sm:h-12 sm:w-12" strokeWidth={2.5} />
+          <img
+            src="/favicon.svg"
+            alt="Mercedes-Benz"
+            className="h-10 w-10 sm:h-12 sm:w-12"
+          />
         </Link>
 
         <div className="flex items-center gap-4 sm:gap-7">
-          {/* 140 YEARS OF INNOVATION */}
-          <div className="hidden items-center gap-2 sm:flex">
-            <span className="font-display text-3xl leading-none tracking-tight">140</span>
-            <span className="max-w-[6.5rem] text-[9px] font-medium uppercase leading-[1.2] tracking-[0.12em] text-white/90">
-              {t.header.anniversary}
-            </span>
-          </div>
+          {/* 140 YEARS OF INNOVATION — orijinalda şəkildir (innovation.png) */}
+          <img
+            src="/images/innovation.png"
+            alt={`140 ${t.header.anniversary}`}
+            className="hidden h-9 w-auto sm:block"
+          />
 
           <button
             type="button"

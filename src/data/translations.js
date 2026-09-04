@@ -22,10 +22,10 @@ export const translations = {
       home: 'Ana səhifə',
     },
     hero: {
-      title: 'Yeni mövsüm, yeni imkanlar.',
-      subtitle: 'Seçilmiş modellərdə xüsusi təkliflərdən yararlanın.',
-      primaryCta: 'Ətraflı öyrən',
-      secondaryCta: 'Müraciət et',
+      title: 'Mercedes-Benz E-Class biznes sedanının təcəssümü',
+      subtitle: 'Qabaqcıl texnologiyalar, komfort və prestij — 69 140 €-dan',
+      primaryCta: 'Mövcud modellər',
+      secondaryCta: 'Ətraflı',
     },
     widget: {
       contact: 'Müraciət edin',
@@ -115,10 +115,10 @@ export const translations = {
       home: 'Home',
     },
     hero: {
-      title: 'New season, new opportunities.',
-      subtitle: 'Enjoy offers on selected models.',
-      primaryCta: 'Know more',
-      secondaryCta: 'Enquire Now',
+      title: 'The essence of the Mercedes-Benz E-Class business sedan',
+      subtitle: 'Advanced technology, comfort and prestige — from €69,140',
+      primaryCta: 'Available models',
+      secondaryCta: 'Learn more',
     },
     widget: {
       contact: 'Contact us',
