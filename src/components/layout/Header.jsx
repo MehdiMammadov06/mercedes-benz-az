@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext.jsx';
 import { navLinks } from '../../data/navigation.js';
 import { useFetch } from '../../hooks/useFetch.js';
@@ -111,18 +111,11 @@ export default function Header() {
           {navLinks.map((link) => (
             // `group` + `group-hover` ilə hover-də alt-menyu açılır (JS state lazım deyil)
             <li key={link.key} className="group relative flex h-full items-center">
-              <NavLink
-                to={link.path}
-                className={({ isActive }) =>
-                  [
-                    'flex items-center gap-2 text-[15px] transition-colors duration-300 ease-mb',
-                    isActive ? 'text-white' : 'text-white/80 group-hover:text-white',
-                  ].join(' ')
-                }
-              >
+              {/* Menyu başlığı — başqa səhifəyə keçmir, sadəcə hover-də dropdown açır */}
+              <span className="flex cursor-default items-center gap-2 text-[15px] text-white/80 transition-colors duration-300 ease-mb group-hover:text-white">
                 {link.icon === 'car' && <CarIcon className="h-5 w-5" />}
                 {t.nav[link.key]}
-              </NavLink>
+              </span>
 
               {/* Aktiv menyunun altında mavi xətt (hover-də görünür) */}
               <span className="pointer-events-none absolute inset-x-0 bottom-0 h-0.5 origin-left scale-x-0 bg-mb-blue transition-transform duration-300 ease-mb group-hover:scale-x-100" />
@@ -164,17 +157,19 @@ export default function Header() {
                   </ul>
 
                   {/* İkinci sütun (flyout): seçilən kateqoriyanın modelləri.
-                      Yalnız Modellər menyusunda və bir kateqoriya hover olunanda görünür. */}
+                      Yalnız Modellər menyusunda və bir kateqoriya hover olunanda görünür.
+                      Eni məzmun qədər (w-max), yumşaq fade+sürüşmə ilə açılır. */}
                   {link.key === 'models' && hoveredCategory && (
                     <ul
-                      className="min-w-[280px] max-w-[320px] rounded-b-lg bg-white py-3 text-mb-ink shadow-xl"
+                      key={hoveredCategory}
+                      className="animate-fade-in w-max min-w-[220px] rounded-b-lg bg-white py-3 text-mb-ink shadow-xl"
                       onMouseEnter={() => setHoveredCategory(hoveredCategory)}
                     >
                       {(modelsByCategory[hoveredCategory] ?? []).map((model) => (
                         <li key={model.id}>
                           <Link
                             to={`/modeller/${model.id}`}
-                            className="block px-6 py-2.5 text-sm transition-colors duration-200 hover:bg-mb-silver"
+                            className="block whitespace-nowrap px-6 py-2.5 text-sm transition-colors duration-200 hover:bg-mb-silver"
                           >
                             {model.name}
                           </Link>
