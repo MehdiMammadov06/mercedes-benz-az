@@ -1,3 +1,14 @@
+/* ===============================================================
+   BU MƏNBƏ FAYLDIR — burada yazırsan, redaktə edirsən.
+   Tailwind CLI bunu oxuyub `src/output.css` faylını yaradır:
+
+     npm run css        (izləmə rejimi, dev üçün — ABB-dəki --watch kimi)
+     npm run css:build  (bir dəfəlik, kiçildilmiş — build üçün)
+
+   React `output.css`-i yükləyir, bu faylı YOX. Ona görə buranı
+   dəyişəndə `npm run css` işləyirsə, dəyişiklik avtomatik output.css-ə düşür.
+   Öz CSS-ini də (adi css qaydaları) elə bu faylda, aşağıdakı bloklarda yaz.
+   =============================================================== */
 @import 'tailwindcss';
 
 /* ---------------------------------------------------------------
