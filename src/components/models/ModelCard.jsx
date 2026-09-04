@@ -1,15 +1,14 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext.jsx';
-import { formatPrice } from '../../utils/format.js';
 import { ArrowRight } from '../icons/index.jsx';
 
-// Tək model kartı: şəkil + ad + qiymət + "Ətraflı" linki.
+// Tək model kartı: yalnız ŞƏKİL + AD + "Ətraflı" (orijinaldakı kimi).
 // Həm ana səhifədə (Model cərgəsi), həm də Modellər səhifəsində istifadə olunur.
 //
 // Şəkil olmasa (public/images/models/... hələ atılmayıbsa), boz placeholder
 // və avtomobilin adı göstərilir — sayt sınmır.
 export default function ModelCard({ model }) {
-  const { t, lang } = useLanguage();
+  const { t } = useLanguage();
 
   return (
     <Link
@@ -40,13 +39,10 @@ export default function ModelCard({ model }) {
         )}
       </div>
 
-      {/* Ad + qiymət */}
+      {/* Ad */}
       <h3 className="mt-5 font-display text-xl text-mb-ink">{model.name}</h3>
-      <p className="mt-1 text-sm text-mb-grey">
-        {t.common.from} — {formatPrice(model.price, lang)}
-      </p>
 
-      {/* Ətraflı */}
+      {/* Ətraflı — mavi */}
       <span className="mt-3 inline-flex items-center justify-center gap-1.5 text-sm font-medium text-mb-blue transition-colors group-hover:text-mb-blue-dark">
         {t.common.details}
         <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-mb group-hover:translate-x-1" />

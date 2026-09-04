@@ -83,11 +83,13 @@ export const translations = {
     categories: {
       all: 'Hamısı',
       sedan: 'Sedan',
-      suv: 'SUV',
+      suv: 'Yolsuzluq avtomobilləri və Krossoverlər',
       coupe: 'Kupe',
-      cabriolet: 'Kabriolet',
+      cabriolet: 'Kabriolet və Roadster',
+      hatchback: 'Heçbek',
+      mpv: 'MPV',
+      estates: 'Estates',
       electric: 'Elektrik',
-      van: 'Van',
     },
     fuel: {
       petrol: 'Benzin',
@@ -202,11 +204,13 @@ export const translations = {
     categories: {
       all: 'All',
       sedan: 'Sedan',
-      suv: 'SUV',
+      suv: 'Off-road vehicles and Crossovers',
       coupe: 'Coupe',
-      cabriolet: 'Cabriolet',
+      cabriolet: 'Cabriolet and Roadster',
+      hatchback: 'Hatchback',
+      mpv: 'MPV',
+      estates: 'Estates',
       electric: 'Electric',
-      van: 'Van',
     },
     fuel: {
       petrol: 'Petrol',
