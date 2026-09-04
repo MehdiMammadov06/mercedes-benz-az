@@ -11,7 +11,8 @@ import Button from '../ui/Button.jsx';
 // adları isə translations.js-dəki `categories` blokundan gəlir.
 
 // Tabların sırası (orijinal saytdakı ardıcıllığa uyğun). "all" = Hamısı.
-const TAB_KEYS = ['all', 'sedan', 'suv', 'coupe', 'cabriolet', 'electric', 'van'];
+// "estates" orijinalda var, amma modeli yoxdur — boş göstərilir.
+const TAB_KEYS = ['all', 'sedan', 'suv', 'coupe', 'cabriolet', 'hatchback', 'mpv', 'estates'];
 
 export default function ModelShowcase() {
   const { t } = useLanguage();
@@ -21,18 +22,15 @@ export default function ModelShowcase() {
   const allModels = data?.models ?? [];
 
   // Seçilən taba görə modelləri süz. "all" olanda hamısı göstərilir.
+  // Bir model birdən çox kateqoriyada ola bilər (məs. GLC Coupé həm SUV, həm Kupe),
+  // ona görə `categories` massivi ilə yoxlanılır.
   const visibleModels = useMemo(() => {
     if (activeTab === 'all') return allModels;
-    return allModels.filter((model) => model.category === activeTab);
+    return allModels.filter((model) => model.categories?.includes(activeTab));
   }, [allModels, activeTab]);
 
-  // Hər tabda ən azı bir model varsa göstər (boş tabları gizlədirik).
-  const availableTabs = useMemo(() => {
-    if (allModels.length === 0) return [];
-    return TAB_KEYS.filter(
-      (key) => key === 'all' || allModels.some((model) => model.category === key)
-    );
-  }, [allModels]);
+  // Bütün tablar orijinaldakı kimi göstərilir (Estates boş olsa da qalır).
+  const availableTabs = allModels.length === 0 ? [] : TAB_KEYS;
 
   return (
     <section className="container-site py-16 sm:py-20 lg:py-24">
@@ -79,11 +77,18 @@ export default function ModelShowcase() {
         </div>
       )}
 
-      {!isLoading && !error && (
+      {!isLoading && !error && visibleModels.length > 0 && (
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {visibleModels.map((model) => (
             <ModelCard key={model.id} model={model} />
           ))}
+        </div>
+      )}
+
+      {/* Boş kateqoriya (məs. Estates) */}
+      {!isLoading && !error && visibleModels.length === 0 && (
+        <div className="flex items-center justify-center py-16 text-center">
+          <p className="text-sm text-mb-grey">{t.models.noResults}</p>
         </div>
       )}
     </section>
