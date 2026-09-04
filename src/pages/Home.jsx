@@ -3,7 +3,7 @@ import ModelShowcase from '../components/home/ModelShowcase.jsx';
 import Spotlight from '../components/home/Spotlight.jsx';
 import MaybachBanner from '../components/home/MaybachBanner.jsx';
 import ShoppingTools from '../components/home/ShoppingTools.jsx';
-import Services from '../components/home/Services.jsx';
+import About from '../components/home/About.jsx';
 import PromoBanner from '../components/home/PromoBanner.jsx';
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       <Spotlight />
       <MaybachBanner />
       <ShoppingTools />
-      <Services />
+      <About />
       <PromoBanner />
     </>
   );

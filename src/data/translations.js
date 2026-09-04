@@ -38,26 +38,11 @@ export const translations = {
       details: 'Ətraflı',
       new: 'Yeni',
     },
-    services: {
-      title: 'Sizin üçün xidmətlər',
-      subtitle: 'Mercedes-Benz sahibliyini asan və qayğısız edən həllər.',
-      items: [
-        {
-          title: 'Test-drive',
-          text: 'Bəyəndiyiniz modeli seçin və sürücü təcrübəsini özünüz yaşayın.',
-          cta: 'Qeydiyyatdan keç',
-        },
-        {
-          title: 'Maliyyə həlləri',
-          text: 'Sizə uyğun lizinq və kredit variantları ilə arzunuza yaxınlaşın.',
-          cta: 'Ətraflı',
-        },
-        {
-          title: 'Servis və baxım',
-          text: 'Rəsmi servis mərkəzlərində orijinal ehtiyat hissələri və peşəkar qulluq.',
-          cta: 'Servis yaz',
-        },
-      ],
+    about: {
+      title: 'Haqqımızda',
+      p1: '“Avtokapital-Azərbaycan” MMC – Mercedes-Benz Group AG-nin Mercedes-Benz markalı avtomobilləri üzrə Azərbaycandakı Rəsmi Nümayəndəliyi.',
+      p2: 'Bizim məqsədimiz – şirkətin müştərilərinə qayğı göstərmək, ən yüksək səviyyəli xidməti təmin etmək, habelə şirkətə istedadlı mütəxəssisləri cəlb etmək, müştərilərin maraqlarına uyğun olaraq, kollektiv yaradıcılıq potensialının həyata keçirilməsinə imkan yaratmaq.',
+      cta: 'Ətraflı',
     },
     promo: {
       title: 'Mercedes-Benz dünyasını kəşf edin',
@@ -176,26 +161,11 @@ export const translations = {
       details: 'Details',
       new: 'New',
     },
-    services: {
-      title: 'Services for you',
-      subtitle: 'Solutions that make Mercedes-Benz ownership easy and carefree.',
-      items: [
-        {
-          title: 'Test drive',
-          text: 'Choose the model you like and experience the drive yourself.',
-          cta: 'Sign up',
-        },
-        {
-          title: 'Financial solutions',
-          text: 'Get closer to your dream with leasing and credit options that suit you.',
-          cta: 'Learn more',
-        },
-        {
-          title: 'Service & maintenance',
-          text: 'Genuine spare parts and professional care at official service centers.',
-          cta: 'Book service',
-        },
-      ],
+    about: {
+      title: 'About us',
+      p1: '“Avtokapital-Azerbaijan” LLC is the Official Representative of Mercedes-Benz Group AG for Mercedes-Benz branded vehicles in Azerbaijan.',
+      p2: 'Our goal is to care for the company’s customers, provide the highest level of service, as well as attract talented professionals to the company and, in line with customers’ interests, create opportunities for realizing collective creative potential.',
+      cta: 'Learn more',
     },
     promo: {
       title: 'Discover the world of Mercedes-Benz',
