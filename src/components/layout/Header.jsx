@@ -123,9 +123,10 @@ export default function Header() {
               {/* --- Dropdown alt-menyu --- */}
               {link.submenu && (
                 <div className="invisible absolute left-0 top-full z-50 flex translate-y-1 opacity-0 transition-all duration-200 ease-mb group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-                  {/* Birinci sütun: kateqoriyalar */}
+                  {/* Birinci sütun: kateqoriyalar.
+                      self-start + h-fit: öz məzmunu qədər qalır, 2-ci sütun uzun olsa da uzanmır. */}
                   <ul
-                    className="min-w-[280px] rounded-b-lg bg-white py-3 text-mb-ink shadow-xl"
+                    className="h-fit min-w-[280px] self-start rounded-b-lg bg-white py-3 text-mb-ink shadow-xl"
                     onMouseLeave={() => setHoveredCategory(null)}
                   >
                     {link.submenu.map((sub) => {
