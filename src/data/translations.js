@@ -78,6 +78,9 @@ export const translations = {
       subtitle: 'Tezliklə.',
       cta: 'Ətraflı',
     },
+    shopping: {
+      title: 'Alış-veriş alətləri',
+    },
     models: {
       title: 'Modellərimiz',
       subtitle: 'Mercedes-Benz model sıramızı kəşf edin.',
@@ -212,6 +215,9 @@ export const translations = {
       title: 'The new Mercedes-Maybach S-Class',
       subtitle: 'Coming soon.',
       cta: 'Learn more',
+    },
+    shopping: {
+      title: 'Shopping tools',
     },
     models: {
       title: 'Our Models',
