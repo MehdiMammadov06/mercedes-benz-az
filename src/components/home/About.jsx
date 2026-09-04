@@ -11,7 +11,7 @@ export default function About() {
     <section className="container-site py-16 sm:py-20 lg:py-24">
       <h2 className="font-display text-5xl text-mb-ink sm:text-6xl">{t.about.title}</h2>
 
-      <div className="mt-10 max-w-6xl space-y-6 text-base leading-relaxed text-mb-grey sm:text-lg">
+      <div className="mt-10 space-y-6 text-base leading-relaxed text-mb-grey sm:text-lg">
         <p>{t.about.p1}</p>
         <p>{t.about.p2}</p>
       </div>
