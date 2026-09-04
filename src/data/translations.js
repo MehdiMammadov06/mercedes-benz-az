@@ -65,12 +65,12 @@ export const translations = {
       cta: 'Bizimlə əlaqə',
     },
     spotlight: {
-      title: 'In the Spotlight',
+      title: 'Diqqət mərkəzində',
       subtitle: 'Mercedes-Benz-dən ən son yenilikləri kəşf edin.',
       cta: {
-        explore: 'Explore Now',
-        informed: 'Keep me Informed',
-        register: 'Register your interest',
+        explore: 'Ətraflı bax',
+        informed: 'Məlumat al',
+        register: 'Maraq bildir',
       },
     },
     models: {
