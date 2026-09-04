@@ -25,27 +25,27 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-mb-black text-white">
       {/* --- Üst sətir: loqo, 140 il bloku, dil dəyişdirici --- */}
-      <div className="container-site flex h-16 items-center justify-between sm:h-20">
+      <div className="container-site flex h-20 items-center justify-between sm:h-24">
         <Link to="/" aria-label={t.header.home} className="shrink-0">
           <img
             src="/favicon.svg"
             alt="Mercedes-Benz"
-            className="h-10 w-10 sm:h-12 sm:w-12"
+            className="h-12 w-12 sm:h-14 sm:w-14"
           />
         </Link>
 
-        <div className="flex items-center gap-4 sm:gap-7">
+        <div className="flex items-center gap-4 sm:gap-8">
           {/* 140 YEARS OF INNOVATION — orijinalda şəkildir (innovation.png) */}
           <img
             src="/images/innovation.png"
             alt={`140 ${t.header.anniversary}`}
-            className="hidden h-9 w-auto sm:block"
+            className="hidden h-11 w-auto sm:block lg:h-12"
           />
 
           <button
             type="button"
             onClick={toggleLang}
-            className="flex items-center gap-1.5 text-xs font-medium transition-opacity hover:opacity-70 sm:text-sm"
+            className="flex items-center gap-1.5 text-sm font-medium transition-opacity hover:opacity-70"
           >
             <GlobeIcon className="h-4 w-4" />
             {t.langSwitchLabel}
@@ -66,14 +66,14 @@ export default function Header() {
 
       {/* --- Alt sətir: masaüstü naviqasiya --- */}
       <nav className="hidden border-t border-white/10 lg:block">
-        <ul className="container-site flex h-12 items-center gap-8">
+        <ul className="container-site flex h-14 items-center gap-9">
           {navLinks.map((link) => (
             <li key={link.key}>
               <NavLink
                 to={link.path}
                 className={({ isActive }) =>
                   [
-                    'flex items-center gap-2 text-sm transition-colors duration-300 ease-mb',
+                    'flex items-center gap-2 text-[15px] transition-colors duration-300 ease-mb',
                     isActive ? 'text-white' : 'text-white/80 hover:text-white',
                   ].join(' ')
                 }
