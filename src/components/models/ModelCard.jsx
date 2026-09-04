@@ -17,19 +17,21 @@ export default function ModelCard({ model }) {
     >
       {/* Şəkil sahəsi */}
       <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-md bg-mb-silver">
+        {/* Placeholder mətni ARXADA (-z-10) — yalnız şəkil YOXDURSA görünür.
+            Şəkil yüklənəndə onun fonu (bg-mb-silver) mətnin üstünü örtür. */}
+        <span className="pointer-events-none absolute -z-10 text-xs font-medium uppercase tracking-wider text-mb-grey">
+          {model.name}
+        </span>
         <img
           src={model.image}
           alt={model.name}
           loading="lazy"
-          className="h-full w-full object-contain transition-transform duration-500 ease-mb group-hover:scale-105"
+          className="h-full w-full bg-mb-silver object-contain transition-transform duration-500 ease-mb group-hover:scale-105"
           onError={(event) => {
-            // Şəkil yoxdursa, gizlət — altdakı placeholder mətni görünsün
+            // Şəkil yoxdursa, gizlət — arxadaki placeholder mətni görünsün
             event.currentTarget.style.visibility = 'hidden';
           }}
         />
-        <span className="pointer-events-none absolute text-xs font-medium uppercase tracking-wider text-mb-grey">
-          {model.name}
-        </span>
 
         {/* "Yeni" nişanı */}
         {model.isNew && (
