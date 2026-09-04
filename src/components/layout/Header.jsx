@@ -39,7 +39,7 @@ export default function Header() {
           <img
             src="/images/innovation.png"
             alt={`140 ${t.header.anniversary}`}
-            className="hidden h-11 w-auto sm:block lg:h-12"
+            className="hidden h-8 w-auto sm:block lg:h-9"
           />
 
           <button
