@@ -2,7 +2,6 @@ import { useMemo, useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext.jsx';
 import { useFetch } from '../../hooks/useFetch.js';
 import ModelSlider from '../models/ModelSlider.jsx';
-import Button from '../ui/Button.jsx';
 
 // Ana səhifədəki "Model cərgəsi" bölməsi:
 //   kateqoriya tabları  +  seçilən kateqoriyanın modelləri (kart şəbəkəsi).
@@ -34,14 +33,9 @@ export default function ModelShowcase() {
 
   return (
     <section className="container-site py-16 sm:py-20 lg:py-24">
-      <div className="mb-10 flex flex-col gap-4 sm:mb-12 sm:flex-row sm:items-end sm:justify-between">
-        <div>
-          <h2 className="font-display text-3xl text-mb-ink sm:text-4xl">{t.models.title}</h2>
-          <p className="mt-2 max-w-xl text-sm text-mb-grey sm:text-base">{t.models.subtitle}</p>
-        </div>
-        <Button to="/modeller" variant="outline-dark" size="md" className="self-start sm:self-auto">
-          {t.models.title}
-        </Button>
+      <div className="mb-10 sm:mb-12">
+        <h2 className="font-display text-3xl text-mb-ink sm:text-4xl">{t.models.title}</h2>
+        <p className="mt-2 max-w-xl text-sm text-mb-grey sm:text-base">{t.models.subtitle}</p>
       </div>
 
       {/* --- Kateqoriya tabları --- */}
