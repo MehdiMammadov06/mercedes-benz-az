@@ -36,14 +36,14 @@ export const spotlightItems = [
     id: 'maybach-gls',
     title: 'The new Mercedes-Maybach GLS: A cosmos of your own',
     text: 'Mercedes-Maybach has unveiled the new GLS.',
-    image: '/images/spotlight/maybach-gls.avif',
+    image: '/images/spotlight/maybach-gls1.avif',
     cta: 'explore',
   },
   {
     id: 'amg-gt-4door',
     title: 'Revolutionary Performance',
     text: 'The all-new Mercedes-AMG GT 4-Door Coupé.',
-    image: '/images/spotlight/amg-gt-4door.avif',
+    image: '/images/spotlight/amg-gt-4door1.avif',
     cta: 'register',
   },
   {
@@ -57,7 +57,7 @@ export const spotlightItems = [
     id: 'eqs',
     title: 'The New Mercedes-Benz EQS',
     text: 'A New Era of Electric Luxury.',
-    image: '/images/spotlight/eqs.avif',
+    image: '/images/spotlight/eqs1.avif',
     cta: 'explore',
   },
   {
