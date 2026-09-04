@@ -73,6 +73,11 @@ export const translations = {
         register: 'Maraq bildir',
       },
     },
+    maybachBanner: {
+      title: 'Yeni Mercedes-Maybach S-Class',
+      subtitle: 'Tezliklə.',
+      cta: 'Ətraflı',
+    },
     models: {
       title: 'Modellərimiz',
       subtitle: 'Mercedes-Benz model sıramızı kəşf edin.',
@@ -202,6 +207,11 @@ export const translations = {
         informed: 'Keep me Informed',
         register: 'Register your interest',
       },
+    },
+    maybachBanner: {
+      title: 'The new Mercedes-Maybach S-Class',
+      subtitle: 'Coming soon.',
+      cta: 'Learn more',
     },
     models: {
       title: 'Our Models',
