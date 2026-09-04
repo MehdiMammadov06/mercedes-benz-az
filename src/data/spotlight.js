@@ -1,153 +1,216 @@
-// "In the Spotlight" bölməsindəki kartlar (orijinal saytdakı ardıcıllıqla).
+// "In the Spotlight" / "Diqqət mərkəzində" bölməsindəki kartlar
+// (orijinal saytdakı ardıcıllıqla).
 //
-// Bu, brend kampaniya məzmunudur — başlıq/mətnlər orijinalda ingiliscədir,
-// ona görə olduğu kimi saxlanılır (sən "yazılara qədər eyni olsun" dedin).
-// Bölmənin başlığı ("In the Spotlight") isə translations.js-dən AZ/EN gəlir.
+// Başlıq (title) və mətn (text) hər iki dildə: { az, en }.
+// SpotlightCard dilə görə uyğununu seçir.
 //
 // ŞƏKİLLƏR: hamısı public/images/spotlight/ qovluğuna .avif adı ilə qoyulur.
 // Şəkil olmasa kart tünd fonla göstərilir (sayt sınmır).
 //
 // cta növü: "explore" | "informed" | "register"  — düymə mətnini seçir
-// (translations.js-dəki spotlight.cta blokundan).
+// (translations.js-dəki spotlight.cta blokundan, o da dilə görə dəyişir).
 
 export const spotlightItems = [
   {
     id: 's-class-presentation',
-    title: 'Mercedes-Benz Azerbaijan present the all-new Mercedes-Benz S-Class',
-    text: 'Baku, August 11, 2026 — An exclusive presentation of Mercedes-Benz’s flagship model.',
+    title: {
+      az: 'Mercedes-Benz Azərbaycan yeni Mercedes-Benz S-Class-ı təqdim edir',
+      en: 'Mercedes-Benz Azerbaijan present the all-new Mercedes-Benz S-Class',
+    },
+    text: {
+      az: 'Bakı, 11 avqust 2026 — Mercedes-Benz-in flaqman modelinin eksklüziv təqdimatı.',
+      en: 'Baku, August 11, 2026 — An exclusive presentation of Mercedes-Benz’s flagship model.',
+    },
     image: '/images/spotlight/s-class-presentation.avif',
     cta: 'explore',
   },
   {
     id: 'electric-gla',
-    title: 'The all-new electric GLA',
-    text: 'Experience the world premiere and register your interest below.',
+    title: { az: 'Tamamilə yeni elektrikli GLA', en: 'The all-new electric GLA' },
+    text: {
+      az: 'Dünya premyerasını yaşayın və maraq bildirin.',
+      en: 'Experience the world premiere and register your interest below.',
+    },
     image: '/images/spotlight/electric-gla.avif',
     cta: 'informed',
   },
   {
     id: 'all-new-gla',
-    title: 'The all-new GLA',
-    text: 'Experience the world premiere and register your interest below.',
+    title: { az: 'Tamamilə yeni GLA', en: 'The all-new GLA' },
+    text: {
+      az: 'Dünya premyerasını yaşayın və maraq bildirin.',
+      en: 'Experience the world premiere and register your interest below.',
+    },
     image: '/images/spotlight/all-new-gla.avif',
     cta: 'informed',
   },
   {
     id: 'maybach-gls',
-    title: 'The new Mercedes-Maybach GLS: A cosmos of your own',
-    text: 'Mercedes-Maybach has unveiled the new GLS.',
+    title: {
+      az: 'Yeni Mercedes-Maybach GLS: sizə məxsus bir kainat',
+      en: 'The new Mercedes-Maybach GLS: A cosmos of your own',
+    },
+    text: {
+      az: 'Mercedes-Maybach yeni GLS-i təqdim etdi.',
+      en: 'Mercedes-Maybach has unveiled the new GLS.',
+    },
     image: '/images/spotlight/maybach-gls1.avif',
     cta: 'explore',
   },
   {
     id: 'amg-gt-4door',
-    title: 'Revolutionary Performance',
-    text: 'The all-new Mercedes-AMG GT 4-Door Coupé.',
+    title: { az: 'İnqilabi performans', en: 'Revolutionary Performance' },
+    text: {
+      az: 'Tamamilə yeni Mercedes-AMG GT 4-Qapılı Kupe.',
+      en: 'The all-new Mercedes-AMG GT 4-Door Coupé.',
+    },
     image: '/images/spotlight/amg-gt-4door1.avif',
     cta: 'register',
   },
   {
     id: 'electric-c-class',
-    title: 'The All-New Electric C-Class',
-    text: 'The all-new electric C-Class combines luxury and advanced technology.',
+    title: { az: 'Tamamilə yeni elektrikli C-Class', en: 'The All-New Electric C-Class' },
+    text: {
+      az: 'Yeni elektrikli C-Class dəbdəbə və qabaqcıl texnologiyanı birləşdirir.',
+      en: 'The all-new electric C-Class combines luxury and advanced technology.',
+    },
     image: '/images/spotlight/electric-c-class.avif',
     cta: 'register',
   },
   {
     id: 'eqs',
-    title: 'The New Mercedes-Benz EQS',
-    text: 'A New Era of Electric Luxury.',
+    title: { az: 'Yeni Mercedes-Benz EQS', en: 'The New Mercedes-Benz EQS' },
+    text: {
+      az: 'Elektrik dəbdəbəsinin yeni dövrü.',
+      en: 'A New Era of Electric Luxury.',
+    },
     image: '/images/spotlight/eqs1.avif',
     cta: 'explore',
   },
   {
     id: 'gle-silhouettes',
-    title: 'Three bold silhouettes. One unmistakable presence.',
-    text: 'Mercedes-Benz unveils the new GLE.',
+    title: {
+      az: 'Üç cəsur siluet. Bir danılmaz mövcudluq.',
+      en: 'Three bold silhouettes. One unmistakable presence.',
+    },
+    text: {
+      az: 'Mercedes-Benz yeni GLE-ni təqdim edir.',
+      en: 'Mercedes-Benz unveils the new GLE.',
+    },
     image: '/images/spotlight/gle-silhouettes.avif',
     cta: 'explore',
   },
   {
     id: 'electric-vle',
-    title: 'Redefining Space in a New Era',
-    text: 'The All-New Electric Mercedes-Benz VLE.',
+    title: { az: 'Yeni dövrdə məkanın yenidən tərifi', en: 'Redefining Space in a New Era' },
+    text: {
+      az: 'Tamamilə yeni elektrikli Mercedes-Benz VLE.',
+      en: 'The All-New Electric Mercedes-Benz VLE.',
+    },
     image: '/images/spotlight/electric-vle.avif',
     cta: 'explore',
   },
   {
     id: 's-class-luxury',
-    title: 'Mercedes-Benz S-Class: A New Era of Luxury and Innovation',
-    text: 'The new flagship, the Mercedes-Benz S-Class.',
+    title: {
+      az: 'Mercedes-Benz S-Class: dəbdəbə və innovasiyanın yeni dövrü',
+      en: 'Mercedes-Benz S-Class: A New Era of Luxury and Innovation',
+    },
+    text: {
+      az: 'Yeni flaqman — Mercedes-Benz S-Class.',
+      en: 'The new flagship, the Mercedes-Benz S-Class.',
+    },
     image: '/images/spotlight/s-class-luxury.avif',
     cta: 'explore',
   },
   {
     id: '140-years',
-    title: 'Mercedes-Benz: 140 Years of Innovation and Shaping the Future of Mobility',
-    text: 'Ever since Karl Benz patented the first automobile.',
+    title: {
+      az: 'Mercedes-Benz: 140 illik innovasiya və mobilliyin gələcəyi',
+      en: 'Mercedes-Benz: 140 Years of Innovation and Shaping the Future of Mobility',
+    },
+    text: {
+      az: 'Karl Benz ilk avtomobili patentləşdirdiyi gündən bəri.',
+      en: 'Ever since Karl Benz patented the first automobile.',
+    },
     image: '/images/spotlight/140-years.avif',
     cta: 'explore',
   },
   {
     id: 'cla-car-of-the-year',
-    title: 'The all-new CLA is crowned the “Car of the Year 2026”',
-    text: 'The all-new Mercedes-Benz CLA has been awarded.',
+    title: {
+      az: 'Tamamilə yeni CLA “2026-nın Avtomobili” seçildi',
+      en: 'The all-new CLA is crowned the “Car of the Year 2026”',
+    },
+    text: {
+      az: 'Tamamilə yeni Mercedes-Benz CLA mükafata layiq görüldü.',
+      en: 'The all-new Mercedes-Benz CLA has been awarded.',
+    },
     image: '/images/spotlight/cla-car-of-the-year.avif',
     cta: 'explore',
   },
   {
     id: 'concept-cars',
-    title: 'Concept Cars',
-    text: 'Welcome to the future.',
+    title: { az: 'Konsept avtomobillər', en: 'Concept Cars' },
+    text: { az: 'Gələcəyə xoş gəlmisiniz.', en: 'Welcome to the future.' },
     image: '/images/spotlight/concept-cars.avif',
     cta: 'explore',
   },
   {
     id: 'lead-in-intelligence',
-    title: 'Lead in Intelligence',
-    text: 'More than a car. A Mercedes-Benz.',
+    title: { az: 'İntellektdə liderlik', en: 'Lead in Intelligence' },
+    text: {
+      az: 'Sadəcə avtomobildən artıq. Bu — Mercedes-Benz.',
+      en: 'More than a car. A Mercedes-Benz.',
+    },
     image: '/images/spotlight/lead-in-intelligence.avif',
     cta: 'explore',
   },
   {
     id: 'manufaktur',
-    title: 'MANUFAKTUR',
-    text: 'Individuality at its most alluring.',
+    title: { az: 'MANUFAKTUR', en: 'MANUFAKTUR' },
+    text: {
+      az: 'Fərdilik ən cəlbedici formada.',
+      en: 'Individuality at its most alluring.',
+    },
     image: '/images/spotlight/manufaktur.avif',
     cta: 'explore',
   },
   {
     id: 'defining-class',
-    title: 'Defining Class',
-    text: 'Since 1886.',
+    title: { az: 'Sinfi müəyyən edən', en: 'Defining Class' },
+    text: { az: '1886-cı ildən bəri.', en: 'Since 1886.' },
     image: '/images/spotlight/defining-class.avif',
     cta: 'explore',
   },
   {
     id: 'eqe-suv',
-    title: 'The New EQE SUV',
-    text: 'EQE SUV.',
+    title: { az: 'Yeni EQE SUV', en: 'The New EQE SUV' },
+    text: { az: 'EQE SUV.', en: 'EQE SUV.' },
     image: '/images/spotlight/eqe-suv.avif',
     cta: 'explore',
   },
   {
     id: 'dolby-atmos',
-    title: 'Dolby Atmos',
-    text: 'Driving a new sound experience.',
+    title: { az: 'Dolby Atmos', en: 'Dolby Atmos' },
+    text: {
+      az: 'Yeni səs təcrübəsi ilə sürün.',
+      en: 'Driving a new sound experience.',
+    },
     image: '/images/spotlight/dolby-atmos.avif',
     cta: 'explore',
   },
   {
     id: 'night-series',
-    title: 'Night Series',
-    text: 'Welcome to Beyond.',
+    title: { az: 'Night Series', en: 'Night Series' },
+    text: { az: 'Zirvədən o tərəfə xoş gəlmisiniz.', en: 'Welcome to Beyond.' },
     image: '/images/spotlight/night-series.avif',
     cta: 'explore',
   },
   {
     id: 'design-concept',
-    title: 'Design & Concept Vehicles',
-    text: 'Welcome to the future.',
+    title: { az: 'Dizayn və konsept avtomobillər', en: 'Design & Concept Vehicles' },
+    text: { az: 'Gələcəyə xoş gəlmisiniz.', en: 'Welcome to the future.' },
     image: '/images/spotlight/design-concept.avif',
     cta: 'explore',
   },
