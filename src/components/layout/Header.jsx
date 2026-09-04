@@ -162,14 +162,14 @@ export default function Header() {
                   {link.key === 'models' && hoveredCategory && (
                     <ul
                       key={hoveredCategory}
-                      className="animate-fade-in w-max min-w-[220px] rounded-b-lg bg-white py-3 text-mb-ink shadow-xl"
+                      className="animate-fade-in w-[340px] rounded-b-lg bg-white py-3 text-mb-ink shadow-xl"
                       onMouseEnter={() => setHoveredCategory(hoveredCategory)}
                     >
                       {(modelsByCategory[hoveredCategory] ?? []).map((model) => (
                         <li key={model.id}>
                           <Link
                             to={`/modeller/${model.id}`}
-                            className="block whitespace-nowrap px-6 py-2.5 text-sm transition-colors duration-200 hover:bg-mb-silver"
+                            className="block px-8 py-2.5 text-sm transition-colors duration-200 hover:bg-mb-silver"
                           >
                             {model.name}
                           </Link>
