@@ -12,6 +12,7 @@ import Showroom from './pages/Showroom.jsx';
 import TestDrive from './pages/TestDrive.jsx';
 import BookService from './pages/BookService.jsx';
 import Accessories from './pages/Accessories.jsx';
+import Collection from './pages/Collection.jsx';
 
 export default function App() {
   return (
@@ -35,6 +36,8 @@ export default function App() {
         <Route path="/xidmetler/servise-yazilmaq" element={<BookService />} />
         {/* Xidmətlər → Aksesuarlar */}
         <Route path="/xidmetler/aksesuarlar" element={<Accessories />} />
+        {/* Xidmətlər → Həyat Tərzi Kolleksiyası */}
+        <Route path="/xidmetler/kolleksiya" element={<Collection />} />
 
         {/* Digər menyu səhifələri — hazırlandıqca real komponentlərlə əvəz olunacaq */}
         {navLinks

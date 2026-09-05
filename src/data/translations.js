@@ -169,7 +169,7 @@ export const translations = {
         links: [
           { label: 'Servisə yazılmaq', to: '/xidmetler/servise-yazilmaq' },
           { label: 'Aksessuarlar', to: '/xidmetler/aksesuarlar' },
-          { label: 'Həyat tərz kolleksiyası', to: '/xidmetler' },
+          { label: 'Həyat tərz kolleksiyası', to: '/xidmetler/kolleksiya' },
           { label: 'Servis paketləri', to: '/xidmetler' },
           { label: 'Orijinal hissələr', to: '/xidmetler' },
         ],
@@ -393,6 +393,38 @@ export const translations = {
         eyebrow: 'Bütün kateqoriyalar',
       },
     },
+    collection: {
+      hero: {
+        title: 'Mercedes-Benz Kolleksiyasından ən yaxşısı.',
+        text: 'Üçbucaqlı ulduza əsaslanan moda, aksesuarlar və bir çox digər məhsullar eksklüziv olaraq bizim kolleksiyamızda tapıla bilər.',
+        cta: 'Müraciət edin',
+      },
+      intro: {
+        eyebrow: 'Mercedes-Benz Kolleksiyası',
+        title: 'Mercedes-Benz Kolleksiyasının tam müxtəlifliyini kəşf edin.',
+        text: 'Çantalar, papaqlar və ya kəmərlər kimi dəbli aksesuarlar, çətirlər və ya açar üzüklər kimi praktik əşyalar və saatlarımız və ya model avtomobillərimiz kimi zərif göz oxşayanlar. Üstəlik, səyahət və açıq havada, idman və motorsporlar üçün geniş seçim və e-skuterlərimiz kimi xüsusi məqamlar. Eyni şey bizim Kolleksiyamıza da avtomobillərimizə aiddir: yalnız keyfiyyət və dizayn baxımından ən yaxşısı.',
+      },
+      scooter: {
+        title: 'eSkuterlərin rok-n-rolleri',
+        text: 'Gəlin, açılın, sürün. Mercedes-Benz eScooter çəkmənizə uyğun gəlir və şəhər həyat tərzinizə uyğun gəlir. Emissiyasız, qaşqıq və güclü, siz istənilən şəhəri, o cümlədən daş döşəmələr üzərində etibarlı şəkildə kruiz edə bilərsiniz. Micro Mobility şirkətinin isveçrəli mütəxəssisləri ilə birlikdə hazırlanmış e-skuter 25 km məsafəyə və 5000 km-dən çox yürüş məsafəsinə malikdir. Min, daxil ol!',
+      },
+      models: {
+        title: 'Böyük emosiyalar kiçik formatda',
+        text: '18 aylıq inkişaf, çoxlu ehtiras, yaradıcılıq və hər şeydən əvvəl ən son CAD texnologiyası kimi texniki nou-hau böyük emosiyaları 100% orijinal model avtomobillərə çevirir. Qapıları açın, bir çox mürəkkəb detalları kəşf edin və orijinal rəng tonunda boya işlərini hiss edin. 1:12 ilə 1:87 arasında dəyişən tərəzilərdə əsl təcrübə.',
+      },
+      watches: {
+        title: 'İstənilən Mercedes kimi dəqiq işləyir',
+        text: 'Mercedes-Benz avtomatik xronoqrafı heç bir güzəştə getmir. Etdiyiniz hər şeydə dəqiqliyi və etibarlılığı qiymətləndirirsinizsə, saatlarımızda bunu daha çox gözləyirsiniz. Aydın dizayn, dəbdəbəli materiallar və 200-cü fərdi hissəyə qədər zəhmətlə işlənib: bizim avtomatik xronoqrafımız maksimum funksionallıq tələblərinə mükəmməl cavab verən ustalıqla İsveçrə saat istehsalı sənətkarlığıdır.',
+      },
+      amg: {
+        eyebrow: 'MERCEDES-AMG',
+        text: 'AMG yüksək performans deməkdir. AMG Active Collection qolf sahəsinə bu motor idmanı ruhunu gətirir. Xaricdə zəngin qara, qırmızı vurğular, daxili funksional materiallar - 18-ci çuxura doğru sürücü üçün avadanlıq. Bunun mütləq qolf olması lazım deyil. AMG Collection trasda və trasdan kənarda motor idman həvəskarları üçün mükəmməl geyimdir.',
+      },
+      categories: {
+        eyebrow: 'Kateqoriyalarımız',
+        title: 'Mercedes-Benz Kolleksiyasının müxtəlifliyini kəşf edin.',
+      },
+    },
     bookService: {
       title: 'Servisə yazılmaq',
       selectBranch: 'Filialı seç',
@@ -594,7 +626,7 @@ export const translations = {
         links: [
           { label: 'Book a service', to: '/xidmetler/servise-yazilmaq' },
           { label: 'Accessories', to: '/xidmetler/aksesuarlar' },
-          { label: 'Lifestyle collection', to: '/xidmetler' },
+          { label: 'Lifestyle collection', to: '/xidmetler/kolleksiya' },
           { label: 'Service packages', to: '/xidmetler' },
           { label: 'Genuine parts', to: '/xidmetler' },
         ],
@@ -816,6 +848,38 @@ export const translations = {
       categories: {
         title: 'Choose the right accessories for your Mercedes.',
         eyebrow: 'All categories',
+      },
+    },
+    collection: {
+      hero: {
+        title: 'The best of the Mercedes-Benz Collection.',
+        text: 'Fashion, accessories and many other products based on the three-pointed star can be found exclusively in our Collection.',
+        cta: 'Make an enquiry',
+      },
+      intro: {
+        eyebrow: 'Mercedes-Benz Collection',
+        title: 'Discover the full diversity of the Mercedes-Benz Collection.',
+        text: 'Fashionable accessories like bags, caps or belts, practical items like umbrellas or key rings, and elegant eye-catchers like our watches or model cars. Plus a wide selection for travel and outdoors, sport and motorsport, and special highlights like our e-scooters. The same applies to our Collection as to our cars: only the best in terms of quality and design.',
+      },
+      scooter: {
+        title: 'The rock ’n’ roll of eScooters',
+        text: 'Come on, unfold, ride. The Mercedes-Benz eScooter suits your style and fits your urban lifestyle. Emission-free, agile and powerful, you can cruise any city reliably, including over cobblestones. Developed together with the Swiss experts at Micro Mobility, the e-scooter reaches up to 25 km/h and offers a range of over 5000 km in total. Hop on, get in!',
+      },
+      models: {
+        title: 'Big emotions in a small format',
+        text: '18 months of development, a lot of passion, creativity and above all technical know-how such as the latest CAD technology turn big emotions into 100% original model cars. Open the doors, discover many intricate details and feel the paintwork in the original colour shade. A real experience in scales ranging from 1:12 to 1:87.',
+      },
+      watches: {
+        title: 'Precise like any Mercedes',
+        text: 'The Mercedes-Benz automatic chronograph makes no compromises. If you value precision and reliability in everything you do, you expect even more from our watches. Clear design, luxurious materials and crafted with dedication down to the 200th individual part: our automatic chronograph is Swiss watchmaking craftsmanship that perfectly meets the highest functionality requirements — ours and yours.',
+      },
+      amg: {
+        eyebrow: 'MERCEDES-AMG',
+        text: 'AMG means high performance. The AMG Active Collection brings this motorsport spirit to the golf course. Rich black on the outside, red accents, functional materials inside — equipment for the drive towards the 18th hole. It does not have to be golf. The AMG Collection is the perfect outfit for motorsport enthusiasts on and off the track.',
+      },
+      categories: {
+        eyebrow: 'Our categories',
+        title: 'Discover the diversity of the Mercedes-Benz Collection.',
       },
     },
     bookService: {
