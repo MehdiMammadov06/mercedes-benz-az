@@ -18,6 +18,7 @@ import GenuineParts from './pages/GenuineParts.jsx';
 import AmgBrand from './pages/AmgBrand.jsx';
 import MaybachBrand from './pages/MaybachBrand.jsx';
 import Innovation140 from './pages/Innovation140.jsx';
+import About from './pages/About.jsx';
 
 export default function App() {
   return (
@@ -53,10 +54,12 @@ export default function App() {
         <Route path="/brendler/mercedes-maybach" element={<MaybachBrand />} />
         {/* Bizim brendlərimiz → 140 illik innovasiya */}
         <Route path="/brendler/innovasiya" element={<Innovation140 />} />
+        {/* Haqqımızda → Şirkət haqqında */}
+        <Route path="/haqqimizda" element={<About />} />
 
         {/* Digər menyu səhifələri — hazırlandıqca real komponentlərlə əvəz olunacaq */}
         {navLinks
-          .filter((link) => link.path !== '/alis')
+          .filter((link) => link.path !== '/alis' && link.path !== '/haqqimizda')
           .map((link) => (
             <Route key={link.key} path={link.path} element={<Placeholder titleKey={link.key} />} />
           ))}
