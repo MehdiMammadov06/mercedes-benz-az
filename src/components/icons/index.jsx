@@ -234,6 +234,93 @@ export function ChevronUp({ className = 'h-5 w-5' }) {
   );
 }
 
+// --- Stock (mövcud avtomobillər) kartı üçün spec ikonları ---
+
+export function CalendarIcon({ className = 'h-4 w-4' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect x="3.5" y="5" width="17" height="16" rx="2" />
+      <path d="M3.5 9.5h17M8 3v3.5M16 3v3.5" />
+    </svg>
+  );
+}
+
+export function PaletteIcon({ className = 'h-4 w-4' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M12 3a9 9 0 0 0 0 18c1.1 0 1.8-.9 1.8-1.9 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.1 0-1 .8-1.8 1.8-1.8H16a5 5 0 0 0 5-5c0-3.9-4-7-9-7z" />
+      <circle cx="7.5" cy="11" r="1" fill="currentColor" stroke="none" />
+      <circle cx="12" cy="8" r="1" fill="currentColor" stroke="none" />
+      <circle cx="16.5" cy="11" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function GearboxIcon({ className = 'h-4 w-4' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <circle cx="6" cy="6" r="1.6" />
+      <circle cx="18" cy="6" r="1.6" />
+      <circle cx="6" cy="18" r="1.6" />
+      <path d="M6 7.6v8.8M18 7.6V12a4 4 0 0 1-4 4H6" />
+    </svg>
+  );
+}
+
+export function FuelIcon({ className = 'h-4 w-4' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M5 21V6a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v15" />
+      <path d="M3.5 21h12M5 12h9" />
+      <path d="M14 8l2.8 2.8c.4.4.7 1 .7 1.6V17a1.6 1.6 0 0 0 3.2 0V9.5L18 6.8" />
+    </svg>
+  );
+}
+
+export function HeartIcon({ className = 'h-5 w-5', filled = false }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill={filled ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M12 20.5l-1.3-1.15C6 15.1 3 12.4 3 9.1 3 6.6 5 4.7 7.4 4.7c1.4 0 2.7.65 3.6 1.7.9-1.05 2.2-1.7 3.6-1.7C17 4.7 19 6.6 19 9.1c0 3.3-3 6-7.7 10.25L12 20.5z" />
+    </svg>
+  );
+}
+
+export function LocationIcon({ className = 'h-4 w-4' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z" />
+      <circle cx="12" cy="10" r="2.5" />
+    </svg>
+  );
+}
+
+export function GaugeIcon({ className = 'h-4 w-4' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M4 18a8 8 0 1 1 16 0" />
+      <path d="M12 14l3.5-3.5" />
+      <circle cx="12" cy="14" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function SearchIcon({ className = 'h-4 w-4' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <circle cx="11" cy="11" r="7" />
+      <path d="M21 21l-4.3-4.3" />
+    </svg>
+  );
+}
+
+export function ChevronDown({ className = 'h-4 w-4' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M6 9l6 6 6-6" />
+    </svg>
+  );
+}
+
 export function GlobeIcon({ className = 'h-4 w-4' }) {
   return (
     <svg
