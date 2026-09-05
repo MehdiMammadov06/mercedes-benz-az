@@ -201,6 +201,58 @@ export const translations = {
         title: 'Yeni A-Class-ın interyeri.',
         text: 'Daxildə müasir, proqressiv və istifadəçi yönümlü A-Class geniş əlaqə və təhlükəsizlik yenilikləri ilə heyran edir. Təkmilləşdirilmiş MBUX multimedia sistemi və ya rahat oturacaqlar olsun – A-Class daim sürücünü düşünür.',
       },
+      equipment: {
+        eyebrow: 'Avadanlıq',
+        title: 'A-Class Kompakt Sedan-ın əsas avadanlıq üstünlükləri',
+        items: {
+          'keyless-go': {
+            title: 'KEYLESS-GO',
+            text: 'KEYLESS-GO açarınızı cibinizdə saxlaya bilərsiniz – onu əlinizdə tutmağa belə ehtiyac yoxdur. Avtomobil, yadda saxlanılmış giriş və sürüş icazəsi sayəsində sahibini tanıyır. Sadəcə qapını tutun, açın, oturun və yola düşün.',
+          },
+          'guard-360': {
+            title: 'GUARD 360° nəqliyyat vasitəsinin qorunması',
+            text: 'GUARD 360° nəqliyyat vasitəsinin qorunması, məsələn, genişləndirilmiş oğurluğa qarşı siqnalizasiya sistemi və evakuasiyaya qarşı müdafiə ilə avtomobilin ətrafının hərtərəfli nəzarətini təmin edir.',
+          },
+          'rear-airbags': {
+            title: 'Arxa oturacaq sahəsində yan toqquşma hava yastıqları',
+            text: 'Arxa sərnişin bölməsindəki yan hava yastıqları güclü yan toqquşma zamanı arxa oturacaqda oturan sərnişinlərin döş qəfəsi nahiyəsini qoruyur.',
+          },
+          'dynamic-select': {
+            title: 'DYNAMIC SELECT',
+            text: 'Necə sürmək istəyirsinizsə, DYNAMIC SELECT ilə bu mümkündür. Sadəcə bir düyməyə toxunmaqla, mühərrik, transmissiya, asqı və sükan kimi sistemlərin ayarlarını müxtəlif sürüş rejimlərinə uyğun seçə bilərsiniz.',
+          },
+        },
+      },
+      amg: {
+        eyebrow: 'MERCEDES-AMG',
+        variantLabel: 'Modeli seç',
+      },
+      form: {
+        brandName: 'Mercedes-Benz Azərbaycan',
+        heading: 'Əlaqə üçün formu doldurun',
+        branch: 'Filialı seç',
+        title: 'Başlıq',
+        titleOptions: ['Cənab', 'Xanım'],
+        firstName: 'Ad',
+        lastName: 'Soyad',
+        email: 'E-poçt ünvanı',
+        phone: 'Əlaqə nömrəsi',
+        message: 'Mesaj',
+        select: 'Seçin...',
+        submit: 'Göndər',
+        submitting: 'Göndərilir...',
+        success: 'Müraciətiniz qəbul olundu. Tezliklə sizinlə əlaqə saxlanılacaq.',
+        branches: [
+          'Abşeron Avtomobil Mərkəzi',
+          'Bakı Avtomobil Mərkəzi',
+          'Gəncə Avtomobil Mərkəzi',
+        ],
+        errors: {
+          required: 'Bu xana mütləq doldurulmalıdır',
+          email: 'Düzgün e-poçt ünvanı daxil edin',
+          phone: 'Düzgün əlaqə nömrəsi daxil edin',
+        },
+      },
     },
     placeholder: {
       title: 'Bu səhifə hazırlanır',
@@ -398,6 +450,58 @@ export const translations = {
         eyebrow: 'Interior',
         title: 'The interior of the new A-Class.',
         text: 'Modern, progressive and user-oriented inside, the A-Class impresses with wide-ranging connectivity and safety innovations. Whether the enhanced MBUX multimedia system or comfortable seats – the A-Class always thinks of the driver.',
+      },
+      equipment: {
+        eyebrow: 'Equipment',
+        title: 'Key equipment highlights of the A-Class Compact Sedan',
+        items: {
+          'keyless-go': {
+            title: 'KEYLESS-GO',
+            text: 'You can keep your KEYLESS-GO key in your pocket – you don’t even need to hold it in your hand. Thanks to stored access and drive authorisation, the vehicle recognises its owner. Just grab the handle, open, get in and set off.',
+          },
+          'guard-360': {
+            title: 'GUARD 360° vehicle protection',
+            text: 'GUARD 360° vehicle protection provides comprehensive monitoring of the vehicle’s surroundings, for example with an extended anti-theft alarm system and anti-tow-away protection.',
+          },
+          'rear-airbags': {
+            title: 'Side airbags in the rear seat area',
+            text: 'The side airbags in the rear passenger compartment protect the chest area of passengers seated in the rear during a severe side impact.',
+          },
+          'dynamic-select': {
+            title: 'DYNAMIC SELECT',
+            text: 'However you want to drive, DYNAMIC SELECT makes it possible. At the touch of a button you can adapt the settings of systems such as the engine, transmission, suspension and steering to different driving modes.',
+          },
+        },
+      },
+      amg: {
+        eyebrow: 'MERCEDES-AMG',
+        variantLabel: 'Select model',
+      },
+      form: {
+        brandName: 'Mercedes-Benz Azerbaijan',
+        heading: 'Fill in the form to get in touch',
+        branch: 'Select a branch',
+        title: 'Title',
+        titleOptions: ['Mr', 'Ms'],
+        firstName: 'First name',
+        lastName: 'Last name',
+        email: 'Email address',
+        phone: 'Contact number',
+        message: 'Message',
+        select: 'Select...',
+        submit: 'Send',
+        submitting: 'Sending...',
+        success: 'Your request has been received. We will contact you shortly.',
+        branches: [
+          'Absheron Automobile Center',
+          'Baku Automobile Center',
+          'Ganja Automobile Center',
+        ],
+        errors: {
+          required: 'This field is required',
+          email: 'Enter a valid email address',
+          phone: 'Enter a valid contact number',
+        },
       },
     },
     placeholder: {

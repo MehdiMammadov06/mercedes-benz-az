@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext.jsx';
 import { useFetch } from '../hooks/useFetch.js';
@@ -8,16 +9,23 @@ import ModelHero from '../components/model-page/ModelHero.jsx';
 import ModelStickyBar from '../components/model-page/ModelStickyBar.jsx';
 import ModelLineup from '../components/model-page/ModelLineup.jsx';
 import FeatureSection from '../components/model-page/FeatureSection.jsx';
+import EquipmentSlider from '../components/model-page/EquipmentSlider.jsx';
+import AmgSection from '../components/model-page/AmgSection.jsx';
+import ContactForm from '../components/model-page/ContactForm.jsx';
 
 // Tək model detal səhifəsi (/modeller/:id).
-// Universal ŞABLON — bölmələr mərhələli əlavə olunur.
-// İndiki mərhələ: Hero + Sticky bar + Model cərgəsi + Eksteryer + İnteryer.
+// Universal ŞABLON. Bölmələr: Hero + Sticky bar + Model cərgəsi + Eksteryer +
+// İnteryer + Avadanlıq + Mercedes-AMG + Əlaqə formu.
 export default function ModelDetail() {
   const { id } = useParams();
   const { t } = useLanguage();
   const { data, isLoading, error } = useFetch('/data/models.json', { delay: 300 });
 
   const tp = t.modelPage;
+
+  // Sticky bardakı "Əlaqə" düyməsi əlaqə formasına sürüşdürür
+  const formRef = useRef(null);
+  const scrollToForm = () => formRef.current?.scrollIntoView({ behavior: 'smooth' });
 
   // --- Yüklənir ---
   if (isLoading) return <DetailSkeleton />;
@@ -55,8 +63,13 @@ export default function ModelDetail() {
       {/* Hero — böyük şəkil + rəng seçimləri */}
       <ModelHero model={model} colorLabel={tp.colorLabel} />
 
-      {/* Yapışqan zolaq — skroll edəndə yuxarıda qalır */}
-      <ModelStickyBar label={tp.stickyLabel} name={model.name} ctaText={tp.contactCta} />
+      {/* Yapışqan zolaq — "Əlaqə" düyməsi formaya sürüşdürür */}
+      <ModelStickyBar
+        label={tp.stickyLabel}
+        name={model.name}
+        ctaText={tp.contactCta}
+        onContact={scrollToForm}
+      />
 
       {/* Model cərgəsi — variantlar (yalnız data varsa) */}
       {detail?.variants?.length > 0 && (
@@ -72,6 +85,19 @@ export default function ModelDetail() {
       {detail?.interior?.image && (
         <FeatureSection data={detail.interior} copy={tp.interior} reverse />
       )}
+
+      {/* Avadanlıq — kart slayderi */}
+      {detail?.equipment?.length > 0 && (
+        <EquipmentSlider items={detail.equipment} copy={tp.equipment} />
+      )}
+
+      {/* Mercedes-AMG */}
+      {(detail?.amg?.image || detail?.amg?.variants?.length > 0) && (
+        <AmgSection amg={detail.amg} copy={tp.amg} />
+      )}
+
+      {/* Əlaqə formu — həmişə göstərilir */}
+      <ContactForm ref={formRef} copy={tp.form} />
     </>
   );
 }

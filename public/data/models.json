@@ -541,6 +541,19 @@
         },
         "interior": {
           "image": "/images/models/detail/a-class/interior.avif"
+        },
+        "equipment": [
+          { "id": "keyless-go", "image": "/images/models/detail/a-class/eq-keyless.avif" },
+          { "id": "guard-360", "image": "/images/models/detail/a-class/eq-guard.avif" },
+          { "id": "rear-airbags", "image": "/images/models/detail/a-class/eq-airbags.avif" },
+          { "id": "dynamic-select", "image": "/images/models/detail/a-class/eq-dynamic.avif" }
+        ],
+        "amg": {
+          "image": "/images/models/detail/a-class/amg.avif",
+          "variants": [
+            { "id": "amg-a35", "name": "Mercedes-AMG A 35 4MATIC Hatchback" },
+            { "id": "amg-a45s", "name": "Mercedes-AMG A 45 S 4MATIC+ Hatchback" }
+          ]
         }
       }
     },
