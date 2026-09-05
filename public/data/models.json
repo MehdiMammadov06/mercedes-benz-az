@@ -554,7 +554,8 @@
             { "id": "amg-a35", "name": "Mercedes-AMG A 35 4MATIC Hatchback" },
             { "id": "amg-a45s", "name": "Mercedes-AMG A 45 S 4MATIC+ Hatchback" }
           ]
-        }
+        },
+        "contactImage": "/images/models/detail/a-class/contact.avif"
       }
     },
 

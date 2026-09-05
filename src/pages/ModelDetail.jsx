@@ -97,7 +97,7 @@ export default function ModelDetail() {
       )}
 
       {/* Əlaqə formu — həmişə göstərilir */}
-      <ContactForm ref={formRef} copy={tp.form} />
+      <ContactForm ref={formRef} copy={tp.form} bgImage={detail?.contactImage} />
     </>
   );
 }
