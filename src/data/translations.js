@@ -188,6 +188,19 @@ export const translations = {
       stickyLabel: 'Model',
       contactCta: 'Əlaqə',
       colorLabel: 'Rəng',
+      lineup: {
+        title: 'Model cərgəsi',
+      },
+      exterior: {
+        eyebrow: 'Eksteryer',
+        title: 'Yeni A-Class-ın eksteryeri.',
+        text: 'Yeni A-Class-ın yenilənmiş eksteryer dizaynı proqressiv ön hissə, radiator barmaqlığında Mercedes-Benz naxışı, əlavə olaraq seçilə bilən yastı LED faralar və xrom işləməli arxa diffuzor ilə heyranedicidir.',
+      },
+      interior: {
+        eyebrow: 'İnteryer',
+        title: 'Yeni A-Class-ın interyeri.',
+        text: 'Daxildə müasir, proqressiv və istifadəçi yönümlü A-Class geniş əlaqə və təhlükəsizlik yenilikləri ilə heyran edir. Təkmilləşdirilmiş MBUX multimedia sistemi və ya rahat oturacaqlar olsun – A-Class daim sürücünü düşünür.',
+      },
     },
     placeholder: {
       title: 'Bu səhifə hazırlanır',
@@ -373,6 +386,19 @@ export const translations = {
       stickyLabel: 'Model',
       contactCta: 'Contact',
       colorLabel: 'Colour',
+      lineup: {
+        title: 'Model range',
+      },
+      exterior: {
+        eyebrow: 'Exterior',
+        title: 'The exterior of the new A-Class.',
+        text: 'The refreshed exterior design of the new A-Class impresses with a progressive front end, the Mercedes-Benz pattern in the radiator grille, optionally available flat LED headlamps and a chrome-trimmed rear diffuser.',
+      },
+      interior: {
+        eyebrow: 'Interior',
+        title: 'The interior of the new A-Class.',
+        text: 'Modern, progressive and user-oriented inside, the A-Class impresses with wide-ranging connectivity and safety innovations. Whether the enhanced MBUX multimedia system or comfortable seats – the A-Class always thinks of the driver.',
+      },
     },
     placeholder: {
       title: 'This page is in progress',
