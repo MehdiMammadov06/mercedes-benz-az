@@ -10,7 +10,12 @@ function getPerView(width) {
   return 1;
 }
 
-export default function EquipmentSlider({ items, copy }) {
+export default function EquipmentSlider({ items, copy, lang, title }) {
+  // Modelə xas çoxdilli mətn ({az,en}) və ya sadə string-i cari dilə uyğun seç
+  const pick = (value, fallback) => {
+    if (value == null) return fallback;
+    return typeof value === 'object' ? (value[lang] ?? fallback) : value;
+  };
   const [perView, setPerView] = useState(() =>
     typeof window !== 'undefined' ? getPerView(window.innerWidth) : 4
   );
@@ -39,7 +44,9 @@ export default function EquipmentSlider({ items, copy }) {
     <section className="container-site py-16 sm:py-20">
       <div className="mb-10 max-w-2xl">
         <p className="text-sm uppercase tracking-widest text-mb-grey">{copy.eyebrow}</p>
-        <h2 className="mt-3 font-display text-2xl text-mb-ink sm:text-3xl">{copy.title}</h2>
+        <h2 className="mt-3 font-display text-2xl text-mb-ink sm:text-3xl">
+          {pick(title, copy.title)}
+        </h2>
       </div>
 
       <div className="relative">
@@ -49,7 +56,11 @@ export default function EquipmentSlider({ items, copy }) {
             style={{ transform: `translateX(-${index * (100 / perView)}%)` }}
           >
             {items.map((item) => {
-              const text = copy.items?.[item.id] ?? {};
+              // Element mətni: modelə xas (item.title/text, çoxdilli) və ya
+              // A-Class üçün olduğu kimi copy.items[item.id]-dən
+              const fallback = copy.items?.[item.id] ?? {};
+              const itemTitle = pick(item.title, fallback.title);
+              const itemText = pick(item.text, fallback.text);
               return (
                 <div
                   key={item.id}
@@ -60,16 +71,16 @@ export default function EquipmentSlider({ items, copy }) {
                     <div className="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-md bg-mb-silver">
                       <img
                         src={item.image}
-                        alt={text.title ?? ''}
+                        alt={itemTitle ?? ''}
                         loading="lazy"
                         className="h-full w-full object-cover"
                         onError={(e) => (e.currentTarget.style.visibility = 'hidden')}
                       />
                     </div>
                     <h3 className="mt-5 text-sm font-semibold uppercase tracking-wide text-mb-ink">
-                      {text.title}
+                      {itemTitle}
                     </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-mb-grey">{text.text}</p>
+                    <p className="mt-3 text-sm leading-relaxed text-mb-grey">{itemText}</p>
                   </div>
                 </div>
               );

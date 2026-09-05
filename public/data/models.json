@@ -18,7 +18,117 @@
         "seats": 5,
         "range": 660
       },
-      "isNew": true
+      "isNew": true,
+      "detail": {
+        "hero": {
+          "colors": [
+            {
+              "name": "MANUFAKTUR Alpine Grey",
+              "hex": "#b7bbbd",
+              "image": "/images/models/detail/eqe-sedan/hero-alpine-grey.avif"
+            },
+            {
+              "name": "Obsidian Black",
+              "hex": "#1a1a1a",
+              "image": "/images/models/detail/eqe-sedan/hero-obsidian-black.avif"
+            },
+            {
+              "name": "High-tech Silver",
+              "hex": "#c9ccce",
+              "image": "/images/models/detail/eqe-sedan/hero-hightech-silver.avif"
+            }
+          ]
+        },
+        "variants": [
+          {
+            "id": "eqe300",
+            "name": "EQE 300",
+            "image": "/images/models/detail/eqe-sedan/variant-eqe300.avif"
+          },
+          {
+            "id": "eqe350",
+            "name": "EQE 350",
+            "image": "/images/models/detail/eqe-sedan/variant-eqe350.avif"
+          },
+          {
+            "id": "eqe350-4matic",
+            "name": "EQE 350 4MATIC",
+            "image": "/images/models/detail/eqe-sedan/variant-eqe350-4matic.avif"
+          }
+        ],
+        "exterior": {
+          "image": "/images/models/detail/eqe-sedan/exterior.avif",
+          "title": {
+            "az": "EQE-nin eksteryeri.",
+            "en": "The exterior equipment of the EQE."
+          },
+          "text": {
+            "az": "İlk baxışdan aydın olur ki, EQE yeni erani təcəssüm etdirir. Əsas xarakterik xüsusiyyət təsirli one-bow dizaynıdır – arxadan önə doğru axan kupe tipli çiyin xətti önə tipik EQ elementlərini, o cümlədən üçölçülü Mercedes-Benz ulduz naxışını vurğulayır.",
+            "en": "Even at first glance, it is clear that the EQE embodies a new era. The main characteristic feature is the striking one-bow design – a coupé-like shoulder line that flows sweepingly from the rear to the front, emphasising typical EQ features such as the three-dimensional Mercedes-Benz star pattern on the front."
+          }
+        },
+        "interior": {
+          "image": "/images/models/detail/eqe-sedan/interior.avif",
+          "title": {
+            "az": "EQE-nin interyeri.",
+            "en": "The interior equipment of the EQE."
+          },
+          "text": {
+            "az": "İçəri keçin və rahatlığı hiss edin: tam elektrik sürücü sistemi daha geniş interyer üçün yer yaradır və ən yüksək tələblərə cavab verir. Yüksək keyfiyyətli materiallar və əla işçiliyə əlavə olaraq, Burmester® surround səs sistemi kimi avadanlıq elementləri yeni standartlar qoyur.",
+            "en": "Get in and feel good: the fully electric drive creates space for a more spacious interior and meets the highest demands. In addition to high-quality materials and excellent workmanship, equipment highlights such as the Burmester® surround sound system set new standards."
+          }
+        },
+        "equipmentTitle": {
+          "az": "EQE-nin texnologiya əsas məqamları.",
+          "en": "The technology highlights of the EQE."
+        },
+        "equipment": [
+          {
+            "id": "mbux-assistant",
+            "image": "/images/models/detail/eqe-sedan/eq-mbux.avif",
+            "title": { "az": "MBUX İnteryer Assistenti", "en": "MBUX Interior Assistant" },
+            "text": {
+              "az": "İstəyə bağlı MBUX İnteryer Assistenti hərəkətlərinizi şərh edir və diqqətlə cavab verir. Məsələn, oxu işığı toxunmadan yandırıla və söndürülə bilər. Panoram dam düyməyə basmadan açılıб bağlanır.",
+              "en": "The optionally available MBUX Interior Assistant interprets your movements and reacts attentively. For example, the reading light can be switched on and off without touching it. The panoramic roof also opens and closes without you having to operate a button."
+            }
+          },
+          {
+            "id": "rear-axle-steering",
+            "image": "/images/models/detail/eqe-sedan/eq-steering.avif",
+            "title": { "az": "Arxa ox sükanı", "en": "Rear axle steering" },
+            "text": {
+              "az": "İstiqaməti təyin edin: tam elektrik EQE-nin arxa ox sükanı əla sabitlik və çevik sürüş dinamikası təmin edir. 10°-yə qədər iki addımda park edin, dönün və qüsursuz balansda sürün.",
+              "en": "Set the direction: the rear axle steering of the all-electric EQE ensures excellent stability and agile driving dynamics. In two steps with up to 10° you park, turn and drive in flawless balance."
+            }
+          },
+          {
+            "id": "distronic",
+            "image": "/images/models/detail/eqe-sedan/eq-distronic.avif",
+            "title": { "az": "Aktiv Məsafə Köməkçisi DISTRONIC", "en": "Active Distance Assist DISTRONIC" },
+            "text": {
+              "az": "Aktiv Məsafə Köməkçisi DISTRONIC yalnız sürəti və məsafəni idarə etmir. Həmçinin avtomobil sürətini maksimum icazə verilən həddə və marşrut xüsusiyyətlərinə uyğun qabaqcadan tənzimləyir.",
+              "en": "Active Distance Assist DISTRONIC not only controls the speed and distance. It also adjusts the vehicle speed to maximum permissible speeds and route features in an anticipatory manner."
+            }
+          },
+          {
+            "id": "energy-package",
+            "image": "/images/models/detail/eqe-sedan/eq-energy.avif",
+            "title": { "az": "EQE Energy Package", "en": "EQE Energy Package" },
+            "text": {
+              "az": "Şəhər, ölkə, elektrik – WLTP-yə görə 660 km-ə qədər tam elektrik yürüş məsafəsi və başlanğıcdan tam moment ilə. Yüksək gərginlikli batareyalar 170 kVt-a qədər şarj imkanı verir.",
+              "en": "City, country, electric – with an all-electric range of up to 660 kilometres (according to WLTP) and full torque right from the start. The high-voltage batteries allow charging with up to 170 kW."
+            }
+          }
+        ],
+        "amg": {
+          "image": "/images/models/detail/eqe-sedan/amg.avif",
+          "variants": [
+            { "id": "amg-eqe43", "name": "Mercedes-AMG EQE 43 4MATIC" },
+            { "id": "amg-eqe53", "name": "Mercedes-AMG EQE 53 4MATIC+" }
+          ]
+        },
+        "contactImage": "/images/models/detail/eqe-sedan/contact.avif"
+      }
     },
     {
       "id": "eqs-sedan",
