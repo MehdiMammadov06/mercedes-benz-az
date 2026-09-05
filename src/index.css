@@ -101,3 +101,39 @@
 @utility text-shadow-hero {
   text-shadow: 0 2px 24px rgb(0 0 0 / 45%);
 }
+
+/* ---------------------------------------------------------------
+   İki uclu qiymət slideri (StockFilters → PriceRangeField).
+   İki input[type=range] üst-üstə durur. Zolaq (track) klikləri
+   ötürməsin deyə pointer-events yalnız thumb-da aktivdir.
+   --------------------------------------------------------------- */
+.range-thumb {
+  pointer-events: none;
+}
+.range-thumb::-webkit-slider-thumb {
+  pointer-events: auto;
+  appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 2px solid var(--color-mb-blue);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 25%);
+  cursor: pointer;
+}
+.range-thumb::-moz-range-thumb {
+  pointer-events: auto;
+  height: 18px;
+  width: 18px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 2px solid var(--color-mb-blue);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 25%);
+  cursor: pointer;
+}
+.range-thumb::-webkit-slider-runnable-track {
+  background: transparent;
+}
+.range-thumb::-moz-range-track {
+  background: transparent;
+}

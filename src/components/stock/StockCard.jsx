@@ -18,14 +18,14 @@ import {
 //        qiymət (endirimli + üstündən xətt çəkilmiş köhnə qiymət), filial
 //
 // Şəkil yoxdursa (public/images/... hələ atılmayıbsa) boz fon + placeholder qalır.
-// Karta klikləmə → model detalı səhifəsinə (növbəti mərhələdə "ayrı pəncərə").
+// Karta və ya ada klikləmə → tək avtomobilin detal səhifəsinə (/alis/:id).
 export default function StockCard({ vehicle }) {
   const { t, lang } = useLanguage();
   const c = t.stock.card;
   const [fav, setFav] = useState(false);
 
   const {
-    modelId,
+    id,
     model,
     variant,
     year,
@@ -52,7 +52,7 @@ export default function StockCard({ vehicle }) {
           {model}
         </span>
 
-        <Link to={`/modeller/${modelId}`} className="block h-full w-full">
+        <Link to={`/alis/${id}`} className="block h-full w-full">
           <img
             src={image}
             alt={`Mercedes-Benz ${model} ${variant}`}
@@ -96,7 +96,11 @@ export default function StockCard({ vehicle }) {
 
       {/* --- Məzmun --- */}
       <div className="flex flex-1 flex-col p-4">
-        <h3 className="font-display text-lg text-mb-ink">Mercedes-Benz {model}</h3>
+        <h3 className="font-display text-lg text-mb-ink">
+          <Link to={`/alis/${id}`} className="transition-colors hover:text-mb-blue">
+            Mercedes-Benz {model}
+          </Link>
+        </h3>
         <p className="mt-0.5 text-sm text-mb-grey">{variant}</p>
 
         {specialOffer && (

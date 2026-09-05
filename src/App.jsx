@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx';
 import ModelDetail from './pages/ModelDetail.jsx';
 import Placeholder from './pages/Placeholder.jsx';
 import Stock from './pages/Stock.jsx';
+import StockDetail from './pages/StockDetail.jsx';
 
 export default function App() {
   return (
@@ -17,6 +18,8 @@ export default function App() {
 
         {/* Alış → Mövcud avtomobillər (stock) — real səhifə */}
         <Route path="/alis" element={<Stock />} />
+        {/* Tək avtomobilin detal səhifəsi */}
+        <Route path="/alis/:id" element={<StockDetail />} />
 
         {/* Digər menyu səhifələri — hazırlandıqca real komponentlərlə əvəz olunacaq */}
         {navLinks

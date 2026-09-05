@@ -18,7 +18,13 @@
       "specialOffer": true,
       "reserved": false,
       "branch": "AutoStar Kaukasus GmbH Azerbaijan LLC",
-      "image": "/images/models/c-class.avif"
+      "image": "/images/models/c-class.avif",
+      "power": {
+        "kw": 150,
+        "hp": 204
+      },
+      "orderNumber": "0351210000",
+      "vin": "W1K2060421000000R180000"
     },
     {
       "id": "c-220d-2025-black",
@@ -36,7 +42,13 @@
       "specialOffer": false,
       "reserved": false,
       "branch": "Mercedes Absheron Automobile Center LLC",
-      "image": "/images/models/c-class.avif"
+      "image": "/images/models/c-class.avif",
+      "power": {
+        "kw": 145,
+        "hp": 197
+      },
+      "orderNumber": "0351210167",
+      "vin": "W1K2070421000137R180007"
     },
     {
       "id": "c-300-2026-grey",
@@ -54,7 +66,13 @@
       "specialOffer": true,
       "reserved": false,
       "branch": "Mercedes Absheron Automobile Center LLC",
-      "image": "/images/models/c-class.avif"
+      "image": "/images/models/c-class.avif",
+      "power": {
+        "kw": 190,
+        "hp": 258
+      },
+      "orderNumber": "0351210334",
+      "vin": "W1K2080421000274R180014"
     },
     {
       "id": "c-200-2024-silver",
@@ -72,7 +90,13 @@
       "specialOffer": false,
       "reserved": true,
       "branch": "AutoStar Kaukasus GmbH Azerbaijan LLC",
-      "image": "/images/models/c-class.avif"
+      "image": "/images/models/c-class.avif",
+      "power": {
+        "kw": 150,
+        "hp": 204
+      },
+      "orderNumber": "0351210501",
+      "vin": "W1K2090421000411R180021"
     },
     {
       "id": "c-300e-2026-blue",
@@ -90,7 +114,13 @@
       "specialOffer": false,
       "reserved": false,
       "branch": "Mercedes Absheron Automobile Center LLC",
-      "image": "/images/models/c-class.avif"
+      "image": "/images/models/c-class.avif",
+      "power": {
+        "kw": 190,
+        "hp": 258
+      },
+      "orderNumber": "0351210668",
+      "vin": "W1K2100421000548R180028"
     },
     {
       "id": "e-350-2025-black",
@@ -108,7 +138,13 @@
       "specialOffer": true,
       "reserved": false,
       "branch": "Mercedes Absheron Automobile Center LLC",
-      "image": "/images/models/e-class.avif"
+      "image": "/images/models/e-class.avif",
+      "power": {
+        "kw": 215,
+        "hp": 292
+      },
+      "orderNumber": "0351210835",
+      "vin": "W1K2110421000685R180035"
     },
     {
       "id": "e-350-2026-black-2",
@@ -126,7 +162,13 @@
       "specialOffer": true,
       "reserved": false,
       "branch": "Mercedes Absheron Automobile Center LLC",
-      "image": "/images/models/e-class.avif"
+      "image": "/images/models/e-class.avif",
+      "power": {
+        "kw": 215,
+        "hp": 292
+      },
+      "orderNumber": "0351211002",
+      "vin": "W1K2120421000822R180042"
     },
     {
       "id": "e-350-2026-black-3",
@@ -144,7 +186,13 @@
       "specialOffer": true,
       "reserved": false,
       "branch": "Mercedes Absheron Automobile Center LLC",
-      "image": "/images/models/e-class.avif"
+      "image": "/images/models/e-class.avif",
+      "power": {
+        "kw": 215,
+        "hp": 292
+      },
+      "orderNumber": "0351211169",
+      "vin": "W1K2130421000959R180049"
     },
     {
       "id": "e-300-2025-white",
@@ -162,7 +210,13 @@
       "specialOffer": false,
       "reserved": false,
       "branch": "AutoStar Kaukasus GmbH Azerbaijan LLC",
-      "image": "/images/models/e-class.avif"
+      "image": "/images/models/e-class.avif",
+      "power": {
+        "kw": 190,
+        "hp": 258
+      },
+      "orderNumber": "0351211336",
+      "vin": "W1K2140421001096R180056"
     },
     {
       "id": "e-220d-2024-grey",
@@ -180,7 +234,13 @@
       "specialOffer": true,
       "reserved": false,
       "branch": "AutoStar Kaukasus GmbH Azerbaijan LLC",
-      "image": "/images/models/e-class.avif"
+      "image": "/images/models/e-class.avif",
+      "power": {
+        "kw": 145,
+        "hp": 197
+      },
+      "orderNumber": "0351211503",
+      "vin": "W1K2150421001233R180063"
     },
     {
       "id": "e-400-2026-blue",
@@ -198,7 +258,13 @@
       "specialOffer": false,
       "reserved": false,
       "branch": "Mercedes Absheron Automobile Center LLC",
-      "image": "/images/models/e-class.avif"
+      "image": "/images/models/e-class.avif",
+      "power": {
+        "kw": 280,
+        "hp": 381
+      },
+      "orderNumber": "0351211670",
+      "vin": "W1K2160421001370R180070"
     },
     {
       "id": "e-300-2026-silver",
@@ -216,7 +282,13 @@
       "specialOffer": true,
       "reserved": false,
       "branch": "Mercedes Absheron Automobile Center LLC",
-      "image": "/images/models/e-class.avif"
+      "image": "/images/models/e-class.avif",
+      "power": {
+        "kw": 190,
+        "hp": 258
+      },
+      "orderNumber": "0351211837",
+      "vin": "W1K2170421001507R180077"
     },
     {
       "id": "eqe-300-2025-black",
@@ -234,7 +306,13 @@
       "specialOffer": true,
       "reserved": true,
       "branch": "Mercedes Absheron Automobile Center LLC",
-      "image": "/images/models/eqe-sedan.avif"
+      "image": "/images/models/eqe-sedan.avif",
+      "power": {
+        "kw": 190,
+        "hp": 258
+      },
+      "orderNumber": "0351212004",
+      "vin": "W1K2180421001644R180084"
     },
     {
       "id": "eqe-350-2026-silver",
@@ -252,7 +330,13 @@
       "specialOffer": true,
       "reserved": false,
       "branch": "AutoStar Kaukasus GmbH Azerbaijan LLC",
-      "image": "/images/models/eqe-sedan.avif"
+      "image": "/images/models/eqe-sedan.avif",
+      "power": {
+        "kw": 215,
+        "hp": 292
+      },
+      "orderNumber": "0351212171",
+      "vin": "W1K2190421001781R180091"
     },
     {
       "id": "eqe-350-2025-grey",
@@ -270,7 +354,13 @@
       "specialOffer": false,
       "reserved": false,
       "branch": "AutoStar Kaukasus GmbH Azerbaijan LLC",
-      "image": "/images/models/eqe-sedan.avif"
+      "image": "/images/models/eqe-sedan.avif",
+      "power": {
+        "kw": 215,
+        "hp": 292
+      },
+      "orderNumber": "0351212338",
+      "vin": "W1K2200421001918R180098"
     },
     {
       "id": "eqe-300-2026-white",
@@ -288,7 +378,13 @@
       "specialOffer": false,
       "reserved": false,
       "branch": "Mercedes Absheron Automobile Center LLC",
-      "image": "/images/models/eqe-sedan.avif"
+      "image": "/images/models/eqe-sedan.avif",
+      "power": {
+        "kw": 190,
+        "hp": 258
+      },
+      "orderNumber": "0351212505",
+      "vin": "W1K2210421002055R180105"
     },
     {
       "id": "gle-450-2025-black",
@@ -306,7 +402,13 @@
       "specialOffer": true,
       "reserved": false,
       "branch": "Mercedes Absheron Automobile Center LLC",
-      "image": "/images/models/gle.avif"
+      "image": "/images/models/gle.avif",
+      "power": {
+        "kw": 280,
+        "hp": 381
+      },
+      "orderNumber": "0351212672",
+      "vin": "W1K2220421002192R180112"
     },
     {
       "id": "gle-300d-2026-white",
@@ -324,7 +426,13 @@
       "specialOffer": false,
       "reserved": false,
       "branch": "AutoStar Kaukasus GmbH Azerbaijan LLC",
-      "image": "/images/models/gle.avif"
+      "image": "/images/models/gle.avif",
+      "power": {
+        "kw": 190,
+        "hp": 258
+      },
+      "orderNumber": "0351212839",
+      "vin": "W1K2230421002329R180119"
     },
     {
       "id": "gle-400e-2026-grey",
@@ -342,7 +450,13 @@
       "specialOffer": true,
       "reserved": true,
       "branch": "Mercedes Absheron Automobile Center LLC",
-      "image": "/images/models/gle.avif"
+      "image": "/images/models/gle.avif",
+      "power": {
+        "kw": 280,
+        "hp": 381
+      },
+      "orderNumber": "0351213006",
+      "vin": "W1K2240421002466R180126"
     },
     {
       "id": "gle-450-2024-silver",
@@ -360,7 +474,59 @@
       "specialOffer": false,
       "reserved": false,
       "branch": "AutoStar Kaukasus GmbH Azerbaijan LLC",
-      "image": "/images/models/gle.avif"
+      "image": "/images/models/gle.avif",
+      "power": {
+        "kw": 280,
+        "hp": 381
+      },
+      "orderNumber": "0351213173",
+      "vin": "W1K2250421002603R180133"
     }
+  ],
+  "branches": {
+    "Mercedes Absheron Automobile Center LLC": {
+      "address": {
+        "az": "Babək prospekti 1145, AZ1025, Bakı",
+        "en": "Babek Avenue 1145, AZ1025, Baku"
+      },
+      "phone": "*5545",
+      "mapQuery": "Mercedes-Benz Absheron Automobile Center Baku",
+      "hours": {
+        "mon": "09:00–18:30",
+        "tue": "09:00–18:30",
+        "wed": "09:00–18:30",
+        "thu": "09:00–18:30",
+        "fri": "09:00–18:30",
+        "sat": "10:00–17:00",
+        "sun": "11:00–16:00"
+      }
+    },
+    "AutoStar Kaukasus GmbH Azerbaijan LLC": {
+      "address": {
+        "az": "Babək prospekti 1145, AZ1025, Bakı",
+        "en": "Babek Avenue 1145, AZ1025, Baku"
+      },
+      "phone": "*5545",
+      "mapQuery": "Mercedes-Benz AutoStar Qafqaz GmbH Baku",
+      "hours": {
+        "mon": "09:00–18:30",
+        "tue": "09:00–18:30",
+        "wed": "09:00–18:30",
+        "thu": "09:00–18:30",
+        "fri": "09:00–18:30",
+        "sat": "10:00–17:00",
+        "sun": "11:00–16:00"
+      }
+    }
+  },
+  "featureKeys": [
+    "ledHeadlamps",
+    "navigation",
+    "parkingAssist",
+    "heatedSeats",
+    "keylessGo",
+    "reversingCamera",
+    "mbux",
+    "ambientLight"
   ]
 }

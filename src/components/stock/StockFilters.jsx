@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext.jsx';
+import { formatPrice } from '../../utils/format.js';
 import { SearchIcon, ChevronDown } from '../icons/index.jsx';
 
 // Sol filtr paneli (kontrollü komponent) — orijinal Stock səhifəsindəki kimi.
@@ -76,17 +77,14 @@ export default function StockFilters({ filters, onChange, onClear, options }) {
           options={options.fuels.map((f) => ({ value: f, label: t.fuel[f] ?? f }))}
         />
 
-        {/* Qiymət aralığı */}
-        <SelectField
+        {/* Qiymət aralığı — iki uclu range slider */}
+        <PriceRangeField
           label={s.filters.priceRange}
-          value={filters.price}
-          onChange={(v) => set('price', v)}
-          anyLabel={s.any}
-          options={[
-            { value: 'under150k', label: s.priceOptions.under150k },
-            { value: '150to250k', label: s.priceOptions['150to250k'] },
-            { value: 'over250k', label: s.priceOptions.over250k },
-          ]}
+          min={options.priceBounds.min}
+          max={options.priceBounds.max}
+          valueMin={filters.priceMin === '' ? options.priceBounds.min : filters.priceMin}
+          valueMax={filters.priceMax === '' ? options.priceBounds.max : filters.priceMax}
+          onChange={(lo, hi) => onChange({ ...filters, priceMin: lo, priceMax: hi })}
         />
 
         {/* Yürüş */}
@@ -185,5 +183,73 @@ function SelectField({ label, value, onChange, options, anyLabel }) {
         <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-mb-grey" />
       </div>
     </label>
+  );
+}
+
+// İki uclu (min/max) qiymət slideri. Kənar kitabxana yoxdur — üst-üstə iki
+// input[type=range] + rəngli zolaq (CSS). Uclar bir-birini keçə bilməz.
+function PriceRangeField({ label, min, max, valueMin, valueMax, onChange }) {
+  const { lang } = useLanguage();
+  const STEP = 1000;
+
+  // min/max bərabər olarsa (bir avtomobil) sıfıra bölünmə olmasın
+  const span = max - min || 1;
+  const pctLo = ((valueMin - min) / span) * 100;
+  const pctHi = ((valueMax - min) / span) * 100;
+
+  const handleLo = (e) => {
+    const lo = Math.min(Number(e.target.value), valueMax - STEP);
+    onChange(Math.max(min, lo), valueMax);
+  };
+  const handleHi = (e) => {
+    const hi = Math.max(Number(e.target.value), valueMin + STEP);
+    onChange(valueMin, Math.min(max, hi));
+  };
+
+  return (
+    <div>
+      <span className="mb-1.5 block text-xs font-medium uppercase tracking-wide text-mb-grey">
+        {label}
+      </span>
+
+      {/* Seçilmiş aralıq mətni */}
+      <div className="mb-2 flex items-center justify-between text-xs font-medium text-mb-ink">
+        <span>{formatPrice(valueMin, lang)}</span>
+        <span>{formatPrice(valueMax, lang)}</span>
+      </div>
+
+      {/* Slider */}
+      <div className="relative h-6">
+        {/* Fon zolağı */}
+        <div className="absolute top-1/2 h-1 w-full -translate-y-1/2 rounded-full bg-mb-grey-light" />
+        {/* Seçilmiş hissə (mavi) */}
+        <div
+          className="absolute top-1/2 h-1 -translate-y-1/2 rounded-full bg-mb-blue"
+          style={{ left: `${pctLo}%`, right: `${100 - pctHi}%` }}
+        />
+        {/* Min uc */}
+        <input
+          type="range"
+          min={min}
+          max={max}
+          step={STEP}
+          value={valueMin}
+          onChange={handleLo}
+          aria-label={`${label} min`}
+          className="range-thumb absolute top-0 h-6 w-full cursor-pointer appearance-none bg-transparent"
+        />
+        {/* Max uc */}
+        <input
+          type="range"
+          min={min}
+          max={max}
+          step={STEP}
+          value={valueMax}
+          onChange={handleHi}
+          aria-label={`${label} max`}
+          className="range-thumb absolute top-0 h-6 w-full cursor-pointer appearance-none bg-transparent"
+        />
+      </div>
+    </div>
   );
 }
