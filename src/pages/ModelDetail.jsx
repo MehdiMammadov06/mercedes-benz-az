@@ -18,7 +18,7 @@ import ContactForm from '../components/model-page/ContactForm.jsx';
 // İnteryer + Avadanlıq + Mercedes-AMG + Əlaqə formu.
 export default function ModelDetail() {
   const { id } = useParams();
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const { data, isLoading, error } = useFetch('/data/models.json', { delay: 300 });
 
   const tp = t.modelPage;
@@ -78,17 +78,22 @@ export default function ModelDetail() {
 
       {/* Eksteryer */}
       {detail?.exterior?.image && (
-        <FeatureSection data={detail.exterior} copy={tp.exterior} />
+        <FeatureSection data={detail.exterior} copy={tp.exterior} lang={lang} />
       )}
 
       {/* İnteryer — şəkil sağda (reverse) */}
       {detail?.interior?.image && (
-        <FeatureSection data={detail.interior} copy={tp.interior} reverse />
+        <FeatureSection data={detail.interior} copy={tp.interior} lang={lang} reverse />
       )}
 
       {/* Avadanlıq — kart slayderi */}
       {detail?.equipment?.length > 0 && (
-        <EquipmentSlider items={detail.equipment} copy={tp.equipment} />
+        <EquipmentSlider
+          items={detail.equipment}
+          copy={tp.equipment}
+          lang={lang}
+          title={detail.equipmentTitle}
+        />
       )}
 
       {/* Mercedes-AMG */}
