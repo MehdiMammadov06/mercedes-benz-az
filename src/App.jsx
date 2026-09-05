@@ -21,6 +21,7 @@ import Innovation140 from './pages/Innovation140.jsx';
 import About from './pages/About.jsx';
 import Compliance from './pages/Compliance.jsx';
 import Reports from './pages/Reports.jsx';
+import Enquiry from './pages/Enquiry.jsx';
 
 export default function App() {
   return (
@@ -73,7 +74,8 @@ export default function App() {
         {/* Model detalı — universal şablon (A-Class tam, digərləri data əlavə edildikcə) */}
         <Route path="/modeller/:id" element={<ModelDetail />} />
 
-        <Route path="/elaqe" element={<Placeholder />} />
+        {/* Footer → Bizimlə əlaqə (General Enquiry formu) */}
+        <Route path="/elaqe" element={<Enquiry />} />
         <Route path="*" element={<Placeholder />} />
       </Routes>
     </Layout>
