@@ -33,8 +33,7 @@ export const navLinks = [
     key: 'services',
     path: '/xidmetler',
     submenu: [
-      { labelKey: 'manuals', to: '/xidmetler' },
-      { labelKey: 'bookService', to: '/xidmetler' },
+      { labelKey: 'bookService', to: '/xidmetler/servise-yazilmaq' },
       { labelKey: 'accessories', to: '/xidmetler' },
       { labelKey: 'lifestyle', to: '/xidmetler' },
       { labelKey: 'servicePackages', to: '/xidmetler' },
