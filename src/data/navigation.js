@@ -26,7 +26,7 @@ export const navLinks = [
       { labelKey: 'availableCars', to: '/alis' },
       { labelKey: 'specialOffers', to: '/teklifler' },
       { labelKey: 'showroomList', to: '/showroom' },
-      { labelKey: 'testDrive', to: '/elaqe' },
+      { labelKey: 'testDrive', to: '/test-drive' },
     ],
   },
   {

@@ -162,7 +162,7 @@ export const translations = {
         links: [
           { label: 'Mövcud təkliflər', to: '/alis' },
           { label: 'Showroom siyahısı', to: '/showroom' },
-          { label: 'Test drayva yazılmaq', to: '/elaqe' },
+          { label: 'Test drayva yazılmaq', to: '/test-drive' },
         ],
       },
       owners: {
@@ -366,6 +366,10 @@ export const translations = {
       noResults: 'Axtarışa uyğun diler tapılmadı.',
       mapPlaceholder: 'Xəritə',
     },
+    testDrive: {
+      title: 'Test drive-a yazıl',
+      contactNumbers: 'Əlaqə nömrələri',
+    },
     colours: {
       'polar-white': 'Polar White (qeyri-metallik)',
       'obsidian-black': 'Obsidian Black (metallik)',
@@ -533,7 +537,7 @@ export const translations = {
         links: [
           { label: 'Current offers', to: '/alis' },
           { label: 'Showroom list', to: '/showroom' },
-          { label: 'Book a test drive', to: '/elaqe' },
+          { label: 'Book a test drive', to: '/test-drive' },
         ],
       },
       owners: {
@@ -736,6 +740,10 @@ export const translations = {
       getDirections: 'Open in maps',
       noResults: 'No dealers match your search.',
       mapPlaceholder: 'Map',
+    },
+    testDrive: {
+      title: 'Book a test drive',
+      contactNumbers: 'Contact Numbers',
     },
     colours: {
       'polar-white': 'Polar White (non-metallic)',
