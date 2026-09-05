@@ -347,6 +347,10 @@ export const translations = {
         ambientLight: 'Ambient işıqlandırma',
       },
     },
+    offers: {
+      title: 'Xüsusi təkliflər',
+      subtitle: 'Seçilmiş Mercedes-Benz modelləri üçün cari kampaniyalar və xüsusi qiymətlər.',
+    },
     colours: {
       'polar-white': 'Polar White (qeyri-metallik)',
       'obsidian-black': 'Obsidian Black (metallik)',
@@ -698,6 +702,10 @@ export const translations = {
         mbux: 'MBUX multimedia',
         ambientLight: 'Ambient lighting',
       },
+    },
+    offers: {
+      title: 'Special offers',
+      subtitle: 'Current campaigns and special prices for selected Mercedes-Benz models.',
     },
     colours: {
       'polar-white': 'Polar White (non-metallic)',

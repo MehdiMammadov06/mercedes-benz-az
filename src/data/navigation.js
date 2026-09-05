@@ -24,7 +24,7 @@ export const navLinks = [
     path: '/alis',
     submenu: [
       { labelKey: 'availableCars', to: '/alis' },
-      { labelKey: 'specialOffers', to: '/alis' },
+      { labelKey: 'specialOffers', to: '/teklifler' },
       { labelKey: 'showroomList', to: '/elaqe' },
       { labelKey: 'testDrive', to: '/elaqe' },
     ],

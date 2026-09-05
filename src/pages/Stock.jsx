@@ -44,11 +44,18 @@ export default function Stock() {
 
   const vehicles = useMemo(() => data?.vehicles ?? [], [data]);
 
-  // URL-də ?category=... varsa (menyudan gələndə) kuzov tipini ilkin seç
+  // URL query-dən ilkin filtrlər:
+  //   ?category=suv  → kuzov tipi (menyudan gələndə)
+  //   ?model=E-Class → model (Xüsusi təkliflər kartlarından gələndə)
   useEffect(() => {
     const category = searchParams.get('category');
-    if (category) {
-      setFilters((prev) => ({ ...prev, bodyStyle: category }));
+    const model = searchParams.get('model');
+    if (category || model) {
+      setFilters((prev) => ({
+        ...prev,
+        ...(category ? { bodyStyle: category } : {}),
+        ...(model ? { model } : {}),
+      }));
     }
   }, [searchParams]);
 
