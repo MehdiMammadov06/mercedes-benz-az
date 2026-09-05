@@ -20,6 +20,7 @@ import MaybachBrand from './pages/MaybachBrand.jsx';
 import Innovation140 from './pages/Innovation140.jsx';
 import About from './pages/About.jsx';
 import Compliance from './pages/Compliance.jsx';
+import Reports from './pages/Reports.jsx';
 
 export default function App() {
   return (
@@ -59,6 +60,8 @@ export default function App() {
         <Route path="/haqqimizda" element={<About />} />
         {/* Haqqımızda → Compliance */}
         <Route path="/haqqimizda/compliance" element={<Compliance />} />
+        {/* Haqqımızda → Hesabatlar */}
+        <Route path="/haqqimizda/hesabatlar" element={<Reports />} />
 
         {/* Digər menyu səhifələri — hazırlandıqca real komponentlərlə əvəz olunacaq */}
         {navLinks
