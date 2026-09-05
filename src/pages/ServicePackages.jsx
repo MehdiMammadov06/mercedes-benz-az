@@ -42,7 +42,7 @@ export default function ServicePackages() {
         <div className="max-w-4xl">
           <p className="text-sm uppercase tracking-widest text-mb-grey">{sp.intro.eyebrow}</p>
           <h2 className="mt-3 font-display text-2xl text-mb-ink sm:text-3xl">{sp.intro.title}</h2>
-          <p className="mt-5 text-sm leading-relaxed text-mb-grey sm:text-base">{sp.intro.text}</p>
+          <p className="mt-5 max-w-3xl text-sm leading-relaxed text-mb-ink/80 sm:text-base">{sp.intro.text}</p>
         </div>
       </section>
 

@@ -171,7 +171,7 @@ export const translations = {
           { label: 'Aksessuarlar', to: '/xidmetler/aksesuarlar' },
           { label: 'Həyat tərz kolleksiyası', to: '/xidmetler/kolleksiya' },
           { label: 'Servis paketləri', to: '/xidmetler/servis-paketleri' },
-          { label: 'Orijinal hissələr', to: '/xidmetler' },
+          { label: 'Orijinal hissələr', to: '/xidmetler/orijinal-hisseler' },
         ],
       },
       legal: [
@@ -453,6 +453,31 @@ export const translations = {
         'Autostar Kaukasus | Babək pr. 1145 | *5545',
       ],
     },
+    genuineParts: {
+      hero: {
+        title: 'Mercedes-Benz ehtiyat hissələri.',
+        text: 'Beləliklə, sizin Mercedes-Benz orijinal Mercedes-Benz olaraq qalsın.',
+        cta: 'Müraciət edin',
+      },
+      intro: {
+        eyebrow: 'Ehtiyat hissələri portfelimiz',
+        title: 'Hər Mercedes-Benz üçün uyğun hissə.',
+        text: 'İstər köhnə Mercedes modeli üçün əvəzedici hissəyə, istərsə də yeni avtomobil üçün uyğun xidmət hissəsinə ehtiyacınız olmasından asılı olmayaraq, Mercedes-Benz-in hərtərəfli ehtiyat hissələri portfelində hər bir avtomobil və hər büdcə üçün fərdi uyğun seçim var. Əlbəttə ki, bütün hissə xətlərimizlə hər bir hissənin ciddi spesifikasiyalarımıza cavab verdiyinə əmin ola bilərsiniz.',
+      },
+      genuine: {
+        title: 'Mercedes-Benz orijinal hissələri',
+        text: 'Baxım və ya köhnəlmiş hissələrin dəyişdirilməsi zamanı Mercedes-Benz-də yalnız sertifikatlı yeni hissələrdən istifadə etmək istərdinizmi? O zaman sizə orijinal Mercedes-Benz hissələrini istifadə etməyi tövsiyə edirik. Onlar avtomobil istehsalçısı kimi Mercedes-Benz-in bütün nou-haularını birləşdirir, sizin avtomobiliniz üçün xüsusi olaraq hazırlanmış və avtomobilinizin digər komponentlərinə optimal şəkildə uyğunlaşdırılmışdır.\n\nBir baxışda üstünlükləriniz:\n- Əla keyfiyyət, dəqiqlik və davamlılıq\n- Yüksək təhlükəsizlik və etibarlılıq üçün ciddi Mercedes-Benz spesifikasiyasına uyğun olaraq sınaqdan keçirilmiş və yoxlanılmışdır\n- Müvafiq avtomobil üçün xüsusi olaraq hazırlanmışdır\n- Dünyada sürətli əlçatanlıq\n\nMercedes-Benz Orijinal Hissələri haqqında əlavə məlumat üçün yerli Mercedes-Benz Xidmət Tərəfdaşınızla əlaqə saxlayın.',
+      },
+      reman: {
+        title: 'Mercedes-Benz Orijinal Yenidən Hazırlanmış Ehtiyat hissələri',
+        text: 'Mercedes-Benz Orijinal Yenidən İstehsal edilmiş Hissələr seriyası bütün ən populyar avtomobil sinifləri üçün - başlanğıc mühərrikindən və sükandan tutmuş mühərrik və elektrik ötürücü sistemlərə qədər geniş çeşiddə ehtiyat hissələri təklif edir. Hər bir hissə ciddi Mercedes-Benz standartlarına uyğun yenidən istehsal, yoxlama və sınaqdan keçir. Nəticə yeni hissənin keyfiyyəti ilə sərfəli qiymətə Orijinal Yenidən İstehsal edilmiş Hissələrdir.\n\nBir baxışda üstünlükləriniz:\n- Mercedes-Benz keyfiyyət standartlarına uyğun yeni hissənin keyfiyyəti\n- Yenidən istehsal sayəsində cəlbedici qiymət-performans nisbəti\n- Orijinal hissələrə 24 ay zəmanət\n- Etibarlı mövcudluq və qısa dəyişdirmə vaxtları',
+      },
+      categories: {
+        eyebrow: 'Orijinal hissələr v. Qeyri-orijinal hissələr',
+        title: 'Orijinal görünür: saxta hissələrin olmasına diqqət edin.',
+        text: 'Mercedes-Benz xidmət partnyorunuz sizi saxta məhsullardan qoruyur. Saxta hissələr çox vaxt aldadıcı dərəcədə orijinal görünür, hətta ekspertlər belə onları ilk baxışdan asanlıqla müəyyən edə bilmirlər.',
+      },
+    },
     bookService: {
       title: 'Servisə yazılmaq',
       selectBranch: 'Filialı seç',
@@ -656,7 +681,7 @@ export const translations = {
           { label: 'Accessories', to: '/xidmetler/aksesuarlar' },
           { label: 'Lifestyle collection', to: '/xidmetler/kolleksiya' },
           { label: 'Service packages', to: '/xidmetler/servis-paketleri' },
-          { label: 'Genuine parts', to: '/xidmetler' },
+          { label: 'Genuine parts', to: '/xidmetler/orijinal-hisseler' },
         ],
       },
       legal: [
@@ -937,6 +962,31 @@ export const translations = {
         'Absheron Automobile Center | Heydar Aliyev Ave 191 | *8885',
         'Autostar Kaukasus | Babek Ave 1145 | *5545',
       ],
+    },
+    genuineParts: {
+      hero: {
+        title: 'Mercedes-Benz spare parts.',
+        text: 'So that your Mercedes-Benz remains a genuine Mercedes-Benz.',
+        cta: 'Make an enquiry',
+      },
+      intro: {
+        eyebrow: 'Our spare parts portfolio',
+        title: 'The right part for every Mercedes-Benz.',
+        text: 'Whether you need a replacement part for an older Mercedes model or a matching service part for a new vehicle, the comprehensive Mercedes-Benz spare parts portfolio offers an individually suitable choice for every vehicle and every budget. Of course, with all our part lines you can be sure that each part meets our strict specifications.',
+      },
+      genuine: {
+        title: 'Mercedes-Benz Genuine Parts',
+        text: 'Would you like to use only certified new parts at Mercedes-Benz during maintenance or when replacing worn parts? Then we recommend using Genuine Mercedes-Benz Parts. As the vehicle manufacturer, they combine all of Mercedes-Benz’s know-how, are developed specifically for your vehicle and are optimally matched to the other components of your car.\n\nYour advantages at a glance:\n- Excellent quality, precision and durability\n- Tested and inspected to strict Mercedes-Benz specifications for high safety and reliability\n- Developed specifically for the respective vehicle\n- Fast availability worldwide\n\nFor more information about Mercedes-Benz Genuine Parts, contact your local Mercedes-Benz Service Partner.',
+      },
+      reman: {
+        title: 'Mercedes-Benz Genuine Remanufactured Parts',
+        text: 'The Mercedes-Benz Genuine Remanufactured Parts range offers a wide selection of spare parts for all the most popular vehicle classes — from the starter motor and steering to engine and electric drive systems. Each part is remanufactured, inspected and tested to strict Mercedes-Benz standards. The result is Genuine Remanufactured Parts with the quality of a new part at an attractive price.\n\nYour advantages at a glance:\n- New-part quality in line with Mercedes-Benz quality standards\n- Attractive price-performance ratio thanks to remanufacturing\n- 24-month warranty on genuine parts\n- Reliable availability and short replacement times',
+      },
+      categories: {
+        eyebrow: 'Genuine parts vs. Non-genuine parts',
+        title: 'It looks genuine: watch out for counterfeit parts.',
+        text: 'Your Mercedes-Benz service partner protects you from counterfeit products. Counterfeit parts often look deceptively genuine — even experts cannot easily identify them at first glance.',
+      },
     },
     bookService: {
       title: 'Book A Service',

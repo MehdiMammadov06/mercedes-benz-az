@@ -11,7 +11,7 @@ function getPerView(width) {
   return 1;
 }
 
-export default function CategorySlider({ eyebrow, title, items, to = '/elaqe' }) {
+export default function CategorySlider({ eyebrow, title, text, items, to = '/elaqe' }) {
   const { lang } = useLanguage();
   const [perView, setPerView] = useState(() =>
     typeof window !== 'undefined' ? getPerView(window.innerWidth) : 4
@@ -37,9 +37,10 @@ export default function CategorySlider({ eyebrow, title, items, to = '/elaqe' })
 
   return (
     <section className="container-site py-16 sm:py-20">
-      <div className="mb-10 max-w-2xl">
+      <div className="mb-10 max-w-3xl">
         {eyebrow && <p className="text-sm uppercase tracking-widest text-mb-grey">{eyebrow}</p>}
         <h2 className="mt-3 font-display text-2xl text-mb-ink sm:text-3xl">{title}</h2>
+        {text && <p className="mt-4 text-sm leading-relaxed text-mb-grey sm:text-base">{text}</p>}
       </div>
 
       <div className="relative">
