@@ -9,6 +9,7 @@ import Stock from './pages/Stock.jsx';
 import StockDetail from './pages/StockDetail.jsx';
 import Offers from './pages/Offers.jsx';
 import Showroom from './pages/Showroom.jsx';
+import TestDrive from './pages/TestDrive.jsx';
 
 export default function App() {
   return (
@@ -26,6 +27,8 @@ export default function App() {
         <Route path="/teklifler" element={<Offers />} />
         {/* Alış → Showroom siyahısı (Dealer Locator) */}
         <Route path="/showroom" element={<Showroom />} />
+        {/* Alış → Test drive */}
+        <Route path="/test-drive" element={<TestDrive />} />
 
         {/* Digər menyu səhifələri — hazırlandıqca real komponentlərlə əvəz olunacaq */}
         {navLinks

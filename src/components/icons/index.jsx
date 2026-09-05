@@ -321,6 +321,14 @@ export function ChevronDown({ className = 'h-4 w-4' }) {
   );
 }
 
+export function PhoneIcon({ className = 'h-4 w-4' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M4.5 5.5c0-.6.4-1 1-1h2.6c.5 0 .9.3 1 .8l.8 3c.1.4 0 .8-.3 1.1L8 10.8a12 12 0 0 0 5.2 5.2l1.4-1.6c.3-.3.7-.4 1.1-.3l3 .8c.5.1.8.5.8 1V18c0 .6-.4 1-1 1A14.5 14.5 0 0 1 4.5 5.5z" />
+    </svg>
+  );
+}
+
 export function GlobeIcon({ className = 'h-4 w-4' }) {
   return (
     <svg
