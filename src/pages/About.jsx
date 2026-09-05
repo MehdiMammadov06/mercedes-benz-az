@@ -1,10 +1,11 @@
 import { useLanguage } from '../context/LanguageContext.jsx';
+import { useLanguage } from '../context/LanguageContext.jsx';
 import { aboutValues } from '../data/about.js';
 import Button from '../components/ui/Button.jsx';
 
 // "Haqqımızda → Şirkət haqqında" səhifəsi (/haqqimizda).
 // Hero (əyri yol şəkli + xoş gəldin başlığı) → intro (3 paraqraf) →
-// dəyər kartları (satış / xidmət / hissələr) → əlaqə CTA-sı.
+// dəyər kartları (satış / xidmət / hissələr).
 // Mətnlər translations.js-dəki `aboutPage` blokundan (AZ/EN).
 export default function About() {
   const { t, lang } = useLanguage();
@@ -74,23 +75,6 @@ export default function About() {
               </div>
             </article>
           ))}
-        </div>
-      </section>
-
-      {/* Əlaqə CTA-sı */}
-      <section className="bg-mb-silver">
-        <div className="container-site py-16 text-center sm:py-20">
-          <h2 className="mx-auto max-w-2xl font-display text-2xl text-mb-ink sm:text-3xl">
-            {a.cta.title}
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-mb-grey sm:text-base">
-            {a.cta.text}
-          </p>
-          <div className="mt-8">
-            <Button to="/elaqe" variant="primary" size="lg">
-              {a.cta.button}
-            </Button>
-          </div>
         </div>
       </section>
     </div>

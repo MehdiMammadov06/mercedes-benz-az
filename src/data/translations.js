@@ -89,11 +89,21 @@ export const translations = {
         eyebrow: 'Dəyərlərimiz',
         title: 'Bizi fərqləndirən nədir',
       },
-      cta: {
-        title: 'Sizinlə əlaqə saxlamaqdan məmnun olarıq',
-        text: 'Yeni Mercedes-Benz avtomobili, texniki xidmət və ya orijinal ehtiyat hissələri ilə bağlı suallarınız üçün bizimlə əlaqə saxlayın.',
-        button: 'Müraciət edin',
-      },
+    },
+    compliance: {
+      title: 'Compliance',
+      intro: 'Mercedes-Benz markasını təmsil edən şirkət kimi biz qlobal məsuliyyət daşıyırıq. Bunun nəticəsi olaraq biz BMT-nin Global Compact prinsiplərinə uyğun fəaliyyət göstəririk:',
+      principles: [
+        'İnsan hüquqlarının qorunması',
+        'İş prosesində fundamental hüquqların qorunması, xüsusən də əmək münasibətlərindən öncə və onlar qüvvədə olduğu zamanı diskriminasiyanın, uşaq əməyinin və məcburi əməyin qarşısının alınması',
+        'Davamlı olaraq ətraf mühitin qorunması',
+        'Korrupsiyaya qarşı mübarizə',
+      ],
+      p1: 'Biz korrupsiyaya qarşı mübarizə aparmaq üçün bazardakı nüfuzumuzdan istifadə etməyə çalışırıq. Biz əminik ki, korrupsiyaya qarşı mübarizə bizim nüfuzumuzu gücləndirir və bizə davamlı iqtisadi müvəffəqiyyətə nail olmağa kömək edir.',
+      p2: 'Biz rüşvət almırıq və vermirik. Biz qanunsuz bizneslə məşğul olmuruq. Biz yalnız müqavilələri ədalətli və hüquqi şəkildə qazanmaq istəyirik. Əməkdaşlarımız və ya iş ortaqları tərəfindən qeyri-etik və ya korrupsiyalı davranışlara dözmürük və bunun əleyhinə ölçü götürürük. Korrupsiyaya əsaslanan qərarlar əxlaqsızdır, rəqabəti pozur, şirkətin aktivlərinə və nüfuzuna zərbə vurur.',
+      p3: 'Bizim bu mübarizədə müştərilərimizin dəstəyinə ehtiyacımız var. Mercedes-Benz markasını təmsil edən hər hansı bir əməkdaşın fəaliyyətində qeyri-etik və ya korrupsiyalı davranış müşahidə etdikdə {email} e-mail ünvanına məktub göndərməyiniz və ya {phone} telefon nömrəsi ilə əlaqə saxlamağınız xahiş olunur. Şirkət tərəfindən məktubu göndərən şəxsin anonimliyinə zəmanət verilir.',
+      email: 'compliance@autocapital.az',
+      phone: '+994 50 289 09 81',
     },
     promo: {
       title: 'Mercedes-Benz dünyasını kəşf edin',
@@ -735,11 +745,21 @@ export const translations = {
         eyebrow: 'Our values',
         title: 'What sets us apart',
       },
-      cta: {
-        title: 'We would be glad to hear from you',
-        text: 'Contact us with any questions about a new Mercedes-Benz vehicle, technical service or genuine spare parts.',
-        button: 'Contact us',
-      },
+    },
+    compliance: {
+      title: 'Compliance',
+      intro: 'As a company representing the Mercedes-Benz brand, we carry global responsibility. As a result, we act in line with the principles of the UN Global Compact:',
+      principles: [
+        'Protection of human rights',
+        'Protection of fundamental rights at work, in particular preventing discrimination, child labour and forced labour before and during employment relationships',
+        'Continuous protection of the environment',
+        'The fight against corruption',
+      ],
+      p1: 'We seek to use our standing in the market to fight corruption. We are convinced that fighting corruption strengthens our reputation and helps us achieve sustainable economic success.',
+      p2: 'We neither take nor give bribes. We do not engage in illegal business. We want to win contracts only in a fair and lawful manner. We do not tolerate unethical or corrupt behaviour by our employees or business partners and take action against it. Decisions based on corruption are immoral, distort competition and damage the company’s assets and reputation.',
+      p3: 'In this fight we need the support of our customers. If you observe unethical or corrupt behaviour in the activity of any employee representing the Mercedes-Benz brand, please send a message to {email} or contact us on {phone}. The company guarantees the anonymity of the person sending the message.',
+      email: 'compliance@autocapital.az',
+      phone: '+994 50 289 09 81',
     },
     promo: {
       title: 'Discover the world of Mercedes-Benz',
