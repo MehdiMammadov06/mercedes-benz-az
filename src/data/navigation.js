@@ -37,7 +37,7 @@ export const navLinks = [
       { labelKey: 'accessories', to: '/xidmetler/aksesuarlar' },
       { labelKey: 'lifestyle', to: '/xidmetler/kolleksiya' },
       { labelKey: 'servicePackages', to: '/xidmetler/servis-paketleri' },
-      { labelKey: 'genuineParts', to: '/xidmetler' },
+      { labelKey: 'genuineParts', to: '/xidmetler/orijinal-hisseler' },
     ],
   },
   {
