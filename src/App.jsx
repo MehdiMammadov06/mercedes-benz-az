@@ -16,6 +16,7 @@ import Collection from './pages/Collection.jsx';
 import ServicePackages from './pages/ServicePackages.jsx';
 import GenuineParts from './pages/GenuineParts.jsx';
 import AmgBrand from './pages/AmgBrand.jsx';
+import MaybachBrand from './pages/MaybachBrand.jsx';
 
 export default function App() {
   return (
@@ -47,6 +48,8 @@ export default function App() {
         <Route path="/xidmetler/orijinal-hisseler" element={<GenuineParts />} />
         {/* Bizim brendlərimiz → Mercedes-AMG */}
         <Route path="/brendler/mercedes-amg" element={<AmgBrand />} />
+        {/* Bizim brendlərimiz → Mercedes-Maybach */}
+        <Route path="/brendler/mercedes-maybach" element={<MaybachBrand />} />
 
         {/* Digər menyu səhifələri — hazırlandıqca real komponentlərlə əvəz olunacaq */}
         {navLinks
