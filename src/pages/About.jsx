@@ -1,5 +1,4 @@
 import { useLanguage } from '../context/LanguageContext.jsx';
-import { useLanguage } from '../context/LanguageContext.jsx';
 import { aboutValues } from '../data/about.js';
 import Button from '../components/ui/Button.jsx';
 
