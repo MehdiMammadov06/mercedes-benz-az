@@ -9,6 +9,9 @@
 //
 // cta növü: "explore" | "informed" | "register"  — düymə mətnini seçir
 // (translations.js-dəki spotlight.cta blokundan, o da dilə görə dəyişir).
+//
+// `to` — karta/düyməyə klikləyəndə gedilən ünvan. Modellə bağlı kampaniyalar
+// uyğun model detal səhifəsinə, ümumi olanlar isə uyğun bölməyə yönəlir.
 
 export const spotlightItems = [
   {
@@ -23,6 +26,7 @@ export const spotlightItems = [
     },
     image: '/images/spotlight/s-class-presentation.avif',
     cta: 'explore',
+    to: '/teklifler',
   },
   {
     id: 'electric-gla',
@@ -33,6 +37,7 @@ export const spotlightItems = [
     },
     image: '/images/spotlight/electric-gla.avif',
     cta: 'informed',
+    to: '/modeller/gla',
   },
   {
     id: 'all-new-gla',
@@ -43,6 +48,7 @@ export const spotlightItems = [
     },
     image: '/images/spotlight/all-new-gla.avif',
     cta: 'informed',
+    to: '/modeller/gla',
   },
   {
     id: 'maybach-gls',
@@ -56,6 +62,7 @@ export const spotlightItems = [
     },
     image: '/images/spotlight/maybach-gls1.avif',
     cta: 'explore',
+    to: '/modeller/maybach-gls',
   },
   {
     id: 'amg-gt-4door',
@@ -66,6 +73,7 @@ export const spotlightItems = [
     },
     image: '/images/spotlight/amg-gt-4door1.avif',
     cta: 'register',
+    to: '/modeller/amg-gt-4door',
   },
   {
     id: 'electric-c-class',
@@ -76,6 +84,7 @@ export const spotlightItems = [
     },
     image: '/images/spotlight/electric-c-class.avif',
     cta: 'register',
+    to: '/modeller/c-class-electric',
   },
   {
     id: 'eqs',
@@ -86,6 +95,7 @@ export const spotlightItems = [
     },
     image: '/images/spotlight/eqs1.avif',
     cta: 'explore',
+    to: '/modeller/eqs-sedan',
   },
   {
     id: 'gle-silhouettes',
@@ -99,6 +109,7 @@ export const spotlightItems = [
     },
     image: '/images/spotlight/gle-silhouettes.avif',
     cta: 'explore',
+    to: '/modeller/gle',
   },
   {
     id: 'electric-vle',
@@ -109,6 +120,7 @@ export const spotlightItems = [
     },
     image: '/images/spotlight/electric-vle.avif',
     cta: 'explore',
+    to: '/modeller/v-class',
   },
   {
     id: 's-class-luxury',
@@ -122,6 +134,7 @@ export const spotlightItems = [
     },
     image: '/images/spotlight/s-class-luxury.avif',
     cta: 'explore',
+    to: '/teklifler',
   },
   {
     id: '140-years',
@@ -135,6 +148,7 @@ export const spotlightItems = [
     },
     image: '/images/spotlight/140-years.avif',
     cta: 'explore',
+    to: '/brendler',
   },
   {
     id: 'cla-car-of-the-year',
@@ -148,6 +162,7 @@ export const spotlightItems = [
     },
     image: '/images/spotlight/cla-car-of-the-year.avif',
     cta: 'explore',
+    to: '/modeller/cla-coupe',
   },
   {
     id: 'concept-cars',
@@ -155,6 +170,7 @@ export const spotlightItems = [
     text: { az: 'Gələcəyə xoş gəlmisiniz.', en: 'Welcome to the future.' },
     image: '/images/spotlight/concept-cars.avif',
     cta: 'explore',
+    to: '/brendler',
   },
   {
     id: 'lead-in-intelligence',
@@ -165,6 +181,7 @@ export const spotlightItems = [
     },
     image: '/images/spotlight/lead-in-intelligence.avif',
     cta: 'explore',
+    to: '/brendler',
   },
   {
     id: 'manufaktur',
@@ -175,6 +192,7 @@ export const spotlightItems = [
     },
     image: '/images/spotlight/manufaktur.avif',
     cta: 'explore',
+    to: '/brendler',
   },
   {
     id: 'defining-class',
@@ -182,6 +200,7 @@ export const spotlightItems = [
     text: { az: '1886-cı ildən bəri.', en: 'Since 1886.' },
     image: '/images/spotlight/defining-class.avif',
     cta: 'explore',
+    to: '/haqqimizda',
   },
   {
     id: 'eqe-suv',
@@ -189,6 +208,7 @@ export const spotlightItems = [
     text: { az: 'EQE SUV.', en: 'EQE SUV.' },
     image: '/images/spotlight/eqe-suv.avif',
     cta: 'explore',
+    to: '/modeller/eqe-suv',
   },
   {
     id: 'dolby-atmos',
@@ -199,6 +219,7 @@ export const spotlightItems = [
     },
     image: '/images/spotlight/dolby-atmos.avif',
     cta: 'explore',
+    to: '/brendler',
   },
   {
     id: 'night-series',
@@ -206,6 +227,7 @@ export const spotlightItems = [
     text: { az: 'Zirvədən o tərəfə xoş gəlmisiniz.', en: 'Welcome to Beyond.' },
     image: '/images/spotlight/night-series.avif',
     cta: 'explore',
+    to: '/brendler',
   },
   {
     id: 'design-concept',
@@ -213,5 +235,6 @@ export const spotlightItems = [
     text: { az: 'Gələcəyə xoş gəlmisiniz.', en: 'Welcome to the future.' },
     image: '/images/spotlight/design-concept.avif',
     cta: 'explore',
+    to: '/brendler',
   },
 ];

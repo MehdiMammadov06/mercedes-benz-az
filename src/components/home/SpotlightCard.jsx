@@ -1,17 +1,23 @@
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext.jsx';
 
 // "In the Spotlight" bölməsindəki tək kart.
 // Portret formalı, tam şəkil + tünd overlay + başlıq/mətn/düymə.
 // Mouse gələndə (group-hover) mətn və düymə yuxarı qalxır.
+// Bütün kart LİNK-dir — klikləyəndə item.to ünvanına aparır.
 export default function SpotlightCard({ item }) {
   const { t, lang } = useLanguage();
   const ctaLabel = t.spotlight.cta[item.cta] ?? t.spotlight.cta.explore;
   // Başlıq/mətn { az, en } obyektidir — cari dilə uyğununu seç
   const title = item.title[lang] ?? item.title.en;
   const text = item.text[lang] ?? item.text.en;
+  const to = item.to ?? '/';
 
   return (
-    <article className="group relative aspect-[3/4] overflow-hidden rounded-lg bg-mb-ink">
+    <Link
+      to={to}
+      className="group relative block aspect-[3/4] overflow-hidden rounded-lg bg-mb-ink"
+    >
       {/* Şəkil */}
       <img
         src={item.image}
@@ -38,13 +44,10 @@ export default function SpotlightCard({ item }) {
           {text}
         </p>
 
-        <button
-          type="button"
-          className="mt-4 w-full truncate rounded-full bg-mb-blue px-5 py-3 text-sm font-medium text-white transition-colors duration-300 ease-mb hover:bg-mb-blue-dark"
-        >
+        <span className="mt-4 w-full truncate rounded-full bg-mb-blue px-5 py-3 text-center text-sm font-medium text-white transition-colors duration-300 ease-mb group-hover:bg-mb-blue-dark">
           {ctaLabel}
-        </button>
+        </span>
       </div>
-    </article>
+    </Link>
   );
 }

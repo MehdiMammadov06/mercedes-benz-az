@@ -13,28 +13,28 @@ export const shoppingTools = [
     id: 'offers',
     title: { az: 'Mövcud təkliflər', en: 'Current offers' },
     image: '/images/shopping/offers.avif',
-    to: '/modeller',
+    to: '/alis',
     span: 'big', // böyük sol kart (2 sütun × 2 sıra)
   },
   {
     id: 'service',
     title: { az: 'Servisə yazılmaq', en: 'Book a service' },
     image: '/images/shopping/service.avif',
-    to: '/xidmetler',
+    to: '/xidmetler/servise-yazilmaq',
     span: 'tall', // hündür kart (2 sıra)
   },
   {
     id: 'showroom',
     title: { az: 'Showroom siyahısı', en: 'Showroom list' },
     image: '/images/shopping/showroom.avif',
-    to: '/elaqe',
+    to: '/showroom',
     span: 'small', // kiçik kart (1 sıra)
   },
   {
     id: 'test-drive',
     title: { az: 'Test Drayva yazıl', en: 'Book a test drive' },
     image: '/images/shopping/test-drive.avif',
-    to: '/elaqe',
+    to: '/test-drive',
     span: 'tall', // hündür kart (2 sıra)
   },
   {
