@@ -501,20 +501,22 @@
       "isNew": false,
       "detail": {
         "hero": {
-          "image": "/images/models/detail/a-class/hero.avif",
           "colors": [
-            { "name": "Polar White", "hex": "#f2f3f5" },
-            { "name": "Cosmos Black", "hex": "#1a1a1a" },
-            { "name": "Denim Blue", "hex": "#3a5f8a" },
-            { "name": "Rose Gold", "hex": "#b98a6d" },
-            { "name": "Mountain Grey", "hex": "#6f7276" },
-            { "name": "Patagonia Red", "hex": "#7c1f26" },
-            { "name": "Spectral Blue", "hex": "#2b6ca3" },
-            { "name": "Digital White", "hex": "#e9eaec" },
-            { "name": "Sodalite Blue", "hex": "#243b66" },
-            { "name": "Mojave Silver", "hex": "#b7babd" },
-            { "name": "Night Black", "hex": "#0d0d0d" },
-            { "name": "Jupiter Red", "hex": "#b3242a" }
+            {
+              "name": "Polar White",
+              "hex": "#f2f3f5",
+              "image": "/images/models/detail/a-class/hero-polar-white.avif"
+            },
+            {
+              "name": "Cosmos Black",
+              "hex": "#1a1a1a",
+              "image": "/images/models/detail/a-class/hero-cosmos-black.avif"
+            },
+            {
+              "name": "Mountain Grey",
+              "hex": "#6f7276",
+              "image": "/images/models/detail/a-class/hero-mountain-grey.avif"
+            }
           ]
         }
       }
