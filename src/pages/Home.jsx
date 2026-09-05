@@ -12,8 +12,8 @@ export default function Home() {
       <ModelShowcase />
       <Spotlight />
       <MaybachBanner />
-      <ShoppingTools />
       <About />
+      <ShoppingTools />
     </>
   );
 }
