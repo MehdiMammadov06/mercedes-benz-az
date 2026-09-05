@@ -29,14 +29,27 @@ npm run css     # Terminal 1 — Tailwind izləmə rejimində
 npm run vite    # Terminal 2 — Vite dev server
 ```
 
-Bax: `tailwindstart.txt` (bütün əmrlər orada qeyd olunub).
-
 Production build üçün:
 
 ```bash
 npm run build   # əvvəlcə output.css-i kiçildir, sonra vite build edir
 npm run preview
 ```
+
+## Vercel-ə deploy
+
+Layihə Vercel üçün hazırdır (`vercel.json` SPA route-larını `index.html`-ə yönləndirir).
+
+1. https://vercel.com saytına GitHub hesabı ilə daxil ol.
+2. **Add New → Project** → `mercedes-benz-az` reposunu **Import** et.
+3. Vercel Vite-i avtomatik tanıyır. Ayarları yoxla:
+   - **Framework Preset:** Vite
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `dist`
+   - **Install Command:** `npm install`
+4. **Deploy** düyməsinə bas. Bitəndə canlı URL verilir (`*.vercel.app`).
+
+Hər `main`-ə push-dan sonra Vercel avtomatik yenidən deploy edir.
 
 ### Tailwind necə işləyir (vacib)
 
