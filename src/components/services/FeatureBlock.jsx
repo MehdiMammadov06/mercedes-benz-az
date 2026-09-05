@@ -1,6 +1,18 @@
-// Xidmət səhifələri (Aksesuarlar, Kolleksiya) üçün universal feature bloku:
-// böyük şəkil + (opsional) eyebrow + başlıq + mətn. `reverse` şəkli sağa/sola atır.
-export default function FeatureBlock({ eyebrow, title, text, image, reverse = false, contain = false }) {
+import Button from '../ui/Button.jsx';
+
+// Xidmət/brend səhifələri üçün universal feature bloku:
+// böyük şəkil + (opsional) eyebrow + başlıq + mətn + (opsional) "Ətraflı" düyməsi.
+// `reverse` şəkli sağa/sola atır. `ctaLabel`+`ctaTo` verilsə düymə göstərilir.
+export default function FeatureBlock({
+  eyebrow,
+  title,
+  text,
+  image,
+  reverse = false,
+  contain = false,
+  ctaLabel,
+  ctaTo = '/elaqe',
+}) {
   return (
     <section className="container-site py-16 sm:py-20">
       <div
@@ -24,6 +36,13 @@ export default function FeatureBlock({ eyebrow, title, text, image, reverse = fa
           {eyebrow && <p className="text-sm uppercase tracking-widest text-mb-grey">{eyebrow}</p>}
           <h2 className="mt-3 font-display text-2xl text-mb-ink sm:text-3xl">{title}</h2>
           <p className="mt-4 whitespace-pre-line text-sm leading-relaxed text-mb-grey sm:text-base">{text}</p>
+          {ctaLabel && (
+            <div className="mt-6">
+              <Button to={ctaTo} variant="primary" size="md">
+                {ctaLabel}
+              </Button>
+            </div>
+          )}
         </div>
       </div>
     </section>

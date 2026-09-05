@@ -518,6 +518,52 @@ export const translations = {
         text: 'Standart spesifikasiyalı Executive oturacağı səyahət rahatlığının zirvəsini təmsil edir. Düyməni basmaqla o, misilsiz rahatlıq təqdim edərək, tam ayılmış vəziyyətə salına bilər. O, həmçinin əlavə geniş ayaq dayağı ilə təchiz olunub və siz isti daş oturacaq masajı və oturacaqların iqlim nəzarəti ilə əylənə bilərsiniz.',
       },
     },
+    maybach: {
+      hero: {
+        title: 'Mercedes-Benz Maybach',
+        text: 'Müstəqilliyin lüksü.',
+        cta: 'Əlaqə',
+      },
+      lineup: { title: 'Model cərgəsi' },
+      intro: {
+        eyebrow: 'Əsas məqamlar',
+        title: 'Mercedes-Maybach-ı xüsusi edən də budur.',
+        subtitle: 'Mühəndislik sənəti və fərdi lüks birləşdi.',
+        blockTitle: 'Yalnız bir Mercedes-Maybach bu cür lüks təklif edir',
+        text: 'Mercedes-Maybach Mercedes-Benz innovasiyasını Maybach-ın unikal lüks brendi ilə birləşdirir. Burada performans eksklüzivliklə birləşdirilir. Müasir rəqəmsal texnologiyalarla ənənəvi sənətkarlıq. Bir misal: Mercedes-Maybach GLS, SUV və lüks sedanın sintezi.',
+      },
+      models: {
+        eyebrow: 'Model cərgəsi',
+        title: 'Mercedes-Maybach Modelləri.',
+        subtitle: 'Bütün Mercedes-Maybach modellərini kəşf edin.',
+        cta: 'Ətraflı',
+        gls: {
+          title: 'Mercedes-Maybach GLS.',
+          subtitle: 'Məkan və rahatlığın zirvəsini yalnız GLS-də tapmaq olar.',
+          text: 'GLS qürurla S-i öz adında daşıyır. Dünyanın heç bir avtomobili kimi, o, dəbdəbəli SUV-nin səssiz çevikliyini S-Class-ın daxili keyfiyyətləri və yüksək səviyyəli təhlükəsizliyi ilə birləşdirir. Gəmiyə qalxın və görünməmiş səviyyədə möhtəşəm lüks və hiss olunan rahatlığı yaşayın.',
+        },
+        sClass: {
+          title: 'Mercedes-Maybach S-Class.',
+          subtitle: 'Müstəqilliyin sərvəti.',
+          text: 'Ən yüksək səviyyəli dəbdəbəli avtomobillər üçün əfsanəvi brendin ənənəsinə sadiq qalaraq, biz heç vaxt olmadığı kimi lüksün son nöqtəsini yenidən müəyyənləşdiririk. Təyyarəyə addımlayın və heç vaxt olmadığı kimi eksklüzivlik, yenilik və mükəmməllik hiss edin.',
+        },
+      },
+      night: {
+        eyebrow: 'Model cərgəsi',
+        title: 'Night Seriyası.',
+        subtitle: 'Bütün Mercedes-Maybach Night Series modellərini kəşf edin.',
+        cta: 'Ətraflı',
+        sClass: {
+          title: 'Mercedes-Maybach S-Class Night Seriyası.',
+          text: 'Mercedes-Maybach S-Class-ın Night Seriyası qeyri-adilik və sirli qaranlıq estetikanın xüsusilə cəlbedici birləşməsini təqdim edir. Tünd xrom və qara rəngli seçilmiş detallar, xüsusi üzlük rəngləri, həyəcanverici kontrastlar və eksklüziv bəzək elementləri ilə işlənmiş həssas minimalizmi yaşayın. Etibarlı görünüşü Maybach təkərlərinin heyrətamiz dizaynı tamamlayır.',
+        },
+        gls: {
+          title: 'Mercedes-Maybach GLS Night Seriyası.',
+          text: 'Night Seriyası avadanlığı paketi ilə birlikdə Mercedes-Maybach GLS SUV unikal möhtəşəm, eksklüziv iştirakı ilə valeh edir. Xüsusi üzlük rəngləri, nəzərə çarpan təzadlar və eksklüziv bəzək elementləri ilə tamamlanan qara və ya qara xromda seçilmiş detallarla heyrətamiz dərəcədə zərif tünd estetikanı hiss edin. Etibarlı görünüş Maybach təkərlərinin heyrətamiz dizaynı ilə tamamlanır.',
+        },
+      },
+      footnote: '[1] Konfiqurasiyadan asılı olaraq istəyə görə seçilə bilən avadanlıq.',
+    },
     bookService: {
       title: 'Servisə yazılmaq',
       selectBranch: 'Filialı seç',
@@ -1067,6 +1113,52 @@ export const translations = {
         title: 'An anniversary statement.',
         text: 'The Executive seat with standard specification represents the pinnacle of travel comfort. At the touch of a button it can be reclined into a fully lying position for unrivalled comfort. It is also equipped with an additional extending footrest, and you can enjoy hot-stone seat massage and seat climate control.',
       },
+    },
+    maybach: {
+      hero: {
+        title: 'Mercedes-Benz Maybach',
+        text: 'The luxury of independence.',
+        cta: 'Contact',
+      },
+      lineup: { title: 'Model range' },
+      intro: {
+        eyebrow: 'Highlights',
+        title: 'This is what makes Mercedes-Maybach special.',
+        subtitle: 'The art of engineering meets individual luxury.',
+        blockTitle: 'Only a Mercedes-Maybach offers luxury like this',
+        text: 'Mercedes-Maybach combines Mercedes-Benz innovation with the unique luxury brand Maybach. Here, performance is paired with exclusivity. Modern digital technology with traditional craftsmanship. One example: the Mercedes-Maybach GLS, a synthesis of SUV and luxury sedan.',
+      },
+      models: {
+        eyebrow: 'Model range',
+        title: 'Mercedes-Maybach Models.',
+        subtitle: 'Discover all Mercedes-Maybach models.',
+        cta: 'Learn more',
+        gls: {
+          title: 'Mercedes-Maybach GLS.',
+          subtitle: 'The pinnacle of space and comfort can only be found in the GLS.',
+          text: 'The GLS proudly carries the S in its name. Like no other car in the world, it combines the silent agility of a luxurious SUV with the interior qualities and high-level safety of the S-Class. Step aboard and experience magnificent luxury and tangible comfort at an unprecedented level.',
+        },
+        sClass: {
+          title: 'Mercedes-Maybach S-Class.',
+          subtitle: 'The wealth of independence.',
+          text: 'Faithful to the tradition of the legendary brand for the highest-level luxury vehicles, we redefine the ultimate in luxury like never before. Step aboard and feel exclusivity, innovation and perfection like never before.',
+        },
+      },
+      night: {
+        eyebrow: 'Model range',
+        title: 'Night Series.',
+        subtitle: 'Discover all Mercedes-Maybach Night Series models.',
+        cta: 'Learn more',
+        sClass: {
+          title: 'Mercedes-Maybach S-Class Night Series.',
+          text: 'The Night Series of the Mercedes-Maybach S-Class presents a particularly appealing combination of extraordinary and mysterious dark aesthetics. Experience refined minimalism crafted with dark chrome and black-toned selected details, special upholstery colours, exciting contrasts and exclusive trim elements. Its confident appearance is completed by the striking design of the Maybach wheels.',
+        },
+        gls: {
+          title: 'Mercedes-Maybach GLS Night Series.',
+          text: 'Together with the Night Series equipment package, the Mercedes-Maybach GLS SUV captivates with a uniquely magnificent, exclusive presence. Feel the strikingly elegant dark aesthetic with selected details in black or black chrome, complemented by special upholstery colours, striking contrasts and exclusive trim elements. The confident appearance is completed by the striking design of the Maybach wheels.',
+        },
+      },
+      footnote: '[1] Optional equipment selectable depending on configuration.',
     },
     bookService: {
       title: 'Book A Service',
