@@ -5,6 +5,7 @@ import { navLinks } from './data/navigation.js';
 import Home from './pages/Home.jsx';
 import ModelDetail from './pages/ModelDetail.jsx';
 import Placeholder from './pages/Placeholder.jsx';
+import Stock from './pages/Stock.jsx';
 
 export default function App() {
   return (
@@ -14,10 +15,15 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
 
-        {/* Menyudaki səhifələr — hazırlandıqca real komponentlərlə əvəz olunacaq */}
-        {navLinks.map((link) => (
-          <Route key={link.key} path={link.path} element={<Placeholder titleKey={link.key} />} />
-        ))}
+        {/* Alış → Mövcud avtomobillər (stock) — real səhifə */}
+        <Route path="/alis" element={<Stock />} />
+
+        {/* Digər menyu səhifələri — hazırlandıqca real komponentlərlə əvəz olunacaq */}
+        {navLinks
+          .filter((link) => link.path !== '/alis')
+          .map((link) => (
+            <Route key={link.key} path={link.path} element={<Placeholder titleKey={link.key} />} />
+          ))}
 
         {/* Model detalı — universal şablon (A-Class tam, digərləri data əlavə edildikcə) */}
         <Route path="/modeller/:id" element={<ModelDetail />} />

@@ -23,7 +23,7 @@ export const navLinks = [
     key: 'buy',
     path: '/alis',
     submenu: [
-      { labelKey: 'availableCars', to: '/modeller' },
+      { labelKey: 'availableCars', to: '/alis' },
       { labelKey: 'specialOffers', to: '/alis' },
       { labelKey: 'showroomList', to: '/elaqe' },
       { labelKey: 'testDrive', to: '/elaqe' },
