@@ -3,12 +3,17 @@ import { useState } from 'react';
 // Model səhifəsinin yuxarı hissəsi: böyük avtomobil şəkli + model adı (arxa fonda)
 // + seçilə bilən rəng nöqtələri. Orijinal saytdakı "A-Class" hero ekranı kimi.
 //
-// Şəkil (detail.hero.image) hələ atılmayıbsa, boz fon və model adı görünür —
-// sayt sınmır (ModelCard-dakı onError pattern).
+// HƏR RƏNGİN ÖZ ŞƏKLİ var (color.image). Rəng nöqtəsinə klik edəndə həm rəng adı,
+// həm də avtomobil şəkli dəyişir.
+//
+// Şəkil (color.image) hələ atılmayıbsa, adi model şəklinə (model.image) qayıdır;
+// o da yoxdursa gizlənir — sayt sınmır (ModelCard-dakı onError pattern).
 export default function ModelHero({ model, colorLabel }) {
-  const hero = model.detail?.hero ?? {};
-  const colors = hero.colors ?? [];
+  const colors = model.detail?.hero?.colors ?? [];
   const [activeColor, setActiveColor] = useState(0);
+
+  // Seçilən rəngin şəkli; yoxdursa adi model şəklinə düşür
+  const currentImage = colors[activeColor]?.image ?? model.image;
 
   return (
     <section className="relative overflow-hidden bg-mb-silver">
@@ -21,14 +26,17 @@ export default function ModelHero({ model, colorLabel }) {
       </span>
 
       <div className="container-site relative flex min-h-[62vh] flex-col items-center justify-center py-16 sm:min-h-[70vh]">
-        {/* Avtomobil şəkli */}
+        {/* Avtomobil şəkli — rəngə görə dəyişir.
+            key={currentImage}: şəkil dəyişəndə React <img>-i yenidən qurur ki,
+            keçid təmiz olsun və köhnə şəklin onError vəziyyəti qalmasın. */}
         <div className="flex w-full max-w-4xl items-center justify-center">
           <img
-            src={hero.image ?? model.image}
-            alt={model.name}
-            className="h-auto w-full object-contain drop-shadow-2xl"
+            key={currentImage}
+            src={currentImage}
+            alt={`${model.name} — ${colors[activeColor]?.name ?? ''}`}
+            className="h-auto w-full object-contain drop-shadow-2xl transition-opacity duration-500 ease-mb"
             onError={(event) => {
-              // detail hero şəkli yoxdursa, adi model şəklinə qayıt; o da yoxdursa gizlət
+              // rəng şəkli yoxdursa, adi model şəklinə qayıt; o da yoxdursa gizlət
               const img = event.currentTarget;
               if (img.src.endsWith(model.image)) {
                 img.style.visibility = 'hidden';
