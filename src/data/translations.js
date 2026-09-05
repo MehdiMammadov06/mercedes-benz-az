@@ -168,7 +168,7 @@ export const translations = {
         title: 'Sahiblər üçün',
         links: [
           { label: 'Servisə yazılmaq', to: '/xidmetler/servise-yazilmaq' },
-          { label: 'Aksessuarlar', to: '/xidmetler' },
+          { label: 'Aksessuarlar', to: '/xidmetler/aksesuarlar' },
           { label: 'Həyat tərz kolleksiyası', to: '/xidmetler' },
           { label: 'Servis paketləri', to: '/xidmetler' },
           { label: 'Orijinal hissələr', to: '/xidmetler' },
@@ -367,6 +367,31 @@ export const translations = {
     testDrive: {
       title: 'Test drive-a yazıl',
       contactNumbers: 'Əlaqə nömrələri',
+    },
+    accessories: {
+      hero: {
+        title: 'Bizdə mükəmməl uyğunluq var: Orijinal Aksesuarlar',
+        text: 'Birbaşa istehsalçıdan mükəmməl uyğunlaşdırılmış aksesuarlar. Daha çox təhlükəsizlik və rahatlıq və ya fərdi toxunuş üçün.',
+        cta: 'Müraciət edin',
+      },
+      safety: {
+        eyebrow: 'Təhlükəsizlik və Rahatlıq',
+        title: 'İdeal daşıyıcı sistemindən tutmuş xüsusi əlavəyə qədər hər şeyi tapın.',
+        text: 'Məqsəd mükəmməllikdir. Buna görə də aksesuarlar sizin Mercedes modelinizə mükəmməl uyğun gəlməlidir. Təhlükəsizlik və rahatlıq üçün məhsul seçimimiz, daşıyıcı sistemlərimiz, avtomobil doldurma infrastrukturu və ya hətta üslub əlavələri ilə əmin ola bilərsiniz: alışdığınız, ulduzunuza mükəmməl uyğun gələn keyfiyyəti əldə edirsiniz.',
+      },
+      style: {
+        eyebrow: 'Stil ilə uyğunluq',
+        title: 'Stil ilə uyğunluq',
+        text: 'Dəyişiklik istəyirsiniz? İdman, eksklüziv Mercedes-Benz və ya AMG dizaynında dəyişdirilə bilən örtüklər hər dəfə qapı açılanda diqqəti cəlb edən xüsusiyyətə çevrilir. Bunun səbəbi içəri girdiyiniz zaman dözümlü və dayanıqlı qapı eşikləri cəlbedici şəkildə işıqlanır. Yenilikçi dəyişdirilə bilən örtük texnologiyası ilə sadə montaj sayəsində fərdiliyiniz parlayır.',
+      },
+      childSeat: {
+        title: 'Şübhəsiz ki, düzgün qərar',
+        text: 'Mercedes-Benz uzun illərdir ki, bütün yaş qrupları üçün yüksək keyfiyyətli uşaq oturacaqları təklif edir. Hazırkı portfelimizə arxaya baxan Baby-Safe plus II və irəli baxan uşaq oturacaqları DuoPlus və KidFix XP daxildir. Bütün uşaq oturacaqları Mercedes-Benz-in ciddi təhlükəsizlik tələblərinə uyğun sınaqdan keçirilir və "Almaniya istehsalıdır".',
+      },
+      categories: {
+        title: 'Mercedes-iniz üçün düzgün aksesuarları seçin.',
+        eyebrow: 'Bütün kateqoriyalar',
+      },
     },
     bookService: {
       title: 'Servisə yazılmaq',
@@ -568,7 +593,7 @@ export const translations = {
         title: 'For owners',
         links: [
           { label: 'Book a service', to: '/xidmetler/servise-yazilmaq' },
-          { label: 'Accessories', to: '/xidmetler' },
+          { label: 'Accessories', to: '/xidmetler/aksesuarlar' },
           { label: 'Lifestyle collection', to: '/xidmetler' },
           { label: 'Service packages', to: '/xidmetler' },
           { label: 'Genuine parts', to: '/xidmetler' },
@@ -767,6 +792,31 @@ export const translations = {
     testDrive: {
       title: 'Book a test drive',
       contactNumbers: 'Contact Numbers',
+    },
+    accessories: {
+      hero: {
+        title: 'We have the perfect fit: Genuine Accessories',
+        text: 'Perfectly fitted accessories straight from the manufacturer. For more safety and comfort or a personal touch.',
+        cta: 'Make an enquiry',
+      },
+      safety: {
+        eyebrow: 'Safety and Comfort',
+        title: 'Find everything from the ideal carrier system to special add-ons.',
+        text: 'The goal is perfection. That is why accessories should fit your Mercedes model perfectly. With our product range for safety and comfort, our carrier systems, vehicle charging infrastructure or even styling add-ons, you can be sure: you get the quality you are used to, perfectly matched to your star.',
+      },
+      style: {
+        eyebrow: 'Matching your style',
+        title: 'Matching your style',
+        text: 'Fancy a change? Interchangeable covers in sporty, exclusive Mercedes-Benz or AMG design become an eye-catcher every time the door opens. That is because the durable and hard-wearing door sills are attractively illuminated as you get in. Thanks to simple installation with innovative interchangeable cover technology, your individuality shines.',
+      },
+      childSeat: {
+        title: 'Undoubtedly the right decision',
+        text: 'Mercedes-Benz has offered high-quality child seats for all age groups for many years. Our current portfolio includes the rear-facing Baby-Safe plus II and the forward-facing child seats DuoPlus and KidFix XP. All child seats are tested to the strict safety requirements of Mercedes-Benz and are "Made in Germany".',
+      },
+      categories: {
+        title: 'Choose the right accessories for your Mercedes.',
+        eyebrow: 'All categories',
+      },
     },
     bookService: {
       title: 'Book A Service',
