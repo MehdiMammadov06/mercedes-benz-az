@@ -243,9 +243,8 @@ export const translations = {
         submitting: 'Göndərilir...',
         success: 'Müraciətiniz qəbul olundu. Tezliklə sizinlə əlaqə saxlanılacaq.',
         branches: [
-          'Abşeron Avtomobil Mərkəzi',
-          'Bakı Avtomobil Mərkəzi',
-          'Gəncə Avtomobil Mərkəzi',
+          'Mercedes Absheron Automobile Center LLC',
+          'AutoStar Kaukasus GmbH Azerbaijan LLC',
         ],
         errors: {
           required: 'Bu xana mütləq doldurulmalıdır',
@@ -493,9 +492,8 @@ export const translations = {
         submitting: 'Sending...',
         success: 'Your request has been received. We will contact you shortly.',
         branches: [
-          'Absheron Automobile Center',
-          'Baku Automobile Center',
-          'Ganja Automobile Center',
+          'Mercedes Absheron Automobile Center LLC',
+          'AutoStar Kaukasus GmbH Azerbaijan LLC',
         ],
         errors: {
           required: 'This field is required',

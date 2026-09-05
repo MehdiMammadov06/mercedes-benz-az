@@ -4,7 +4,7 @@ import { forwardRef, useState } from 'react';
 // Sol tərəf: brend adı + başlıq. Sağ tərəf: ağ form kartı (mavi fon üzərində).
 //
 // ref: sticky bardakı "Əlaqə" düyməsi buraya sürüşdürmək üçün istifadə edir.
-const ContactForm = forwardRef(function ContactForm({ copy }, ref) {
+const ContactForm = forwardRef(function ContactForm({ copy, bgImage }, ref) {
   const emptyForm = {
     branch: '',
     title: '',
@@ -59,12 +59,25 @@ const ContactForm = forwardRef(function ContactForm({ copy }, ref) {
     ].join(' ');
 
   return (
-    <section ref={ref} className="bg-mb-blue-dark py-16 sm:py-24">
-      <div className="container-site grid gap-10 lg:grid-cols-2 lg:items-center">
+    <section ref={ref} className="relative overflow-hidden bg-mb-ink py-16 sm:py-24">
+      {/* Fon şəkli — yoxdursa tünd fon (bg-mb-ink) qalır */}
+      {bgImage && (
+        <img
+          src={bgImage}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover"
+          onError={(e) => (e.currentTarget.style.display = 'none')}
+        />
+      )}
+      {/* Mətnin oxunması üçün tünd örtük */}
+      <div className="absolute inset-0 bg-black/45" />
+
+      <div className="container-site relative grid gap-10 lg:grid-cols-2 lg:items-center">
         {/* Sol: brend adı + başlıq */}
         <div className="text-white">
-          <h2 className="font-display text-3xl sm:text-4xl">{copy.brandName}</h2>
-          <p className="mt-3 text-sm text-white/80">{copy.heading}</p>
+          <h2 className="font-display text-3xl text-shadow-hero sm:text-4xl">{copy.brandName}</h2>
+          <p className="mt-3 text-sm text-white/90 text-shadow-hero">{copy.heading}</p>
         </div>
 
         {/* Sağ: form kartı */}
