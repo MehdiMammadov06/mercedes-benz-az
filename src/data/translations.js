@@ -182,6 +182,13 @@ export const translations = {
         { label: 'Məlumatların Mühafizəsi', to: '/haqqimizda' },
       ],
     },
+    modelPage: {
+      notFound: 'Belə bir model tapılmadı.',
+      backToModels: 'Modellərə qayıt',
+      stickyLabel: 'Model',
+      contactCta: 'Əlaqə',
+      colorLabel: 'Rəng',
+    },
     placeholder: {
       title: 'Bu səhifə hazırlanır',
       text: 'Bu bölmə növbəti mərhələdə əlavə olunacaq.',
@@ -359,6 +366,13 @@ export const translations = {
         { label: 'Cookie Policy', to: '/haqqimizda' },
         { label: 'Data Protection', to: '/haqqimizda' },
       ],
+    },
+    modelPage: {
+      notFound: 'This model could not be found.',
+      backToModels: 'Back to models',
+      stickyLabel: 'Model',
+      contactCta: 'Contact',
+      colorLabel: 'Colour',
     },
     placeholder: {
       title: 'This page is in progress',
