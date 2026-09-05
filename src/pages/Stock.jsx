@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext.jsx';
+import { translations } from '../data/translations.js';
 import { useFetch } from '../hooks/useFetch.js';
 import StockCard from '../components/stock/StockCard.jsx';
 import StockFilters from '../components/stock/StockFilters.jsx';
@@ -15,21 +16,14 @@ const EMPTY_FILTERS = {
   year: '',
   keyword: '',
   fuel: '',
-  price: '',
+  priceMin: '', // '' = alt hədd yoxdur (data min-i)
+  priceMax: '', // '' = üst hədd yoxdur (data max-ı)
   distance: '',
   colour: '',
   bodyStyle: '',
   transmission: '',
   branch: '',
 };
-
-// Qiymət aralığı açarını yoxlayan köməkçi
-function matchPrice(price, key) {
-  if (key === 'under150k') return price < 150000;
-  if (key === '150to250k') return price >= 150000 && price <= 250000;
-  if (key === 'over250k') return price > 250000;
-  return true;
-}
 
 // Yürüş açarını yoxlayan köməkçi
 function matchDistance(distance, key) {
@@ -61,6 +55,10 @@ export default function Stock() {
   // Filtr dropdown-ları üçün mövcud dəyərlər (data-dan avtomatik çıxarılır)
   const options = useMemo(() => {
     const uniq = (arr) => [...new Set(arr)];
+    const prices = vehicles.map((v) => v.price);
+    // Slider hədləri: min aşağı, max yuxarı yuvarlaqlaşdırılır (1000-lik addım)
+    const rawMin = prices.length ? Math.min(...prices) : 0;
+    const rawMax = prices.length ? Math.max(...prices) : 0;
     return {
       models: uniq(vehicles.map((v) => v.model)).sort(),
       years: uniq(vehicles.map((v) => v.year)).sort((a, b) => b - a),
@@ -69,6 +67,10 @@ export default function Stock() {
       bodyStyles: uniq(vehicles.map((v) => v.bodyStyle)),
       transmissions: uniq(vehicles.map((v) => v.transmission)),
       branches: uniq(vehicles.map((v) => v.branch)).sort(),
+      priceBounds: {
+        min: Math.floor(rawMin / 1000) * 1000,
+        max: Math.ceil(rawMax / 1000) * 1000,
+      },
     };
   }, [vehicles]);
 
@@ -82,11 +84,32 @@ export default function Stock() {
       if (filters.bodyStyle && v.bodyStyle !== filters.bodyStyle) return false;
       if (filters.transmission && v.transmission !== filters.transmission) return false;
       if (filters.branch && v.branch !== filters.branch) return false;
-      if (filters.price && !matchPrice(v.price, filters.price)) return false;
+      if (filters.priceMin !== '' && v.price < filters.priceMin) return false;
+      if (filters.priceMax !== '' && v.price > filters.priceMax) return false;
       if (filters.distance && !matchDistance(v.distance, filters.distance)) return false;
       if (filters.keyword) {
-        const hay = `${v.model} ${v.variant}`.toLowerCase();
-        if (!hay.includes(filters.keyword.toLowerCase().trim())) return false;
+        const term = filters.keyword.toLowerCase().trim();
+        if (term) {
+          // Axtarış sahəsi geniş: ad, variant, yanacaq/rəng/transmissiya (hər iki
+          // dildə), il — ki "electric", "elektrik", "white", "petrol" da tapılsın.
+          const parts = [
+            v.model,
+            v.variant,
+            v.year,
+            v.fuel,
+            v.colour,
+            v.transmission,
+            v.branch,
+            translations.az.fuel[v.fuel],
+            translations.en.fuel[v.fuel],
+            translations.az.colours[v.colour],
+            translations.en.colours[v.colour],
+            translations.az.transmission[v.transmission],
+            translations.en.transmission[v.transmission],
+          ];
+          const hay = parts.filter(Boolean).join(' ').toLowerCase();
+          if (!hay.includes(term)) return false;
+        }
       }
       return true;
     });
