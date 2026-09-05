@@ -160,8 +160,8 @@ export const translations = {
       buyers: {
         title: 'Alıcılar üçün',
         links: [
-          { label: 'Mövcud təkliflər', to: '/modeller' },
-          { label: 'Showroom siyahısı', to: '/elaqe' },
+          { label: 'Mövcud təkliflər', to: '/alis' },
+          { label: 'Showroom siyahısı', to: '/showroom' },
           { label: 'Test drayva yazılmaq', to: '/elaqe' },
         ],
       },
@@ -351,6 +351,21 @@ export const translations = {
       title: 'Xüsusi təkliflər',
       subtitle: 'Seçilmiş Mercedes-Benz modelləri üçün cari kampaniyalar və xüsusi qiymətlər.',
     },
+    showroom: {
+      title: 'Diler Lokatoru',
+      subtitle: 'İş saatlarını, əlaqə nömrələrini və ünvan məlumatlarını görmək üçün yeri seçin.',
+      filter: 'Filtr',
+      resetSearch: 'Axtarışı sıfırla',
+      searchPlaceholder: 'Şəhər və ya diler adı ilə axtar...',
+      makeEnquiry: 'Müraciət et',
+      moreDetails: 'Ətraflı',
+      lessDetails: 'Gizlət',
+      phone: 'Telefon',
+      workingHours: 'İş saatları',
+      getDirections: 'Xəritədə aç',
+      noResults: 'Axtarışa uyğun diler tapılmadı.',
+      mapPlaceholder: 'Xəritə',
+    },
     colours: {
       'polar-white': 'Polar White (qeyri-metallik)',
       'obsidian-black': 'Obsidian Black (metallik)',
@@ -516,8 +531,8 @@ export const translations = {
       buyers: {
         title: 'For buyers',
         links: [
-          { label: 'Current offers', to: '/modeller' },
-          { label: 'Showroom list', to: '/elaqe' },
+          { label: 'Current offers', to: '/alis' },
+          { label: 'Showroom list', to: '/showroom' },
           { label: 'Book a test drive', to: '/elaqe' },
         ],
       },
@@ -706,6 +721,21 @@ export const translations = {
     offers: {
       title: 'Special offers',
       subtitle: 'Current campaigns and special prices for selected Mercedes-Benz models.',
+    },
+    showroom: {
+      title: 'Dealer Locator',
+      subtitle: 'Select a location to view opening times, contact numbers and address details.',
+      filter: 'Filter',
+      resetSearch: 'Reset Search',
+      searchPlaceholder: 'Search by city or dealer name...',
+      makeEnquiry: 'Make an Enquiry',
+      moreDetails: 'More Details',
+      lessDetails: 'Less Details',
+      phone: 'Phone',
+      workingHours: 'Working hours',
+      getDirections: 'Open in maps',
+      noResults: 'No dealers match your search.',
+      mapPlaceholder: 'Map',
     },
     colours: {
       'polar-white': 'Polar White (non-metallic)',
