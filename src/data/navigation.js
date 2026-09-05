@@ -36,7 +36,7 @@ export const navLinks = [
       { labelKey: 'bookService', to: '/xidmetler/servise-yazilmaq' },
       { labelKey: 'accessories', to: '/xidmetler/aksesuarlar' },
       { labelKey: 'lifestyle', to: '/xidmetler/kolleksiya' },
-      { labelKey: 'servicePackages', to: '/xidmetler' },
+      { labelKey: 'servicePackages', to: '/xidmetler/servis-paketleri' },
       { labelKey: 'genuineParts', to: '/xidmetler' },
     ],
   },
