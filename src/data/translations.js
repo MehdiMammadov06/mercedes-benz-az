@@ -105,6 +105,13 @@ export const translations = {
       email: 'compliance@autocapital.az',
       phone: '+994 50 289 09 81',
     },
+    reports: {
+      company: '“Avtokapital-Azərbaycan” MMC',
+      description: '31 dekabr 2024-cü il tarixində bitən il üzrə Konsolidə edilmiş Maliyyə Hesabatları və Müstəqil Auditorun Hesabatı',
+      label: 'Hesabat:',
+      download: 'YÜKLƏ',
+      fileUrl: 'https://mercedes-benz.az/hesabat.pdf',
+    },
     promo: {
       title: 'Mercedes-Benz dünyasını kəşf edin',
       text: 'Xüsusi təkliflər, yeni modellər və unikal təcrübələr sizi gözləyir.',
@@ -760,6 +767,13 @@ export const translations = {
       p3: 'In this fight we need the support of our customers. If you observe unethical or corrupt behaviour in the activity of any employee representing the Mercedes-Benz brand, please send a message to {email} or contact us on {phone}. The company guarantees the anonymity of the person sending the message.',
       email: 'compliance@autocapital.az',
       phone: '+994 50 289 09 81',
+    },
+    reports: {
+      company: '“Avtokapital-Azerbaijan” LLC',
+      description: 'Consolidated Financial Statements and Independent Auditor’s Report for the year ended 31 December 2024',
+      label: 'Report:',
+      download: 'DOWNLOAD',
+      fileUrl: 'https://mercedes-benz.az/hesabat.pdf',
     },
     promo: {
       title: 'Discover the world of Mercedes-Benz',
