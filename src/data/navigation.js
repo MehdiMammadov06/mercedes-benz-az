@@ -55,7 +55,7 @@ export const navLinks = [
     path: '/haqqimizda',
     submenu: [
       { labelKey: 'company', to: '/haqqimizda' },
-      { labelKey: 'compliance', to: '/haqqimizda' },
+      { labelKey: 'compliance', to: '/haqqimizda/compliance' },
       { labelKey: 'reports', to: '/haqqimizda' },
     ],
   },

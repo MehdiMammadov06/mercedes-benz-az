@@ -19,6 +19,7 @@ import AmgBrand from './pages/AmgBrand.jsx';
 import MaybachBrand from './pages/MaybachBrand.jsx';
 import Innovation140 from './pages/Innovation140.jsx';
 import About from './pages/About.jsx';
+import Compliance from './pages/Compliance.jsx';
 
 export default function App() {
   return (
@@ -56,6 +57,8 @@ export default function App() {
         <Route path="/brendler/innovasiya" element={<Innovation140 />} />
         {/* Haqqımızda → Şirkət haqqında */}
         <Route path="/haqqimizda" element={<About />} />
+        {/* Haqqımızda → Compliance */}
+        <Route path="/haqqimizda/compliance" element={<Compliance />} />
 
         {/* Digər menyu səhifələri — hazırlandıqca real komponentlərlə əvəz olunacaq */}
         {navLinks
