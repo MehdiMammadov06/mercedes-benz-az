@@ -30,7 +30,6 @@ export const translations = {
       showroomList: 'Showroom siyahısı',
       testDrive: 'Test drive',
       // Xidmətlər
-      manuals: 'Təlimat Kitabçaları',
       bookService: 'Servisə yazılmaq',
       accessories: 'Aksessuarlar',
       lifestyle: 'Həyat Tərz Kolleksiyaları',
@@ -168,12 +167,11 @@ export const translations = {
       owners: {
         title: 'Sahiblər üçün',
         links: [
-          { label: 'Servisə yazılmaq', to: '/xidmetler' },
+          { label: 'Servisə yazılmaq', to: '/xidmetler/servise-yazilmaq' },
           { label: 'Aksessuarlar', to: '/xidmetler' },
           { label: 'Həyat tərz kolleksiyası', to: '/xidmetler' },
           { label: 'Servis paketləri', to: '/xidmetler' },
           { label: 'Orijinal hissələr', to: '/xidmetler' },
-          { label: 'Təlimat Kitabçaları', to: '/xidmetler' },
         ],
       },
       legal: [
@@ -370,6 +368,33 @@ export const translations = {
       title: 'Test drive-a yazıl',
       contactNumbers: 'Əlaqə nömrələri',
     },
+    bookService: {
+      title: 'Servisə yazılmaq',
+      selectBranch: 'Filialı seç',
+      title_field: 'Başlıq',
+      titleOptions: ['Cənab', 'Xanım'],
+      firstName: 'Ad',
+      lastName: 'Soyad',
+      email: 'E-poçt ünvanı',
+      phone: 'Əlaqə nömrəsi',
+      select: 'Seçin...',
+      consumerTitle: 'İstehlakçı məlumatı',
+      consumerText: 'Ən son məhsul xəbərləri, marketinq xidmətləri və təkliflərdən xəbərdar olmağınız üçün sizinlə əlaqədə qalmaq istərdik. Aşağıdakı üsullardan hər hansı biri ilə gələcəkdə məlumat almaq istəməsəniz, həmin seçimi ləğv edin. Təqdim olunan bütün məlumatlar Məxfilik və Kuki Siyasətinə uyğun istifadə olunacaq və heç bir üçüncü tərəflə paylaşılmayacaq.',
+      channels: { phone: 'Telefon', email: 'E-poçt', sms: 'SMS', post: 'Poçt' },
+      message: 'Mesaj',
+      submit: 'Göndər',
+      submitting: 'Göndərilir...',
+      success: 'Müraciətiniz qəbul olundu. Tezliklə sizinlə əlaqə saxlanılacaq.',
+      branches: [
+        'Mercedes Absheron Automobile Center LLC',
+        'AutoStar Kaukasus GmbH Azerbaijan LLC',
+      ],
+      errors: {
+        required: 'Bu xana mütləq doldurulmalıdır',
+        email: 'Düzgün e-poçt ünvanı daxil edin',
+        phone: 'Düzgün əlaqə nömrəsi daxil edin',
+      },
+    },
     colours: {
       'polar-white': 'Polar White (qeyri-metallik)',
       'obsidian-black': 'Obsidian Black (metallik)',
@@ -407,7 +432,6 @@ export const translations = {
       specialOffers: 'Special offers',
       showroomList: 'Showroom list',
       testDrive: 'Test drive',
-      manuals: 'Manuals',
       bookService: 'Book a service',
       accessories: 'Accessories',
       lifestyle: 'Lifestyle collection',
@@ -543,12 +567,11 @@ export const translations = {
       owners: {
         title: 'For owners',
         links: [
-          { label: 'Book a service', to: '/xidmetler' },
+          { label: 'Book a service', to: '/xidmetler/servise-yazilmaq' },
           { label: 'Accessories', to: '/xidmetler' },
           { label: 'Lifestyle collection', to: '/xidmetler' },
           { label: 'Service packages', to: '/xidmetler' },
           { label: 'Genuine parts', to: '/xidmetler' },
-          { label: 'Manuals', to: '/xidmetler' },
         ],
       },
       legal: [
@@ -744,6 +767,33 @@ export const translations = {
     testDrive: {
       title: 'Book a test drive',
       contactNumbers: 'Contact Numbers',
+    },
+    bookService: {
+      title: 'Book A Service',
+      selectBranch: 'Select Branch',
+      title_field: 'Title',
+      titleOptions: ['Mr', 'Ms'],
+      firstName: 'First Name',
+      lastName: 'Last Name',
+      email: 'Email Address',
+      phone: 'Contact Number',
+      select: 'Please select ...',
+      consumerTitle: 'Consumer Information',
+      consumerText: 'We would like to stay in touch with you to keep up to date with our latest product news, marketing services and offers. If you would prefer not to receive future information by either of the methods below please indicate by un-selecting the option. All information provided will be used in accordance with our Privacy and Cookie Policy and not shared with any 3rd party company.',
+      channels: { phone: 'Phone', email: 'Email', sms: 'SMS', post: 'Post' },
+      message: 'Message',
+      submit: 'Submit',
+      submitting: 'Submitting...',
+      success: 'Your request has been received. We will contact you shortly.',
+      branches: [
+        'Mercedes Absheron Automobile Center LLC',
+        'AutoStar Kaukasus GmbH Azerbaijan LLC',
+      ],
+      errors: {
+        required: 'This field is required',
+        email: 'Enter a valid email address',
+        phone: 'Enter a valid contact number',
+      },
     },
     colours: {
       'polar-white': 'Polar White (non-metallic)',

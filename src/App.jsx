@@ -10,6 +10,7 @@ import StockDetail from './pages/StockDetail.jsx';
 import Offers from './pages/Offers.jsx';
 import Showroom from './pages/Showroom.jsx';
 import TestDrive from './pages/TestDrive.jsx';
+import BookService from './pages/BookService.jsx';
 
 export default function App() {
   return (
@@ -29,6 +30,8 @@ export default function App() {
         <Route path="/showroom" element={<Showroom />} />
         {/* Alış → Test drive */}
         <Route path="/test-drive" element={<TestDrive />} />
+        {/* Xidmətlər → Servisə yazılmaq (Book A Service formu) */}
+        <Route path="/xidmetler/servise-yazilmaq" element={<BookService />} />
 
         {/* Digər menyu səhifələri — hazırlandıqca real komponentlərlə əvəz olunacaq */}
         {navLinks
