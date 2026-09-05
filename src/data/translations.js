@@ -74,6 +74,27 @@ export const translations = {
       p2: 'Bizim məqsədimiz – şirkətin müştərilərinə qayğı göstərmək, ən yüksək səviyyəli xidməti təmin etmək, habelə şirkətə istedadlı mütəxəssisləri cəlb etmək, müştərilərin maraqlarına uyğun olaraq, kollektiv yaradıcılıq potensialının həyata keçirilməsinə imkan yaratmaq.',
       cta: 'Ətraflı',
     },
+    aboutPage: {
+      hero: {
+        title: 'Mercedes-Benz Azərbaycana xoş gəldiniz',
+        cta: 'Müraciət edin',
+      },
+      intro: {
+        title: 'Haqqımızda',
+        p1: '“Avtokapital Azərbaycan” MMC – Mercedes-Benz Group AG-nin Azərbaycandakı rəsmi distributoru və Mercedes-Benz markasının avtomobil bazarında eksklüziv təmsilçisidir.',
+        p2: 'Bizim əsas fəaliyyət istiqamətlərimizə yeni Mercedes-Benz avtomobillərinin satışı, zəmanətli və zəmanətdən sonrakı texniki xidmətlərin göstərilməsi, texniki və kuzov təmiri, həmçinin orijinal ehtiyat hissələrinin və aksesuarların satışı daxildir.',
+        p3: 'Müştərilərimizin məmnuniyyəti və etimadı bizim üçün prioritetdir. Biz, Mercedes-Benz-in keyfiyyətini və komfortunu təqdim edərək, müştərilərimiz üçün ən yüksək səviyyədə xidmət göstərməyə çalışırıq. Məqsədimiz müştərilərimizin ehtiyaclarını qarşılamaq və onlara rahat və etibarlı avtomobil təcrübəsi təqdim etməkdir.',
+      },
+      values: {
+        eyebrow: 'Dəyərlərimiz',
+        title: 'Bizi fərqləndirən nədir',
+      },
+      cta: {
+        title: 'Sizinlə əlaqə saxlamaqdan məmnun olarıq',
+        text: 'Yeni Mercedes-Benz avtomobili, texniki xidmət və ya orijinal ehtiyat hissələri ilə bağlı suallarınız üçün bizimlə əlaqə saxlayın.',
+        button: 'Müraciət edin',
+      },
+    },
     promo: {
       title: 'Mercedes-Benz dünyasını kəşf edin',
       text: 'Xüsusi təkliflər, yeni modellər və unikal təcrübələr sizi gözləyir.',
@@ -698,6 +719,27 @@ export const translations = {
       p1: '“Avtokapital-Azerbaijan” LLC is the Official Representative of Mercedes-Benz Group AG for Mercedes-Benz branded vehicles in Azerbaijan.',
       p2: 'Our goal is to care for the company’s customers, provide the highest level of service, as well as attract talented professionals to the company and, in line with customers’ interests, create opportunities for realizing collective creative potential.',
       cta: 'Learn more',
+    },
+    aboutPage: {
+      hero: {
+        title: 'Welcome to Mercedes-Benz Azerbaijan',
+        cta: 'Contact us',
+      },
+      intro: {
+        title: 'About us',
+        p1: '“Avtokapital Azerbaijan” LLC is the official distributor of Mercedes-Benz Group AG in Azerbaijan and the exclusive representative of the Mercedes-Benz brand in the automotive market.',
+        p2: 'Our core activities include the sale of new Mercedes-Benz vehicles, the provision of warranty and post-warranty technical services, mechanical and body repairs, as well as the sale of genuine spare parts and accessories.',
+        p3: 'The satisfaction and trust of our customers are our priority. By delivering the quality and comfort of Mercedes-Benz, we strive to provide the highest level of service for our customers. Our aim is to meet our customers’ needs and offer them a comfortable and reliable automotive experience.',
+      },
+      values: {
+        eyebrow: 'Our values',
+        title: 'What sets us apart',
+      },
+      cta: {
+        title: 'We would be glad to hear from you',
+        text: 'Contact us with any questions about a new Mercedes-Benz vehicle, technical service or genuine spare parts.',
+        button: 'Contact us',
+      },
     },
     promo: {
       title: 'Discover the world of Mercedes-Benz',
