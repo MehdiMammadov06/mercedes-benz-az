@@ -46,7 +46,7 @@ export const navLinks = [
     submenu: [
       { labelKey: 'amg', to: '/brendler/mercedes-amg' },
       { labelKey: 'maybach', to: '/brendler/mercedes-maybach' },
-      { labelKey: 'innovation140', to: '/brendler' },
+      { labelKey: 'innovation140', to: '/brendler/innovasiya' },
       { labelKey: 'gClass', to: '/brendler' },
     ],
   },

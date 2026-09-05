@@ -564,6 +564,35 @@ export const translations = {
       },
       footnote: '[1] Konfiqurasiyadan asılı olaraq istəyə görə seçilə bilən avadanlıq.',
     },
+    innovation140: {
+      hero: {
+        title: '140 illik innovasiya',
+        text: 'Mercedes-Benz 1886-cı ildə avtomobilin ixtirasından bəri mobilliyin gələcəyini formalaşdırır.',
+        cta: 'Müraciət edin',
+      },
+      redefine: {
+        eyebrow: '1886-cı ildən bəri',
+        title: 'Fərdi mobilliyin yenidən tərif edilməsi',
+        text: '29 yanvar 2026-cı il "Mercedes-Benz" tarixində xüsusi bir tarixdir: bu tarix Karl Bensin öz "Motorwagen"i üçün patent ərizəsi verdiyi vaxtdan 140 il keçdiyini göstərir. Avtomobilin doğum günü. 2026-cı il brendimizin tarixindəki ən böyük məhsul təqdimatı proqramı ilə xarakterizə olunur. Bütün seqmentlərdə yeni standartlar müəyyən edilir. Və fərdi mobillik bir daha yenidən tərif olunur. Yubileyimizi bizimlə birlikdə qeyd edin və yeni modellərimizi indi kəşf edin.',
+        cta: 'Bütün modellərə baxın',
+      },
+      places: {
+        eyebrow: 'Yeni S-Class',
+        title: '140 İl. 140 Məkan',
+        text: 'Yeni S-Class dünya üzrə 140 məkanı əhatə edən qlobal bir macaraya yola düşür. Altı qitə boyunca keçən yürüşdə 50 000 km-dən çox məsafə qət edilir. Öz səyahətinizdə bizə qoşulun və bu möhtəşəm yürüşün bir hissəsi olun.',
+        cta: 'Ətraflı',
+      },
+      community: {
+        eyebrow: 'Mercedes-Benz İcması',
+        title: 'Bütün dünyadan olan icmalarla birlikdə qeyd edin.',
+        text: 'Yeni S-Class modelinin qlobal səyahətini izləmək üçün Mercedes-Benz icmasına qoşulun. Sizi eksklüziv təcrübə, maraqlı yarışlar və çox daha çoxu gözləyir.',
+      },
+      form: {
+        eyebrow: 'Bizimlə Əlaqə',
+        title: 'Yeni modellərimizlə indi tanış olun',
+        heading: 'Əlaqə üçün formu doldurun',
+      },
+    },
     bookService: {
       title: 'Servisə yazılmaq',
       selectBranch: 'Filialı seç',
@@ -1159,6 +1188,35 @@ export const translations = {
         },
       },
       footnote: '[1] Optional equipment selectable depending on configuration.',
+    },
+    innovation140: {
+      hero: {
+        title: '140 years of innovation',
+        text: 'Since inventing the automobile in 1886, Mercedes-Benz has been shaping the future of mobility.',
+        cta: 'Make an enquiry',
+      },
+      redefine: {
+        eyebrow: 'Since 1886',
+        title: 'Redefining individual mobility',
+        text: '29 January 2026 is a special date in Mercedes-Benz history: it marks 140 years since Karl Benz filed the patent application for his “Motorwagen”. The birthday of the automobile. 2026 is characterised by the largest product launch programme in our brand’s history. New standards are being set in all segments. And individual mobility is being redefined once again. Celebrate our anniversary with us and discover our new models now.',
+        cta: 'View all models',
+      },
+      places: {
+        eyebrow: 'The new S-Class',
+        title: '140 Years. 140 Places',
+        text: 'The new S-Class sets off on a global adventure covering 140 places worldwide. Over 50,000 km are travelled across six continents. Join us on your own journey and become part of this magnificent tour.',
+        cta: 'Learn more',
+      },
+      community: {
+        eyebrow: 'Mercedes-Benz Community',
+        title: 'Celebrate together with communities from all over the world.',
+        text: 'Join the Mercedes-Benz community to follow the global journey of the new S-Class model. An exclusive experience, exciting competitions and much more await you.',
+      },
+      form: {
+        eyebrow: 'Contact us',
+        title: 'Discover our new models now',
+        heading: 'Fill in the form to get in touch',
+      },
     },
     bookService: {
       title: 'Book A Service',
