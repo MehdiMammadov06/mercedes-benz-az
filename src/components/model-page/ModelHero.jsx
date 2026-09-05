@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-// Model səhifəsinin yuxarı hissəsi: böyük avtomobil şəkli + model adı (arxa fonda)
-// + seçilə bilən rəng nöqtələri. Orijinal saytdakı "A-Class" hero ekranı kimi.
+// Model səhifəsinin yuxarı hissəsi: böyük avtomobil şəkli + seçilə bilən rəng
+// nöqtələri. Orijinal saytdakı "A-Class" hero ekranı kimi.
 //
 // HƏR RƏNGİN ÖZ ŞƏKLİ var (color.image). Rəng nöqtəsinə klik edəndə həm rəng adı,
 // həm də avtomobil şəkli dəyişir.
@@ -17,14 +17,6 @@ export default function ModelHero({ model, colorLabel }) {
 
   return (
     <section className="relative overflow-hidden bg-mb-silver">
-      {/* Nəhəng, açıq rəngli model adı — fonda */}
-      <span
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 select-none text-center font-display text-[22vw] leading-none text-white/70"
-      >
-        {model.name.split(' ')[0]}
-      </span>
-
       <div className="container-site relative flex min-h-[62vh] flex-col items-center justify-center py-16 sm:min-h-[70vh]">
         {/* Avtomobil şəkli — rəngə görə dəyişir.
             key={currentImage}: şəkil dəyişəndə React <img>-i yenidən qurur ki,

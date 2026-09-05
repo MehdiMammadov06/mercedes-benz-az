@@ -518,6 +518,29 @@
               "image": "/images/models/detail/a-class/hero-mountain-grey.avif"
             }
           ]
+        },
+        "variants": [
+          {
+            "id": "a180",
+            "name": "A 180",
+            "image": "/images/models/detail/a-class/variant-a180.avif"
+          },
+          {
+            "id": "a200",
+            "name": "A 200",
+            "image": "/images/models/detail/a-class/variant-a200.avif"
+          },
+          {
+            "id": "a250e",
+            "name": "A 250 e",
+            "image": "/images/models/detail/a-class/variant-a250e.avif"
+          }
+        ],
+        "exterior": {
+          "image": "/images/models/detail/a-class/exterior.avif"
+        },
+        "interior": {
+          "image": "/images/models/detail/a-class/interior.avif"
         }
       }
     },

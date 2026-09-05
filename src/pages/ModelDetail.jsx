@@ -6,10 +6,12 @@ import { ArrowRight } from '../components/icons/index.jsx';
 
 import ModelHero from '../components/model-page/ModelHero.jsx';
 import ModelStickyBar from '../components/model-page/ModelStickyBar.jsx';
+import ModelLineup from '../components/model-page/ModelLineup.jsx';
+import FeatureSection from '../components/model-page/FeatureSection.jsx';
 
 // Tək model detal səhifəsi (/modeller/:id).
 // Universal ŞABLON — bölmələr mərhələli əlavə olunur.
-// İndiki mərhələ: Hero + Sticky model bar.
+// İndiki mərhələ: Hero + Sticky bar + Model cərgəsi + Eksteryer + İnteryer.
 export default function ModelDetail() {
   const { id } = useParams();
   const { t } = useLanguage();
@@ -46,13 +48,30 @@ export default function ModelDetail() {
     );
   }
 
+  const detail = model.detail;
+
   return (
     <>
-      {/* Hero — böyük şəkil + model adı + rəng seçimləri */}
+      {/* Hero — böyük şəkil + rəng seçimləri */}
       <ModelHero model={model} colorLabel={tp.colorLabel} />
 
       {/* Yapışqan zolaq — skroll edəndə yuxarıda qalır */}
       <ModelStickyBar label={tp.stickyLabel} name={model.name} ctaText={tp.contactCta} />
+
+      {/* Model cərgəsi — variantlar (yalnız data varsa) */}
+      {detail?.variants?.length > 0 && (
+        <ModelLineup variants={detail.variants} copy={tp.lineup} />
+      )}
+
+      {/* Eksteryer */}
+      {detail?.exterior?.image && (
+        <FeatureSection data={detail.exterior} copy={tp.exterior} />
+      )}
+
+      {/* İnteryer — şəkil sağda (reverse) */}
+      {detail?.interior?.image && (
+        <FeatureSection data={detail.interior} copy={tp.interior} reverse />
+      )}
     </>
   );
 }
