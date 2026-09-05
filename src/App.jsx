@@ -3,6 +3,7 @@ import Layout from './components/layout/Layout.jsx';
 import ScrollToTop from './components/utils/ScrollToTop.jsx';
 import { navLinks } from './data/navigation.js';
 import Home from './pages/Home.jsx';
+import ModelDetail from './pages/ModelDetail.jsx';
 import Placeholder from './pages/Placeholder.jsx';
 
 export default function App() {
@@ -18,8 +19,8 @@ export default function App() {
           <Route key={link.key} path={link.path} element={<Placeholder titleKey={link.key} />} />
         ))}
 
-        {/* Model detalı — növbəti mərhələdə real komponentlə əvəz olunacaq */}
-        <Route path="/modeller/:id" element={<Placeholder titleKey="models" />} />
+        {/* Model detalı — universal şablon (A-Class tam, digərləri data əlavə edildikcə) */}
+        <Route path="/modeller/:id" element={<ModelDetail />} />
 
         <Route path="/elaqe" element={<Placeholder />} />
         <Route path="*" element={<Placeholder />} />
