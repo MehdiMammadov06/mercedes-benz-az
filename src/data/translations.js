@@ -478,6 +478,46 @@ export const translations = {
         text: 'Mercedes-Benz xidmət partnyorunuz sizi saxta məhsullardan qoruyur. Saxta hissələr çox vaxt aldadıcı dərəcədə orijinal görünür, hətta ekspertlər belə onları ilk baxışdan asanlıqla müəyyən edə bilmirlər.',
       },
     },
+    amg: {
+      hero: {
+        title: 'Mercedes-AMG modelləri.',
+        text: 'Yarış uğurları üzərində qurulub.',
+        cta: 'Əlaqə',
+      },
+      lineup: {
+        title: 'Model cərgəsi',
+      },
+      intro: {
+        eyebrow: 'Əsas məqamlar',
+        title: 'AFFALTERBACH-DA YARADILIB: bu, Mercedes-AMG modellərini xüsusi edir.',
+        text: 'Sürücülük və dizaynda xarakter. Mercedes-AMG modellərinin kökləri yarışdadır. Bu, maşın sürməzdən əvvəl də aydın olur. Çeviklik və yerinə yetirmək istəyi zahiri görünüşdə də dərhal tanınır. Çünki hər bir Mercedes-AMG həm daxili, həm də xaricdən xarakterik xüsusiyyətlərə malikdir.',
+      },
+      highlights: [
+        {
+          id: 'game-changer',
+          title: 'Oyunun dəyişdirilməsi.',
+          text: 'Biz həmişə oyunu necə dəyişə biləcəyimizi göstərmişik və bunu özümüzə və başqalarına sübut etmişik. Beləliklə, biz birlikdə keçmişimizi qeyd edəcəyik, bu günümüzü yaşayacağıq və gələcək xəyalımızı paylaşacağıq. Məşhur dünyanın ən sürətli ailə üzvlərimizin hekayələrini yaşayın və oyun dəyişdiricisi olmağın nə demək olduğunu öyrənin.',
+          image: '/images/amg/highlights/game-changer.avif',
+        },
+        {
+          id: 'exhaust',
+          title: 'Hər şey səssizdir: AMG performanslı egzoz sistemi.',
+          text: 'AMG Performance egzoz sistemi bir düyməyə basmaqla salonda daha da emosional mühərrik səsini təmin edir. Tipik AMG-dən tutmuş, AMG Performance egzoz sisteminin səsi üç dəyişən tənzimlənən işlənmiş qaz qapağı vasitəsilə hazırda seçilmiş sürücü proqramına tam uyğunlaşır.',
+          image: '/images/amg/highlights/exhaust.avif',
+        },
+        {
+          id: 'grille',
+          title: 'Bütün Mercedes-AMG modelləri AMG-ə məxsus radiator barmaqlığı tərəfindən dərhal tanınır.',
+          text: 'AMG brendinin diqqətəlayiq xüsusiyyətlərinə həmçinin xüsusi xromlu ön splitter və dəyişdirilmiş hava girişləri ilə yenilənmiş ön apron daxildir.',
+          image: '/images/amg/highlights/grille.avif',
+        },
+      ],
+      anniversary: {
+        eyebrow: 'AMG-nin 55 illiyi',
+        title: 'Yubiley bəyanatı.',
+        text: 'Standart spesifikasiyalı Executive oturacağı səyahət rahatlığının zirvəsini təmsil edir. Düyməni basmaqla o, misilsiz rahatlıq təqdim edərək, tam ayılmış vəziyyətə salına bilər. O, həmçinin əlavə geniş ayaq dayağı ilə təchiz olunub və siz isti daş oturacaq masajı və oturacaqların iqlim nəzarəti ilə əylənə bilərsiniz.',
+      },
+    },
     bookService: {
       title: 'Servisə yazılmaq',
       selectBranch: 'Filialı seç',
@@ -986,6 +1026,46 @@ export const translations = {
         eyebrow: 'Genuine parts vs. Non-genuine parts',
         title: 'It looks genuine: watch out for counterfeit parts.',
         text: 'Your Mercedes-Benz service partner protects you from counterfeit products. Counterfeit parts often look deceptively genuine — even experts cannot easily identify them at first glance.',
+      },
+    },
+    amg: {
+      hero: {
+        title: 'Mercedes-AMG models.',
+        text: 'Built on racing success.',
+        cta: 'Contact',
+      },
+      lineup: {
+        title: 'Model range',
+      },
+      intro: {
+        eyebrow: 'Highlights',
+        title: 'CREATED IN AFFALTERBACH: this is what makes Mercedes-AMG models special.',
+        text: 'Character in driving and design. The roots of Mercedes-AMG models lie in racing. This is clear even before you drive. The agility and the will to perform are immediately recognisable in the appearance too. Because every Mercedes-AMG has distinctive features both inside and out.',
+      },
+      highlights: [
+        {
+          id: 'game-changer',
+          title: 'Changing the game.',
+          text: 'We have always shown how we can change the game — and proved it to ourselves and to others. So, together we will celebrate our past, live our present and share our future dream. Experience the stories of the fastest family members in the world and learn what it means to be a game changer.',
+          image: '/images/amg/highlights/game-changer.avif',
+        },
+        {
+          id: 'exhaust',
+          title: 'It is all about the sound: the AMG performance exhaust system.',
+          text: 'At the touch of a button, the AMG Performance exhaust system delivers an even more emotional engine sound in the cabin. From typical AMG onwards, the sound of the AMG Performance exhaust system adapts perfectly to the currently selected drive programme via three variably adjustable exhaust flaps.',
+          image: '/images/amg/highlights/exhaust.avif',
+        },
+        {
+          id: 'grille',
+          title: 'Every Mercedes-AMG is instantly recognised by the AMG-specific radiator grille.',
+          text: 'The distinctive features of the AMG brand also include the special chrome front splitter and the redesigned front apron with modified air intakes.',
+          image: '/images/amg/highlights/grille.avif',
+        },
+      ],
+      anniversary: {
+        eyebrow: '55 years of AMG',
+        title: 'An anniversary statement.',
+        text: 'The Executive seat with standard specification represents the pinnacle of travel comfort. At the touch of a button it can be reclined into a fully lying position for unrivalled comfort. It is also equipped with an additional extending footrest, and you can enjoy hot-stone seat massage and seat climate control.',
       },
     },
     bookService: {

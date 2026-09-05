@@ -15,6 +15,7 @@ import Accessories from './pages/Accessories.jsx';
 import Collection from './pages/Collection.jsx';
 import ServicePackages from './pages/ServicePackages.jsx';
 import GenuineParts from './pages/GenuineParts.jsx';
+import AmgBrand from './pages/AmgBrand.jsx';
 
 export default function App() {
   return (
@@ -44,6 +45,8 @@ export default function App() {
         <Route path="/xidmetler/servis-paketleri" element={<ServicePackages />} />
         {/* Xidmətlər → Orijinal Hissələr */}
         <Route path="/xidmetler/orijinal-hisseler" element={<GenuineParts />} />
+        {/* Bizim brendlərimiz → Mercedes-AMG */}
+        <Route path="/brendler/mercedes-amg" element={<AmgBrand />} />
 
         {/* Digər menyu səhifələri — hazırlandıqca real komponentlərlə əvəz olunacaq */}
         {navLinks
