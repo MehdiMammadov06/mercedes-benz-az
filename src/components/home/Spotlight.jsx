@@ -4,13 +4,6 @@ import { spotlightItems } from '../../data/spotlight.js';
 import SpotlightCard from './SpotlightCard.jsx';
 import { ChevronLeft, ChevronRight } from '../icons/index.jsx';
 
-// Ana səhifədəki "In the Spotlight" bölməsi — kampaniya kartları slideri.
-// Sağ/sol ox + nöqtələr ilə sürüşür (JS/React state, kənar kitabxana yoxdur).
-//
-// Bir anda neçə kart görünür (ekran eninə görə):
-//   mobil (<640)   -> 1
-//   planşet        -> 2
-//   masaüstü ≥1024 -> 3
 function getPerView(width) {
   if (width >= 1024) return 3;
   if (width >= 640) return 2;
@@ -53,7 +46,7 @@ export default function Spotlight() {
       </div>
 
       <div className="relative">
-        {/* Sürüşən zolaq */}
+
         <div className="-mx-3 overflow-hidden">
           <div
             className="flex transition-transform duration-500 ease-mb"
@@ -71,7 +64,6 @@ export default function Spotlight() {
           </div>
         </div>
 
-        {/* Sol ox */}
         <button
           type="button"
           onClick={goPrev}
@@ -82,7 +74,6 @@ export default function Spotlight() {
           <ChevronLeft />
         </button>
 
-        {/* Sağ ox */}
         <button
           type="button"
           onClick={goNext}
@@ -93,7 +84,6 @@ export default function Spotlight() {
           <ChevronRight />
         </button>
 
-        {/* Nöqtələr */}
         {pageCount > 1 && (
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
             {Array.from({ length: pageCount }).map((_, dot) => (

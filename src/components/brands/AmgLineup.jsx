@@ -2,9 +2,6 @@ import { useEffect, useMemo, useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext.jsx';
 import { ChevronLeft, ChevronRight } from '../icons/index.jsx';
 
-// AMG "Model cərgəsi" — tab filtri + model kartları slideri.
-// Tab-lar (Sedan / SUV / Coupé / ...) seçildikcə modellər filtrlənir.
-// Kart: şəkil + ad (ağ fon, orijinaldakı kimi). React state, kitabxanasız.
 function getPerView(width) {
   if (width >= 1024) return 3;
   if (width >= 640) return 2;
@@ -30,7 +27,6 @@ export default function AmgLineup({ title, tabs, models }) {
     [models, activeTab]
   );
 
-  // Tab dəyişəndə slideri əvvələ qaytar
   useEffect(() => setIndex(0), [activeTab]);
 
   const total = filtered.length;

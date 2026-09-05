@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext.jsx';
 import { ChevronLeft, ChevronRight } from '../icons/index.jsx';
 
-// AMG "Edition 55" yubiley karuseli — tünd fon kartlar: şəkil + ad + uzun mətn.
-// Bir anda desktop 3, planşet 2, mobil 1 kart. React state, kitabxanasız.
 function getPerView(width) {
   if (width >= 1024) return 3;
   if (width >= 640) return 2;

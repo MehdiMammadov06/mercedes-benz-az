@@ -1,8 +1,6 @@
 import { useLanguage } from '../../context/LanguageContext.jsx';
 import Button from '../ui/Button.jsx';
 
-// ŞƏKİL: `public/images/mercedesnew.png` (E-Class hero şəkli).
-// Şəkil olmasa, altdaki qradient fon göstərilir (sayt sınmır).
 const HERO_IMAGE = '/images/mercedesnew.png';
 
 export default function Hero() {
@@ -19,7 +17,7 @@ export default function Hero() {
         }}
       />
 
-      {/* Mətnin oxunması üçün soldan sağa tündləşən örtük */}
+      {/* Mətn*/}
       <div className="absolute inset-0 bg-linear-to-r from-black/75 via-black/35 to-transparent" />
 
       <div className="container-site relative flex h-full flex-col justify-center pb-16">

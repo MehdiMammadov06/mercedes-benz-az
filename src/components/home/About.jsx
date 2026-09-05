@@ -1,9 +1,6 @@
 import { useLanguage } from '../../context/LanguageContext.jsx';
 import Button from '../ui/Button.jsx';
 
-// Ana səhifədəki "Haqqımızda" bölməsi.
-// Başlıq (font-display) + iki paraqraf + mavi "Ətraflı" düyməsi.
-// Mətnlər translations.js-dəki `about` blokundan (AZ/EN).
 export default function About() {
   const { t } = useLanguage();
 

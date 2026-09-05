@@ -1,9 +1,6 @@
 import { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext.jsx';
 
-// AMG "Əsas məqamlar" slideri — tünd fon, bir anda 1 slayd:
-// solda başlıq+mətn, sağda şəkil. Altda nöqtələr. React state, kitabxanasız.
-// `intro` — hər slaydın üstündə sabit qalan eyebrow+başlıq+mətn.
 export default function HighlightSlider({ intro, slides }) {
   const [index, setIndex] = useState(0);
   const total = slides.length;
@@ -12,14 +9,14 @@ export default function HighlightSlider({ intro, slides }) {
   return (
     <section className="bg-mb-ink py-16 text-white sm:py-20">
       <div className="container-site">
-        {/* Sabit intro */}
+        {/* slider */}
         <div className="mb-10 max-w-3xl">
           <p className="text-sm uppercase tracking-widest text-white/60">{intro.eyebrow}</p>
           <h2 className="mt-3 font-display text-2xl sm:text-3xl">{intro.title}</h2>
           <p className="mt-4 text-sm leading-relaxed text-white/75 sm:text-base">{intro.text}</p>
         </div>
 
-        {/* Slayd: mətn solda, şəkil sağda */}
+        {/* Slayd*/}
         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-14">
           <div>
             <h3 className="font-display text-xl sm:text-2xl">{slide.title}</h3>

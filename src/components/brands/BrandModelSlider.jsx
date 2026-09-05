@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight } from '../icons/index.jsx';
 
-// Brend səhifələri üçün sadə "Model cərgəsi" slideri (tabsız).
-// Ağ fon, şəkil + ad. React state + transform, kənar kitabxana yoxdur.
 function getPerView(width) {
   if (width >= 1024) return 3;
   if (width >= 640) return 2;

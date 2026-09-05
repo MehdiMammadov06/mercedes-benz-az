@@ -3,14 +3,6 @@ import { useLanguage } from '../../context/LanguageContext.jsx';
 import { useFetch } from '../../hooks/useFetch.js';
 import ModelSlider from '../models/ModelSlider.jsx';
 
-// Ana səhifədəki "Model cərgəsi" bölməsi:
-//   kateqoriya tabları  +  seçilən kateqoriyanın modelləri (kart şəbəkəsi).
-//
-// Tab açarları models.json-dakı `category` dəyərləri ilə üst-üstə düşür,
-// adları isə translations.js-dəki `categories` blokundan gəlir.
-
-// Tabların sırası (orijinal saytdakı ardıcıllığa uyğun). "all" = Hamısı.
-// "estates" orijinalda var, amma modeli yoxdur — boş göstərilir.
 const TAB_KEYS = ['all', 'sedan', 'suv', 'coupe', 'cabriolet', 'hatchback', 'mpv', 'estates'];
 
 export default function ModelShowcase() {
@@ -20,15 +12,11 @@ export default function ModelShowcase() {
 
   const allModels = data?.models ?? [];
 
-  // Seçilən taba görə modelləri süz. "all" olanda hamısı göstərilir.
-  // Bir model birdən çox kateqoriyada ola bilər (məs. GLC Coupé həm SUV, həm Kupe),
-  // ona görə `categories` massivi ilə yoxlanılır.
   const visibleModels = useMemo(() => {
     if (activeTab === 'all') return allModels;
     return allModels.filter((model) => model.categories?.includes(activeTab));
   }, [allModels, activeTab]);
 
-  // Bütün tablar orijinaldakı kimi göstərilir (Estates boş olsa da qalır).
   const availableTabs = allModels.length === 0 ? [] : TAB_KEYS;
 
   return (
@@ -38,7 +26,7 @@ export default function ModelShowcase() {
         <p className="mt-2 max-w-xl text-sm text-mb-grey sm:text-base">{t.models.subtitle}</p>
       </div>
 
-      {/* --- Kateqoriya tabları --- */}
+      {/* Kateqoriya */}
       {availableTabs.length > 0 && (
         <div className="mb-10 flex flex-wrap gap-2 sm:gap-3">
           {availableTabs.map((key) => {
@@ -62,7 +50,6 @@ export default function ModelShowcase() {
         </div>
       )}
 
-      {/* --- Məzmun: yüklənir / xəta / kartlar --- */}
       {isLoading && <ShowcaseSkeleton />}
 
       {error && (
@@ -75,7 +62,6 @@ export default function ModelShowcase() {
         <ModelSlider models={visibleModels} />
       )}
 
-      {/* Boş kateqoriya (məs. Estates) */}
       {!isLoading && !error && visibleModels.length === 0 && (
         <div className="flex items-center justify-center py-16 text-center">
           <p className="text-sm text-mb-grey">{t.models.noResults}</p>
@@ -85,7 +71,6 @@ export default function ModelShowcase() {
   );
 }
 
-// Yüklənərkən göstərilən "skeleton" kartlar (slider görünüşünə uyğun 3 ədəd)
 function ShowcaseSkeleton() {
   return (
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
