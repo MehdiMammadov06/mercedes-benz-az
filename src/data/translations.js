@@ -170,7 +170,7 @@ export const translations = {
           { label: 'Servisə yazılmaq', to: '/xidmetler/servise-yazilmaq' },
           { label: 'Aksessuarlar', to: '/xidmetler/aksesuarlar' },
           { label: 'Həyat tərz kolleksiyası', to: '/xidmetler/kolleksiya' },
-          { label: 'Servis paketləri', to: '/xidmetler' },
+          { label: 'Servis paketləri', to: '/xidmetler/servis-paketleri' },
           { label: 'Orijinal hissələr', to: '/xidmetler' },
         ],
       },
@@ -425,6 +425,34 @@ export const translations = {
         title: 'Mercedes-Benz Kolleksiyasının müxtəlifliyini kəşf edin.',
       },
     },
+    servicePackages: {
+      hero: {
+        title: 'Mercedes-Benz Servis paketləri',
+        cta: 'Müraciət edin',
+      },
+      intro: {
+        eyebrow: 'Mercedes-Benz Servis paketləri',
+        title: 'Sürprizlər olmadan şəffaf təmir xərcləri.',
+        text: 'Mercedes-Benz Xidmət Paketləri vasitəsilə biz bütün planlaşdırılmış texniki xidmət prosedurlarını əhatə edir və xidmət xərclərinizi şəffaf edirik. Paketin müddətindən və yürüş məsafəsindən asılı olaraq, bütün daxil edilmiş xidmətləri əhatə edən sabit qiymət mövcuddur. Beləliklə, siz şəffaf təmir xərclərinə arxalana və xoşagəlməz sürprizlərdən qaça bilərsiniz.',
+      },
+      premium: {
+        title: 'Premium Servis',
+        text: '«Avtokapital-Azərbaycan» şirkəti — Mercedes-Benzin Azərbaycandakı Rəsmi Nümayəndəliyi — Mercedes-Benz markalı avtomobillərin xidməti üzrə xüsusi qiymətlər təklif edir.\n\nMercedes-Benz markalı avtomobillər üçün nəzərdə tutulan xidmət hər zaman öz unikallığı ilə seçilib. Müasir avadanlıq, cəld təmir, peşəkar işçi kollektivi. «Premium-servis» proqramı avtomobillər üçün nəzərdə tutulan bütün ehtiyat hissələrinə 20% qədər, habelə rəsmi servisdə xidmət olunma şərti ilə bütün xidmət növlərinə 20% endirimin tətbiq edilməsinə şərait yaradır.',
+      },
+      premiumPlus: {
+        title: 'Premium servis plus',
+        text: '"AvtoKapital-Azərbaycan" şirkəti diler şəbəkəsində yaşı 8-dən çox olan (01.01.2011-ci il tarixədək istehsal edilmiş) Mercedes-Benz avtomobillərinin sahibləri üçün loyallıq proqramı tətbiq edir və Mercedes-Benz avtomobillərinə xidmət üçün xüsusi qiymətlər təqdim edir. "Premium-Servis Plus" loyallıq proqramı orijinal ehtiyat hissələrinə 20%-ə qədər endirim, həmçinin, Azərbaycanda Mercedes-Benz-in rəsmi servis stansiyalarında olmaq şərti ilə işçilik üçün 30% endirim nəzərdə tutur. Vaxtımıza və pulumuza bizimlə birlikdə qənaət edin!',
+      },
+      loyal: {
+        title: 'Loyal Tarif',
+        text: 'Azərbaycanda Mercedes-Benz-in Baş nümayəndəliyi — "AvtoKapital-Azərbaycan" rəsmi diler şəbəkəsində yaşı 2 ildən 4 ilə qədər olan Mercedes-Benz avtomobillərinin sahibləri üçün "Loyal Tarif"in tətbiq edildiyini elan edir. "Loyal Tarif" avtomobillərə xidmət Mercedes-Benz-in rəsmi servis mərkəzlərində xidmət göstərilməsi şərtilə orijinal ehtiyat hissələrinə 10%-ə qədər xüsusi endirimlər, həmçinin göstəriləcək xidmətlərə 10% endirim nəzərdə tutur.',
+      },
+      contactNote: 'Ətraflı məlumat üçün Mercedes-Benz-in Azərbaycandakı rəsmi dilerləri ilə əlaqə saxlaya bilərsiniz:',
+      contacts: [
+        'Abşeron Avtomobil Mərkəzi | Heydər Əliyev pr. 191 | *8885',
+        'Autostar Kaukasus | Babək pr. 1145 | *5545',
+      ],
+    },
     bookService: {
       title: 'Servisə yazılmaq',
       selectBranch: 'Filialı seç',
@@ -627,7 +655,7 @@ export const translations = {
           { label: 'Book a service', to: '/xidmetler/servise-yazilmaq' },
           { label: 'Accessories', to: '/xidmetler/aksesuarlar' },
           { label: 'Lifestyle collection', to: '/xidmetler/kolleksiya' },
-          { label: 'Service packages', to: '/xidmetler' },
+          { label: 'Service packages', to: '/xidmetler/servis-paketleri' },
           { label: 'Genuine parts', to: '/xidmetler' },
         ],
       },
@@ -881,6 +909,34 @@ export const translations = {
         eyebrow: 'Our categories',
         title: 'Discover the diversity of the Mercedes-Benz Collection.',
       },
+    },
+    servicePackages: {
+      hero: {
+        title: 'Mercedes-Benz Service Packages',
+        cta: 'Make an enquiry',
+      },
+      intro: {
+        eyebrow: 'Mercedes-Benz Service Packages',
+        title: 'Transparent repair costs with no surprises.',
+        text: 'With Mercedes-Benz Service Packages, we cover all scheduled maintenance procedures and make your service costs transparent. Depending on the duration of the package and the mileage, there is a fixed price that covers all included services. This way, you can rely on transparent repair costs and avoid unpleasant surprises.',
+      },
+      premium: {
+        title: 'Premium Service',
+        text: '“Avtokapital-Azerbaijan” — the Official Representative of Mercedes-Benz in Azerbaijan — offers special prices for the service of Mercedes-Benz branded vehicles.\n\nService for Mercedes-Benz vehicles has always been distinguished by its uniqueness. Modern equipment, prompt repairs, a professional team. The “Premium Service” programme provides up to 20% discount on all spare parts intended for the vehicle, as well as a 20% discount on all types of service, provided servicing takes place at an official service centre.',
+      },
+      premiumPlus: {
+        title: 'Premium Service Plus',
+        text: '“AvtoKapital-Azerbaijan” applies a loyalty programme for owners of Mercedes-Benz vehicles older than 8 years (manufactured before 01.01.2011) within the dealer network and offers special service prices. The “Premium Service Plus” loyalty programme provides up to 20% discount on genuine spare parts, and a 30% discount on labour, provided servicing takes place at official Mercedes-Benz service stations in Azerbaijan. Save time and money together with us!',
+      },
+      loyal: {
+        title: 'Loyal Tariff',
+        text: 'The Head Representative of Mercedes-Benz in Azerbaijan — the “AvtoKapital-Azerbaijan” official dealer network — announces the application of the “Loyal Tariff” for owners of Mercedes-Benz vehicles aged 2 to 4 years. The “Loyal Tariff” provides up to 10% special discounts on genuine spare parts and a 10% discount on services rendered, provided servicing takes place at official Mercedes-Benz service centres.',
+      },
+      contactNote: 'For more information, you can contact the official Mercedes-Benz dealers in Azerbaijan:',
+      contacts: [
+        'Absheron Automobile Center | Heydar Aliyev Ave 191 | *8885',
+        'Autostar Kaukasus | Babek Ave 1145 | *5545',
+      ],
     },
     bookService: {
       title: 'Book A Service',
